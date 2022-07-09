@@ -1,0 +1,23 @@
+
+u
+Esrc/main/java/com/global/streams/parallelStreams/ParallelStreams.java,f/4/f4c37d61fa2ac81b11c164e17f5459cd6aa474a3
+e
+5src/main/java/com/global/streams/StreamsMaxAnMin.java,b/4/b46f4192a0497e509203d24540cb12d6c2169ddc
+d
+4src/main/java/com/global/streams/StreamsSorting.java,c/b/cb0d5bab56a99749ac39599799a621822a2de9c5
+g
+7src/main/java/com/global/streams/StreamsSumAverage.java,c/7/c79402cb8341d3545c7e4bdf3b9597df86c41155
+i
+9src/main/java/com/global/streams/mapreduce/MapReduce.java,a/b/abb39d0e69615bdbb7b725aebeebf24bb3364171
+r
+Bsrc/main/java/com/global/regurlarExpression/RegularExpression.java,8/f/8f9c88b11368066629b73a893fb55a335f49be4d
+P
+ src/test/java/MaxNumberTest.java,0/9/099176a22fb3ddaed12076c4a6cc45ae5f04ff35
+R
+"src/test/java/GlobalRelayTest.java,5/7/57f6d43a538442e513d55688eb40fdebfa0b9b92
+\
+,src/main/java/healthycoderapp/LuhnsAlgo.java,2/2/224acd6722b0a9f294a68db62d1df7259f535ea6
+†
+Vsrc/main/java/com/global/corejava/comparableandcomparator/ComparableAndComparator.java,2/2/22145d4205939e089296ae548eff6e510f6112cd
+€
+Psrc/main/java/com/global/corejava/comparableandcomparator/StudentComparator.java,b/a/ba4bd80fe7499dbab9f1acf933b62f4e460ec526
