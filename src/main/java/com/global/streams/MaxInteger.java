@@ -3,7 +3,7 @@ package com.global.streams;
 import java.util.Collection;
 import java.util.Optional;
 
-public class GlobalRelay {
+public class MaxInteger {
 
     public Optional<Integer> findMax(Collection<Integer> numbers) {
 

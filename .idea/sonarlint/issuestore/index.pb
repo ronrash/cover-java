@@ -13,8 +13,6 @@ r
 Bsrc/main/java/com/global/regurlarExpression/RegularExpression.java,8/f/8f9c88b11368066629b73a893fb55a335f49be4d
 P
  src/test/java/MaxNumberTest.java,0/9/099176a22fb3ddaed12076c4a6cc45ae5f04ff35
-R
-"src/test/java/GlobalRelayTest.java,5/7/57f6d43a538442e513d55688eb40fdebfa0b9b92
 \
 ,src/main/java/healthycoderapp/LuhnsAlgo.java,2/2/224acd6722b0a9f294a68db62d1df7259f535ea6
 †
