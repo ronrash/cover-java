@@ -1,17 +1,15 @@
 package com.global.corejava.sampletestcodes;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class SampleTest {
     public static void main(String[] args) {
-        final boolean hello = isUserPresent("hello");
-        System.out.println(hello);
+//        final boolean hello = isUserPresent("hello");
+//        System.out.println(hello);
+   String status="Active";
+        System.out.println(isCaseStatusEligible(status));
+
     }
 
-    public static boolean isUserPresent(final String user) {
-        final List<String> test = new ArrayList<>();
-        return test != null && !test.isEmpty();
+    private static boolean isCaseStatusEligible(final String status) {
+        return "INACTIVE".equals(status) || "ACTIVE".equals(status);
     }
 }

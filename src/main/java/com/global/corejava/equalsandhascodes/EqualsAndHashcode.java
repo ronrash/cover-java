@@ -43,21 +43,5 @@ class Employee{
         this.name = name;
     }
 
-    public boolean equals(Object object)
-    {
-        if(object==null || object.getClass()!=this.getClass())
-            return false;
 
-        if(object==this) // both are physicall pointing to the same referernce they are same
-            return true;
-
-        Employee employee = (Employee) object;
-        return (this.getId()==employee.getId() && this.getName().equals(((Employee) object).getName()));
-
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name);
-    }
 }

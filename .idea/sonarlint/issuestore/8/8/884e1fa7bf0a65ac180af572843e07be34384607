@@ -1,0 +1,9 @@
+
+\
+java:S1854
+"FRemove this useless assignment to local variable "optionalCollection".(²õ¬·
+M
+java:S1481
+"7Remove this unused "optionalCollection" local variable.(²õ¬·
+X
+java:S1612"=Replace this lambda with method reference 'Objects::nonNull'.(ÒÜ„®ýÿÿÿÿ
