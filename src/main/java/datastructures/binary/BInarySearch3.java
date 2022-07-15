@@ -14,7 +14,7 @@ public class BInarySearch3 {
         final int[] array = new int[]{10,20,30,40,50,60,70,80,90,100}; //10,20,30,40,50,60,70,80,90,100
         final int target = 99;
         final int index = cielingBS(array, target);
-        System.out.printf("next closet number greater than the target is  %d%n", index);
+        System.out.printf("next smallest number greater than the target is  %d%n", index);
     }
 
     private static int cielingBS(final int[] array, final int target) {

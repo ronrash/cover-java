@@ -8,15 +8,17 @@ public class BInarySearch4 {
         // 12 13 14 15 16  19
         // tagret - 18 -- floor of 18 is 16 --
 
+        // if the
+
 
 
         final int[] array = new int[]{10,20,30,40,50,60,70,80,90,100}; //10,20,30,40,50,60,70,80,90,100
         final int target = 35;
-        final int index = cielingBS(array, target);
-        System.out.printf("next closet number greater than the target is  %d%n", index);
+        final int index = floorBS(array, target);
+        System.out.printf("next closet number greater than but less than target is  %d%n", index);
     }
 
-    private static int cielingBS(final int[] array, final int target) {
+    private static int floorBS(final int[] array, final int target) {
 
         /*
         * logic
