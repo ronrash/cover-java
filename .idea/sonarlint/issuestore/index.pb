@@ -1,27 +1,5 @@
 
-u
-Esrc/main/java/com/global/streams/parallelStreams/ParallelStreams.java,f/4/f4c37d61fa2ac81b11c164e17f5459cd6aa474a3
-e
-5src/main/java/com/global/streams/StreamsMaxAnMin.java,b/4/b46f4192a0497e509203d24540cb12d6c2169ddc
-d
-4src/main/java/com/global/streams/StreamsSorting.java,c/b/cb0d5bab56a99749ac39599799a621822a2de9c5
-g
-7src/main/java/com/global/streams/StreamsSumAverage.java,c/7/c79402cb8341d3545c7e4bdf3b9597df86c41155
-i
-9src/main/java/com/global/streams/mapreduce/MapReduce.java,a/b/abb39d0e69615bdbb7b725aebeebf24bb3364171
-r
-Bsrc/main/java/com/global/regurlarExpression/RegularExpression.java,8/f/8f9c88b11368066629b73a893fb55a335f49be4d
-P
- src/test/java/MaxNumberTest.java,0/9/099176a22fb3ddaed12076c4a6cc45ae5f04ff35
-\
-,src/main/java/healthycoderapp/LuhnsAlgo.java,2/2/224acd6722b0a9f294a68db62d1df7259f535ea6
-€
-Psrc/main/java/com/global/corejava/comparableandcomparator/StudentComparator.java,b/a/ba4bd80fe7499dbab9f1acf933b62f4e460ec526
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-\
-,src/main/java/com/global/corejava/Dates.java,3/d/3dcce207e85596c6986f104d2b1ad84e5d0cbea8
-c
-3src/main/java/com/global/Generics/GenericsMain.java,5/6/56690aae6f81707d40dd8563c57847d37906b10a
-`
-0src/main/java/com/global/streams/MaxInteger.java,8/8/884e1fa7bf0a65ac180af572843e07be34384607
+f
+6src/main/java/datastructures/binary/BinarySearch2.java,7/f/7f84ebd8563438b1ff9b246abd3d163cb100260a
