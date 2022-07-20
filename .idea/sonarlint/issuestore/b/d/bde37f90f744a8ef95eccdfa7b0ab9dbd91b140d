@@ -1,0 +1,5 @@
+
+T
+java:S1612"?Replace this lambda with method reference 'Collection::stream'.(ª÷˜
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÿéáşÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(š—“¿ÿÿÿÿÿ

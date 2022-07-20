@@ -1,0 +1,7 @@
+
+E
+java:S3631"/Use "Arrays.stream" instead of "Arrays.asList".(½±ç’
+S	java:S106"9Replace this use of System.out or System.err by a logger.(š—“¿ÿÿÿÿÿ
+E
+java:S3631"/Use "Arrays.stream" instead of "Arrays.asList".(±ÈŠ¤
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‚¨Ö§

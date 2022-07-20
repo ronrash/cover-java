@@ -1,0 +1,29 @@
+
+T
+java:S39588"2Refactor the code so this stream pipeline is used.(“ä§Êıÿÿÿÿ8ãòœ–0
+_
+java:S18548"=Remove this useless assignment to local variable "intStream".(“ä§Êıÿÿÿÿ8ãòœ–0
+Z
+java:S18543"=Remove this useless assignment to local variable "charArray".(®ö˜8¥ÏÅƒ0
+R
+java:S1854&"7Remove this useless assignment to local variable "max".(ş‡ù¥ıÿÿÿÿ
+R
+java:S1854%"7Remove this useless assignment to local variable "sum".(ÑóÌ¥üÿÿÿÿ
+C
+java:S1481%"(Remove this unused "sum" local variable.(ÑóÌ¥üÿÿÿÿ
+C
+java:S1481&"(Remove this unused "max" local variable.(ş‡ù¥ıÿÿÿÿ
+S
+java:S1612,"=Replace this lambda with method reference 'Objects::nonNull'.(õòùü
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(º®—šşÿÿÿÿ
+K
+java:S14813".Remove this unused "charArray" local variable.(®ö˜8¥ÏÅƒ0
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(«û›½8ğ¨–0
+`
+java:S16128">Replace this lambda with method reference 'Integer::parseInt'.(“ä§Êıÿÿÿÿ8ãòœ–0
+P
+java:S14818".Remove this unused "intStream" local variable.(“ä§Êıÿÿÿÿ8ãòœ–0
+I
+java:S2201<",The return value of "parseInt" must be used.(óõÃĞ8òÍ¤–0
+Z	java:S106E"9Replace this use of System.out or System.err by a logger.(¡Òõçıÿÿÿÿ8œ¹ƒ0
+N	java:S106N"9Replace this use of System.out or System.err by a logger.(ıÛÎê

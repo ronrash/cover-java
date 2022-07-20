@@ -1,0 +1,10 @@
+
+[
+java:S1854"ERemove this useless assignment to local variable "aggregateExample2".(ñ—‡
+L
+java:S1481"6Remove this unused "aggregateExample2" local variable.(ñ—‡
+S	java:S106"9Replace this use of System.out or System.err by a logger.(’¹±ùûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‡˜ĞÈıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‡ş¼Ìüÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(û¾ÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(°ëà«ÿÿÿÿÿ

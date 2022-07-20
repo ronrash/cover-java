@@ -1,0 +1,12 @@
+
+>
+java:S1172"(Remove this unused method parameter "a".(á§ïÏ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ôì¨Åþÿÿÿÿ
+=
+java:S1172
+"(Remove this unused method parameter "s".(ƒŽ¿o
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¯©Ø¡üÿÿÿÿ
+R
+java:S1854"7Remove this useless assignment to local variable "obj".(þ¼¯¢øÿÿÿÿ
+C
+java:S1481"(Remove this unused "obj" local variable.(þ¼¯¢øÿÿÿÿ
