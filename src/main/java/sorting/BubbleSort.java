@@ -8,8 +8,10 @@ public class BubbleSort {
     // // also known as exchange sort
     // exchange the next element with each iteration
 
-    // 1,3,4,5 -- with every pass
-
+    // 1,3,4,5 -- with every pass the largest element will go and take its place in the last accordingly
+    //ist pass   5
+      // 2nd pass 4
+// 3rd pass 3
     // Space complextity -- O(1) -- no extra space is required
     // time complexity -- o(n2)  -- best case O(n) worst case O(n2)
 
