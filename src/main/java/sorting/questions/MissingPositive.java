@@ -1,5 +1,6 @@
 package sorting.questions;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class MissingPositive {
@@ -45,6 +46,9 @@ public class MissingPositive {
             if(a[j]!=j+1)
                 return j+1;
         }
+        // if all the numbers are ath their correct position then we can return the length of the array
+        // bcoz that element will be the first missing number
+        // example [1,2,3,4] -- all nos are at correct postion , so next positive no is a.length
         return a.length;
     }
 

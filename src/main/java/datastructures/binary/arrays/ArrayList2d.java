@@ -15,7 +15,7 @@ public class ArrayList2d {
         }
         for(int row =0;row< 3;row++)
         {
-            for(int col=0;col<3;col++)
+            for(int col=0;col< list.size();col++)
             {
                 list.get(row).add(j++);
             }

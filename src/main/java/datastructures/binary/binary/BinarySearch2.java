@@ -1,4 +1,4 @@
-package datastructures.binary;
+package datastructures.binary.binary;
 
 public class BinarySearch2 {
     public static void main(String[] args) {
@@ -39,7 +39,6 @@ public class BinarySearch2 {
                 else
                     end = mid - 1;
             }
-
         }
         return -1;
     }
