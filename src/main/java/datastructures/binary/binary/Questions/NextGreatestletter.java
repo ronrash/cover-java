@@ -16,7 +16,7 @@ public class NextGreatestletter {
 
     public static void main(String[] args) {
         char[] letters = new char[]{'c', 'f', 'j'}; // answer is c
-        char target = 'a';
+        char target = 'j';
         final char nextGreatestLetter = nextGreatestLetter(letters, target);
         System.out.println(nextGreatestLetter);
 

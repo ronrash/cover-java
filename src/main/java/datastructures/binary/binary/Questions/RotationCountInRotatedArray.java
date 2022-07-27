@@ -1,4 +1,4 @@
-package datastructures.binary.Questions;
+package datastructures.binary.binary.Questions;
 
 public class RotationCountInRotatedArray {
     public static void main(String[] args) {
@@ -24,6 +24,10 @@ public class RotationCountInRotatedArray {
                 maxElement=array[i];
                 index=i;
             }
+        }
+        if(index== array.length-1)
+        {
+            return 0;
         }
         return index+1;
     }

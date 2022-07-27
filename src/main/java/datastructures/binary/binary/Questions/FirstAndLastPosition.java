@@ -1,4 +1,4 @@
-package datastructures.binary.Questions;
+package datastructures.binary.binary.Questions;
 
 public class FirstAndLastPosition {
 
