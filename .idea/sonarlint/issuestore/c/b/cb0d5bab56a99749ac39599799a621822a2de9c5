@@ -1,10 +1,0 @@
-
-N	java:S106"9Replace this use of System.out or System.err by a logger.(˜áÕ
-E
-java:S3631"/Use "Arrays.stream" instead of "Arrays.asList".(˜áÕ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(£ıíÌşÿÿÿÿ
-i
-java:S1602"SRemove useless curly braces around statement and then remove useless return keyword(…¥Ñ†
-R
-java:S1612"<Replace this lambda with method reference 'Student::getAge'.(…¥Ñ†
-S	java:S106"9Replace this use of System.out or System.err by a logger.(š—“¿ÿÿÿÿÿ

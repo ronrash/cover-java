@@ -1,12 +1,0 @@
-
-V
-java:S1854!";Remove this useless assignment to local variable "collect".(ë¦ùåÿÿÿÿÿ
-M	java:S106"9Replace this use of System.out or System.err by a logger.(ŸŞ¿O
-G
-java:S1481!",Remove this unused "collect" local variable.(ë¦ùåÿÿÿÿÿ
-S	java:S106/"9Replace this use of System.out or System.err by a logger.(àÉÄ­úÿÿÿÿ
-M	java:S106:"9Replace this use of System.out or System.err by a logger.(ŸŞ¿O
-B
-java:S1602B",Remove useless curly braces around statement(¿¤°
-N	java:S106C"9Replace this use of System.out or System.err by a logger.(«¢±¥
-S	java:S106J"9Replace this use of System.out or System.err by a logger.(êÑÂôşÿÿÿÿ

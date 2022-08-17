@@ -16,6 +16,8 @@ public class Map {
         map.put(1,1);
         map.put(2,2);
 
+        final Integer integer = map.get(3);
+
         // create an immutable map
         final java.util.Map<Integer, Integer> unmodifiableMap = Collections.unmodifiableMap(map);
 

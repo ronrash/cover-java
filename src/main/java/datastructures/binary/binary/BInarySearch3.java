@@ -8,9 +8,6 @@ public class BInarySearch3 {
 
         // 12 13 14 15
         // tagret - 13 -- ceiling is 14
-
-
-
         final int[] array = new int[]{10,20,30,40,50,60,70,80,90,100}; //10,20,30,40,50,60,70,80,90,100
         final int target = 99;
         final int index = cielingBS(array, target);

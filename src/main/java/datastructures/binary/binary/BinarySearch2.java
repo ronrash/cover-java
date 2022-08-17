@@ -16,8 +16,6 @@ public class BinarySearch2 {
 
         // find if the array is ascending order sorted or descnding
         boolean isAsceding = arr[start] < arr[end];
-
-
         while (start <= end) {
             // find the middle element
             int mid = start + (end - start) / 2; // might be possible that the start+end value be greater than integer value

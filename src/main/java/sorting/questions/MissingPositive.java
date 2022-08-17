@@ -40,6 +40,7 @@ public class MissingPositive {
                 i++;
         }
         // after swapping find the first missing positive [1,-1,3,4]
+        System.out.println(Arrays.toString(a));
         for(int j=0;j<a.length;j++)
         {
             // after swapping find the first missing positive [1,-1,3,4]

@@ -7,7 +7,7 @@ import java.util.List;
 public class GoogleMissingNumber {
     public static void main(String[] args) {
 
-        // Question -- find out the missing numbers in an array of range 1-n
+        // Question -- find out the missing numbers in an array of range of sequential numbers 1-n
         int a[]={7,3,2,4,8,2,3,1};
 
         //here there are duplicate numbers as well

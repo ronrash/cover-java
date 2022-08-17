@@ -11,7 +11,7 @@ public class FindWealthiest {
 
     public static void main(String[] args) {
         int[][] a = {
-                {10,30,200} //60
+                {10,30,200} //24
                 ,{1,1,1}   // 3
                 ,{7,7,70}  // 84
         };

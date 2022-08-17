@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class SelectionSort {
     // performs well in small list
-
     /*
      * Algorithm where we find the max elemeet in the array and then swap that with the last element
      * then we reduce the range ie we ignore the last element and so forth

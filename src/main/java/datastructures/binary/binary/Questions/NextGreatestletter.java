@@ -27,19 +27,19 @@ public class NextGreatestletter {
          * */
     }
 
-    private static char nextGreatestLetter(final char[] letters, final char target) {
+    private static char nextGreatestLetter(final char[] a, final char target) {
 
         int start = 0;
-        int end = letters.length - 1;
+        int end = a.length - 1;
 
         while (start <= end) {
             int mid = start + (end - start) / 2;
 
-            if (target > letters[mid])
+            if (target > a[mid])
                 start = mid + 1;
             else
                 end = mid - 1;
         }
-        return letters[start % letters.length];
+        return a[start % a.length];
     }
 }
