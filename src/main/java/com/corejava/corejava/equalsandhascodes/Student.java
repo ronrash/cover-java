@@ -3,6 +3,8 @@ package com.corejava.corejava.equalsandhascodes;
 import java.util.List;
 import java.util.Objects;
 
+import com.corejava.streams.Address;
+
 public class Student {
 
     private String name;
@@ -10,6 +12,8 @@ public class Student {
     private int marks;
     private String department;
     private List<String> hobbies;
+
+    private List<Address> address;
 
     public Student() {
 
@@ -25,6 +29,14 @@ public class Student {
 
     public String getName() {
         return name;
+    }
+
+    public List<Address> getAddress() {
+        return address;
+    }
+
+    public void setAddress(final List<Address> address) {
+        this.address = address;
     }
 
     public void setName(final String name) {

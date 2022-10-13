@@ -11,6 +11,8 @@ public class Map {
     public static void main(String[] args) {
 
         // this is a mutable map
+
+        HashMap<Integer,String> studentMap= new HashMap<>();
         HashMap<Integer,Integer> map = new HashMap<>();
 
         map.put(1,1);

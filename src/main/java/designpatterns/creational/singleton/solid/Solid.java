@@ -21,7 +21,6 @@ public class Solid {
     *        (abstract classes and interfaces) instead of concrete implementations
     *        High level modules should not depend upon low level modules but both should depend upon the abstraction.
     *
-    *
     * */
 
 

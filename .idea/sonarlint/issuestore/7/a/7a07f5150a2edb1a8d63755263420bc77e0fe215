@@ -1,13 +1,0 @@
-
-P
-java:S1191"5Use classes from the Java API instead of Sun classes.(ÍªÜ¼þÿÿÿÿ
-d
-java:S3973!"IUse indentation to denote the code conditionally executed by this "else".(„¶áìøÿÿÿÿ
-V	java:S125
-"<This block of commented-out lines of code should be removed.(Ð”³žûÿÿÿÿ
-Q	java:S125"<This block of commented-out lines of code should be removed.(Ž¶Ÿ›
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¶ž”ìøÿÿÿÿ
-5
-java:S1659"Declare "j" on a separate line.(‹¡ë
-P
-java:S1128"5Remove this unused import 'com.sun.jdi.IntegerValue'.(ÍªÜ¼þÿÿÿÿ

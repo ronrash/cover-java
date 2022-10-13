@@ -1,0 +1,29 @@
+
+M
+java:S39588"2Refactor the code so this stream pipeline is used.(“ä§Êýÿÿÿÿ
+X
+java:S18548"=Remove this useless assignment to local variable "intStream".(“ä§Êýÿÿÿÿ
+S
+java:S18543"=Remove this useless assignment to local variable "charArray".(®ö˜
+R
+java:S1854&"7Remove this useless assignment to local variable "max".(þ‡ù¥ýÿÿÿÿ
+R
+java:S1854%"7Remove this useless assignment to local variable "sum".(ÑóÌ¥üÿÿÿÿ
+C
+java:S1481%"(Remove this unused "sum" local variable.(ÑóÌ¥üÿÿÿÿ
+C
+java:S1481&"(Remove this unused "max" local variable.(þ‡ù¥ýÿÿÿÿ
+S
+java:S1612,"=Replace this lambda with method reference 'Objects::nonNull'.(õòùü
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(º®—šþÿÿÿÿ
+D
+java:S14813".Remove this unused "charArray" local variable.(®ö˜
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(«û›½
+Y
+java:S16128">Replace this lambda with method reference 'Integer::parseInt'.(“ä§Êýÿÿÿÿ
+I
+java:S14818".Remove this unused "intStream" local variable.(“ä§Êýÿÿÿÿ
+B
+java:S2201<",The return value of "parseInt" must be used.(óõÃÐ
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(¡Òõçýÿÿÿÿ
+N	java:S106N"9Replace this use of System.out or System.err by a logger.(ýÛÎê

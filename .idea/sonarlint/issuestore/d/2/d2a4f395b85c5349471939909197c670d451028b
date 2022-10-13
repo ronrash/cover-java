@@ -1,0 +1,12 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŠƒÂ´þÿÿÿÿ
+E
+java:S1611"/Remove the parentheses around the "s" parameter(µž‹ç
+B
+java:S1602",Remove useless curly braces around statement(µž‹ç
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÆÚ²”úÿÿÿÿ
+g
+java:S4276"QRefactor this code to use the more specialised Functional Interface 'IntConsumer'(Ý•œ×
+E
+java:S1611"/Remove the parentheses around the "s" parameter(Ý•œ×
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ý•œ×

@@ -1,0 +1,10 @@
+
+Q	java:S125("<This block of commented-out lines of code should be removed.(æÙ›Ë
+Q	java:S125/"<This block of commented-out lines of code should be removed.(À“éë
+\
+java:S1854H"FRemove this useless assignment to local variable "employeeImmutable1".(ŸÃûı
+M
+java:S1481H"7Remove this unused "employeeImmutable1" local variable.(ŸÃûı
+J
+java:S1874R"/Remove this use of "setDate"; it is deprecated.(ÑÔ˜Áşÿÿÿÿ
+N	java:S106W"9Replace this use of System.out or System.err by a logger.(­‡¾ª
