@@ -20,6 +20,7 @@ public class Sample {
             sum=sum+array[i];
             final int maxSum = Math.max(sum, array[0]);
         }
+        return sum;
     }
     public static void main(String[] args) {
 

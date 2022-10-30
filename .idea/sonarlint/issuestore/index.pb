@@ -19,8 +19,6 @@ n
 >src/main/java/datastructures/binary/arrays/Array2dExample.java,6/6/6657fc5cfe1635cd2fcd9938ef4d6d82ea5f14d7
 V
 &src/main/java/leetcode/TwoSumCopy.java,6/7/6735090c503f29046ff5249a6e5379d9a0b597b8
-Y
-)src/main/java/TestingCode/SampleCode.java,5/8/58707c62c128f7767a21d74c82ca4af6f7a81bf1
 f
 6src/main/java/datastructures/binary/arrays/Array1.java,d/6/d6bf45666e62fc4590180aeb4d9a6b062b529d36
 g

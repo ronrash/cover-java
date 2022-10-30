@@ -6,6 +6,16 @@ import java.util.List;
 public class GenericsMain {
     public static void main(String[] args) {
 
+
+        //
+        List list = new ArrayList();
+        list.add(new Integer(1));
+        list.add(new String("abc"));
+        list.add(1);
+
+        final Object o = list.get(2);
+        System.out.println("generics "+o);
+
         SampleGenerics<Integer> sampleGenerics = new SampleGenerics<>(19);
         // if generics extends NUmber then we can only pass whatever is child of inherits Number
        // SampleGenerics<String> stringSampleGenerics= new SampleGenerics<>("rohit");
