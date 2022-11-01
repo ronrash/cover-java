@@ -22,3 +22,27 @@ public class BoundedGenerics {
         final Long multipliedValue1 = BoundedGenerics.getMultipliedValue(10L);
     }
 }
+ class BoundedGeneric2<T> {
+
+    private T t;
+
+    public void set(T t) {
+        this.t = t;
+    }
+
+    public T get() {
+        return t;
+    }
+
+    public <U extends Number> void inspect(U u){
+        System.out.println("T: " + t.getClass().getName());
+        System.out.println("U: " + u.getClass().getName());
+    }
+
+    public static void main(String[] args) {
+        BoundedGeneric2<Integer> integerBox = new BoundedGeneric2<Integer>();
+        integerBox.set(new Integer(10));
+        // in this method we cannot pass a string becoz it is bounded
+        integerBox.inspect(2); // error: this is still String!
+    }
+}

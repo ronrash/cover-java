@@ -23,6 +23,10 @@ public class GenericsMain {
     }
     // after compilation type erasure kicks in
 
+    public List<Object> genericMethodAfterCompilation(Object[] array){
+        return new ArrayList<>();
+    }
+
     public List<Object> genericMethod(List<Object> list) {
         return list.stream().sorted().collect(Collectors.toList());
     }

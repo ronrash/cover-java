@@ -6,6 +6,7 @@ import java.util.List;
 
 public class WildCards {
     /*
+        Wild card shoudl be used with collecion
     *   We know that Object is the supertype of all Java classes. However, a collection of Object is not the supertype of any collection.
     *   List<Object> is not  a superType for List<String>
 
@@ -22,7 +23,18 @@ public class WildCards {
         buildings.forEach(Building::paint);
     }
 
+    public static void getList(List<Number> numberList){
+        // here in this method we cannot pass a List<Integer> we can only pass List<NUmber>
+    }
+
     public static void main(String[] args) {
+
+        // for getList method
+        List<Number> numberList = new ArrayList<>();
+        List<Integer> integerList = new ArrayList<>();
+        WildCards.getList(numberList); // this is correct
+       // WildCards.getList(integerList); // this is wrong and will give comile time error
+       // to correct this use another
         Building building = new Building("Green");
         Building building1 = new Building("Blue");
 

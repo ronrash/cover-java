@@ -1,0 +1,8 @@
+
+m	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ
+U
+java:S1854":Remove this useless assignment to local variable "maxSum".(§Š”Êùÿÿÿÿ
+I
+java:S1481".Remove this unused "stepCount" local variable.(’ãðÂûÿÿÿÿ
+F
+java:S1481"+Remove this unused "maxSum" local variable.(§Š”Êùÿÿÿÿ
