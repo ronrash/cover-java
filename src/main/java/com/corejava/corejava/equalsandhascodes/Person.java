@@ -37,6 +37,10 @@ public class Person {
 
     @Override
     public int hashCode() {
+        // what is a hashcode?
+        // hascode genereate ann integer value ,return the hashcode of the object
+        //This method is supported for the benefit of hash tables such as those provided by HashMap.
+       // f two objects are equal according to the equals(Object) method, then calling the hashCode method on each of the two objects must produce the same integer result.
         return Objects.hash(id, name);
     }
 

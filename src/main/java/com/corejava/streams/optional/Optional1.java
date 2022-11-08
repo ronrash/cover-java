@@ -10,6 +10,7 @@ public class Optional1 {
     public static void main(String[] args) {
 
         // of -- when we are sure our object is not null
+
         // ofNullable -- when we don't know it returns Optional.empty if object is null
 
         // orElse orElseGet orElseThrows
@@ -36,7 +37,13 @@ public class Optional1 {
         if(studentWithMatchingDepartment.isPresent())
             studentWithMatchingDepartment.get();
 
-        Optional.ofNullable(getStudentWithMatchingDepartment(department)).ifPresent(student1 -> System.out.println(student1.get()));
+//        Optional.ofNullable(getStudentWithMatchingDepartment(department)).isPresent(student1 -> System.out.println(student1.get())).;
+
+        Optional.ofNullable(getStudentWithMatchingDepartment(department)).ifPresent(student1 -> System.out.println(student1));
+        if(studentWithMatchingDepartment.isPresent())
+        {
+
+        }
     }
 
     private static Optional<Student>  getStudentWithMatchingDepartment(String department){
@@ -52,6 +59,8 @@ public class Optional1 {
 //                .filter(student -> student.getDepartment().equalsIgnoreCase(department))
 //                .findAny()
 //                .orElseThrow(()->new RuntimeException("no student with matching department"));
+
+
 
             return   StudentUtility.getStudentList()
                     .stream()
