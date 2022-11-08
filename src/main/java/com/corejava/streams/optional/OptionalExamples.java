@@ -58,5 +58,6 @@ public class OptionalExamples {
       // I want to set it i can either set null or a default value or keep it null
         final String s = Optional.of(customer2.getName()).orElse("");
         customer2.setName(s);
+        //sout
     }
 }
