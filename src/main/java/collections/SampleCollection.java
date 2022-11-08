@@ -6,8 +6,6 @@ public class SampleCollection {
     // adding new changes
 
    /*
-   * latest changes on main
-   * another changes
    *
    * */
 }
