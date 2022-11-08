@@ -2,12 +2,23 @@ package com.corejava.corejava.comparableandcomparator;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
 import com.corejava.corejava.Util;
 
 public class ComparableAndComparator {
+
+//    The comparable interface imposes a total ordering on the objects of each class that implements it.
+//    This ordering is referred to as the class's natural ordering, and the class's compareTo method is referred to as its natural comparison method.
+//        Lists (and arrays) of objects that implement this interface can be sorted automatically by Collections.sort (and Arrays.sort).
+//        Objects that implement this interface can be used as keys in a sorted map or as elements in a sorted set, without the need to specify a comparator
+
+    // Comparable has compareTo(Object object)
+    //Comparator is used for default natural sorting order
+    // has compare(Object object1,Object object2 )
+
     public static void main(String[] args) {
 //        List<Integer> list = Arrays.asList(2, 4, 5, 1);
 //        List<String> stringList = Arrays.asList("b", "d", "a", "c");
@@ -15,6 +26,11 @@ public class ComparableAndComparator {
 //        Collections.sort(stringList);
 //        Util.sortList(list);
 //        Util.sortList(stringList);
+
+        int [] array = new int[]{2,1,5,3};
+        Arrays.sort(array);
+        System.out.println(Arrays.toString(array));;
+
 
         final List<Student> studentList = Arrays.asList(new Student(2, "ron"),
                 new Student(1, "bae"), new Student(3, "apple"));
@@ -39,16 +55,30 @@ public class ComparableAndComparator {
         Collections.sort(personList);
         Util.sortList(personList);
 
-        final List<Emp> emp = Arrays.asList(new Emp(2, "ron"),
+        final List<Emp> empList = Arrays.asList(new Emp(2, "ron"),
                 new Emp(1, "bae"), new Emp(3, "apple"));
 
         // custom sorting
         System.out.println("");
         System.out.println("Custom sorting order using comparator does not require class to implemnet Comparable interface");
-        Collections.sort(emp, (e1, e2) -> e1.getId() < e2.getId() ? 1 : e1.getId() > e2.getId() ? -1 : 0);
-        Util.sortList(emp);
+        //  Collections.sort(empList, (e1, e2) -> e1.getId() < e2.getId() ? 1 : e1.getId() > e2.getId() ? -1 : 0);
+        Collections.sort(empList, (e1, e2) -> e2.getName().compareTo(e1.getName()));
+        // or else we can do this as well
+        Collections.sort(empList, new MyComparator());
+        Util.sortList(empList);
     }
 
+}
+
+class MyComparator implements Comparator<Emp> {
+    @Override
+    public int compare(final Emp emp1, final Emp emp2) {
+        // if name
+
+        // if by id
+        return emp1.getId() > emp2.getId() ? 1 : emp1.getId() < emp2.getId() ? -1 : 0;
+
+    }
 }
 
 

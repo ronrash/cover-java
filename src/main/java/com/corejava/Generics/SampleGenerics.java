@@ -17,4 +17,8 @@ public class SampleGenerics<T extends Number> {
         return "" +
                 "value=" + value ;
     }
+
+    public static void main(String[] args) {
+        SampleGenerics<Integer> generics = new SampleGenerics<>(20);
+    }
 }

@@ -93,16 +93,6 @@ z
 Jsrc/main/java/designpatterns/creational/singleton/solid/lsp/Instagram.java,b/0/b040ac6f9ad04751057d0c35829e55793fe423c9
 ƒ
 Ssrc/main/java/designpatterns/creational/singleton/solid/lsp/solution/Instagram.java,b/7/b7df2a8bd0fa674f5eb2311887bc16d9bff6f5fe
-j
-:src/main/java/com/corejava/streams/optional/Optional1.java,9/8/98253657f7ab3d78ca5d56b6390fd2001734cb7a
-`
-0src/main/java/collections/ConcurrentHashMap.java,b/d/bdfa2b0902d43f7d857742396563c6198fdd28e1
-ˆ
-Xsrc/main/java/com/corejava/corejava/comparableandcomparator/ComparableAndComparator.java,7/f/7f9244f8eb66d61f7ab99d509145212490c88c60
-k
-;src/main/java/com/corejava/corejava/immutables/Address.java,d/7/d71b104aa5651ca2f384901b019b96cefa681ff2
-u
-Esrc/main/java/com/corejava/corejava/immutables/EmployeeImmutable.java,3/0/30db0d8acc7c519ea56d94836ade059bfe8b89af
 n
 >src/main/java/com/corejava/streams/IntermediateOperations.java,c/5/c559a805327fb09e604a014744f53e71a3b61298
 d
@@ -171,5 +161,7 @@ a
 1src/main/java/iostreams/BufferedreaderSample.java,e/2/e2cfdcd3bd261c74499a039bd189a407151d6bb7
 d
 4src/main/java/iostreams/FileInputStream01Sample.java,c/9/c928f864ffaab8e94976b4ec6ed9163ac5998a0e
-d
-4src/main/java/com/corejava/Generics/classes/Box.java,2/b/2bdfcb3d27b90ab700339c6a88136fd03661e6af
+v
+Fsrc/main/java/com/corejava/corejava/equalsandhascodes/MainExample.java,b/e/bed6291de9913e0ce9dafb7b6ad0354b0d58c30a
+|
+Lsrc/main/java/com/corejava/corejava/equalsandhascodes/EqualsAndHashcode.java,1/c/1c19fc5569a98d354db3bad5576d16ab1dda56da

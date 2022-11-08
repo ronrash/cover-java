@@ -7,7 +7,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public final class EmployeeImmutable {
-    //final so that this class cannot be extended
+    //An object is immutable if its state cannot be changed
+    // Wrapper classes are immutable String is immutable
+    // Mostly used in concurrent applicatuons ,bcz their state cannot be changed by thread interference
+    // fprivateinal so that this class cannot be extended
     // private scope of the variable is within this class
     // final so that the values are not re-assigned and hence we have to initialize them in the constructor
     private final Integer id;
