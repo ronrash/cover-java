@@ -6,6 +6,7 @@ public class SampleCollection {
     // adding new changes
 
    /*
-   *
+   * changes on main
+   * anther commit
    * */
 }
