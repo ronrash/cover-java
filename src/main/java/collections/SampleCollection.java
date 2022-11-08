@@ -4,12 +4,7 @@ public class SampleCollection {
 
     //Adding some
     // adding new changes
-
-
-   /*
-   * changes on main
-   * anther commit
-   * */
+    // main changes 1234
     // add local changes
 
 }
