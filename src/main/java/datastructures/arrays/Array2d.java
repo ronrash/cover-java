@@ -9,7 +9,7 @@ public class Array2d {
         /*{
            {1,2,3}, row[0]
            {4,5},   row[1]
-           {6,7,8,9,10} row[3]
+           {6,7,8,9,10} row[2]
          }
        array.length == no of rows
 

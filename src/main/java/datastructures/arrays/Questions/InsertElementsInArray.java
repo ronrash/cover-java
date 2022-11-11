@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class InsertElementsInArray {
     public static void main(String[] args) {
 
-        // insert at beigining
+        // insert at beiggining
         int[] a = {10,2,3,4};
         int target =90;
         int position=1;
