@@ -1,0 +1,2 @@
+# we can see our deployment on a yaml file 
+  kubectl get deployment <deployment-name> -o yaml --> this wil; write everything inyaml format

@@ -1,0 +1,61 @@
+spring.jpa.hibernate.ddl-auto=create-drop
+https://www.baeldung.com/spring-data-derived-queries
+https://www.baeldung.com/spring-data-jpa-query
+https://www.baeldung.com/spring-data-jpa-stored-procedures
+https://www.baeldung.com/hibernate-identifiers
+https://www.baeldung.com/hibernate-identifiers
+
+SpringData Jpa--
+@Entity -- @Table  @Column  @Transactional
+https://www.baeldung.com/spring-transactional-propagation-isolation
+
+Propagation level are Required Requires_New,Supports,Mandatory,Nested,Never,Not_Supported
+@Transactional(propagation=Propagation.Required)
+Required-- same transaction is used -- if not spring container creates a new transaction
+            inner methods have distinct logical transaction but same physical transaction .
+            if inner method fails outer method will also fail to commit.
+            unchedcked exceptions cause state to rollback if we want checked to also casue
+            we need to set them
+            eg @Transactional(propagation=Propagation.Required,rollbackfor=SOmeCheckedException)
+
+Requires_New -- both inner and outer have different physical transactions and will be independent of each other
+                so if inner has an exception it will rollback but not outer
+                the inner method always creates a new transaction
+
+Nested - This only used with SpringJdbc managed transactions .
+        same physical transaction inner and outer but has savepoints so inner transaction may rollback independently of USERSGROUPS_SYSTEM_USER_ID
+
+Not_Supported-  it will exceute outside the scope of a transaction even if the calling method has a transaction.
+Never -- means if a method is annotated with this annotation it should nerver run inside a transaction,if it is being called from a method
+         that has a transaction it will  thrw an error.. and it it doesn not have it will run without a transaction
+Mandatory -- on a method or class should always run in a transaction-- if inner method is called directly it throws an excetption
+            it uses the transaction of the caller and if it does not have throws an error
+Supports- it will nt create a new  transaction , but if it is called from a method which uses transaction it will use its transaction but will never create a
+           a new transaction on it own.
+
+Isolation Levels
+Dirty Reads -- Transaction A  -- updates a data before it commits transaction b reads it --
+Non-Repeatabale read -- Transaction A -- queries a database
+                        Transaction B -- updates
+                        Transaction A -- agains queries
+Phantom Reads ------- Transaction A --- queries
+                      transaction B  -- inserts
+                      Transaction A -- again reads gets different data
+
+
+In java e differentIsolation levels are
+Read Uncommitted -- all three hapen -- dirty read ,non Repeatabale and phantom
+Read Comitted -- avoids dirty Reads
+Repeatable read -- phantom reads still happen
+Serializable -- all three avoided but --performace takesa hit
+
+
+Optimistic vs Pessimistic locking
+these are different ways in which transactions read data
+
+Optimistic -- there is no locking of data -- it reads and updates the version/timestamp
+            another transaction will check what is the version/timestamp and see it is the sanme or not
+            if not it will redo and update,
+            used for apps with hgh reads and less updates
+
+Pessimistic - we lock the database -- set different Isolation levels

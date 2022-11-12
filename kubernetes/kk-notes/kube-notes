@@ -1,0 +1,32 @@
+Kubeconfig -- a file which has information to access the kubernetes cluster
+docker ps --
+
+when we want to create any kubernetes resource object we use the command
+for example to create a pod
+ kubectl create -f pod.yml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

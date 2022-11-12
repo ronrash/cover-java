@@ -1,0 +1,59 @@
+ Kubernetes opne source
+- container management tool- automates deploying scaling and managing containerized application
+manages our containers at runtime -- used for  deploying scaling load balancing scheduling
+
+managing a large number of container is not easy
+deploying
+schdeuling
+scaling
+load balancing
+batch execution
+roll Back
+monitoring
+auto scaling,service discovery self healing,zero time deployment
+
+other management tools are dockercompose --kubernetes marathon
+advantage of kubernetes is availabilty and scalability
+
+Kubernetes components
+pods
+node
+cluster
+replication controller replica set
+service
+deployment
+secrets
+config Map
+etcd
+
+
+problem of multiple API calls that block for a long time
+solve the problem of hitting the database multiple times
+
+Services -- Services give access to external world to our applications deployed in kubernetes clusters
+Workloads -- where ur applications are deployed on the kubernetes clauster-- it has configuration to store your application
+kubectl is a command to ineract with the kubernetes cluster
+
+deploy our application -- kubectl create deployment first-rest-api --image=manha/docker image username
+expose the deployemet -- kubectl expose deployment first-rest-api --type=LoadBalancer --port=8080
+
+kubectl follows single responsibilty service- it has one
+pods are the smallest deployable unit -- they have a unique ip address
+these are where the containers live
+a pod is a collection of conatiners and can talk to each other using localhost
+
+kubectl get pods
+kubectl describe pod <podname> -- gives entire details of the pods
+like pod --containers inside the pod ,, docker image,name of the pods ip address -- on which node it is running
+
+Namespace is very important-- it means ur dev and qa or prod cluster willhave different resources and all of them are separate
+namespace helps in that
+
+pods have our conatiners and porvides an ip address ,it provides categorization for all these conatiners
+by associating them with labels
+
+replicaset -- maintains the pods -- whenever the pods go down ,, it brings it up
+the stratergy by default is using is called rolling updates-- in deployment-- ie 0 downtime
+The 5 instance of pods for v1 -- one at a time comes up and down
+
+to see the deployment -- kubectlt get deployment --> rest-ap1

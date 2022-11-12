@@ -1,0 +1,25 @@
+ To deploy a docker image to kubernetes clsuer
+ # 1. we need to create a deployement
+    -->    kubectl create deployment credit-k8-deployment --image=rondocker2191/credit-card
+
+    2. expose a deployment
+       kubectl expose deployment credit-k8-deployment --type=LoadBalancer --port=8082
+       kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080
+
+
+
+   3. If we want to update the deployement
+                                  <deployment-name>     <container-name>=<image-name>
+      kubectl set image deployment credit-k8-deployment credit-card=imagename
+
+      once we have update the deployement with a new image ,check what is happening with the replicaset
+      kubectl get rs -o wide
+       relica set has a invalid status , w
+       check the pod s
+       kubectlt get pods , describe the pods
+
+       Successfully assigned default/credit-k8-deployment-69f66bd5f9-4w46q to docker-desktop
+  Normal   Pulling    2m53s (x4 over 4m15s)  kubelet            Pulling image "imagename"
+  Warning  Failed     2m52s (x4 over 4m13s)  kubelet            Failed to pull image "imagename":
+  rpc error: code = Unknown desc = Error response from daemon: pull access denied for imagename,
+  repository does not exist or may require 'docker login': denied: requested access to the resource is denied 

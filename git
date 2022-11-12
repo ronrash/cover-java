@@ -1,0 +1,82 @@
+git status
+git add . 0r git add -a  --> adds the file plus commits them as well
+git commit -m "heloo some message"
+
+git pull --rebase origin team/SCMI
+git commit -m "SCMI-1303"
+git commit --amend --no-edit
+git reset commitid
+
+git branch
+git branch -r --> for remote
+gt branch -a  --> all branches
+git branch feature-a --> create baranches
+git checkout feature-a --> switch to different branch
+git checkout -a --> checkout to previous branch
+3698801
+git checkout -b feature-new --> create and checkout to the new branch
+git branch -d feature-a --> -d to delete a branch
+
+
+
+git restore --staged filename
+git log
+git reset commitid
+
+#rebase --
+when your master is ahead from your feature branch the rebase will pull changes from
+master and apply beneath your local changes in the feature branch
+
+git pull -r origin main  -- this will pull changes from master
+# resolve conflicts
+git add .
+git rebase --continue and then give a commit message
+git push -f  --> forcefully
+
+
+
+fork a repository
+upstrem -- from where you hae forked a repository
+git remote add upstream https://.................
+
+create a new branch
+
+git merge team/cct-857 team/cct-876 --no-ff
+8.0.5-cct-876-SNAPSHOT
+
+refdata git
+git push origin HEAD:refs/for/master  -- sdp
+git pull -r
+git push origin HEAD:refs/for/dev/REFDATA2
+
+git push origin HEAD:refs/for/team/cct-825
+git push origin HEAD:refs/for/team/cct-876
+git push origin HEAD:refs/for/team/CCT-1326
+https://trello.com/b/GEfMESjF/rohit-prashar
+mvn clean install -DskipTests
+mvn install -DskipTests
+
+git log
+  387  git reset 9f6593a6fcc886c64de24c9b328eeb2a5de28b06
+ssh SITCCM01DCTDB02.cpp.nonlive -L 5436:localhost:5432
+monitor build -https://build.mdv.cpp.nonlive/view/Team%20SCMI/job/Team_SCMI_ccm-jobs_validation_pipeline.groovy_cpp.context.mi.reportdata/
+
+python download_tables_from_database.py localhost 5432 pgreadonly pgreadonly referencedataviewstore -o baseLineDataSet
+
+https://tools.hmcts.net/confluence/pages/viewpage.action?spaceKey=RES&title=My+Timesheets&__ncforminfo=_eReoxdxf3lNJhyhD2p3Sy__8mrUjT2gMXTHO-ccC1ViQMe5mCV7NH2RGK3DJXHeaqQbf_Bzm_IjJeyHd08CNQ==
+git push origin HEAD:refs/for/team/nows
+mvn clean install
+mvn clean install -DskipTests
+gpg -d rohitprashar1@cpp.nonlive-pki-embedded.ovpn.gpg > hmcts-vpn.ovpn
+
+git push origin HEAD:refs/for/team/nows
+mvn clean install
+mvn clean install -DskipTests
+
+
+remove files from the staging area
+git rm --cached -r .
+git rm --cached -r fileName
+git remote add origin https://github.com/rohitprashar/crnew.git
+git branch -M main
+git push -u origin main
