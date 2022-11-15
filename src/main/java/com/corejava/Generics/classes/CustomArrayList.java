@@ -1,5 +1,6 @@
 package com.corejava.Generics.classes;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class CustomArrayList {
@@ -57,6 +58,8 @@ public class CustomArrayList {
         customArrayList.remove();
 
         System.out.println(customArrayList);
+
+        ArrayList<Integer> arrayList = new ArrayList<>();
 
 
     }

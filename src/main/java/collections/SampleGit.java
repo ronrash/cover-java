@@ -5,5 +5,6 @@ public class SampleGit {
     // cherry pick changes
     // second commitq
     // new changes
+    // cherry pick second changes
 
 }

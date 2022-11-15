@@ -28,6 +28,8 @@ public class CustomGenericArrayList<T> {
         // remove the last item
        return data[--size];
     }
+
+
     public void set(int index, int value)
     {
         if(index<=size)
