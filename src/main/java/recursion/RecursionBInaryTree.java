@@ -5,7 +5,7 @@ public class RecursionBInaryTree {
      * Recursion is basically done with dynamic programming to reduce the duplicate work
      *
      * In Recursion 3 things are important
-     *  1. Argumernts to pass
+     *  1. Arguments to pass
      *  2. return type.
      *  3. what argument should go in the body
      * */

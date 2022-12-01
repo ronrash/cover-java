@@ -1,5 +1,7 @@
 package collections;
 
+import java.util.Objects;
+
 public class StudentNew {
     private String name;
     private int age;
@@ -42,5 +44,18 @@ public class StudentNew {
                 ", age=" + age +
                 ", code='" + code + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(final Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        final StudentNew that = (StudentNew) o;
+        return age == that.age && Objects.equals(name, that.name) && Objects.equals(code, that.code);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, code);
     }
 }

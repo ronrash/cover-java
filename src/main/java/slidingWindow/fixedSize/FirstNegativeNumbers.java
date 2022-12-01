@@ -38,7 +38,6 @@ public class FirstNegativeNumbers {
             }
 
         }
-
         System.out.println(finalList);
     }
 }

@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.hashmapQuestions;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -14,8 +14,8 @@ public class TwoSum {
     *    map-- K,V
     * */
     public static void main(String[] args) {
-        int[] array ={2,7,11,15,3,5};   //
-        int target=9;
+        int[] array ={3,2,3};   //
+        int target=6;
         final int[] ints = twoSum(array, target);
         System.out.println(Arrays.toString(ints));
 
@@ -26,9 +26,9 @@ public class TwoSum {
 
         for(int i=0;i< array.length;i++)
         {
-            int complement = target - array[i];
-            if(map.containsKey(complement))
-                return new int[]{map.get(complement),i};
+            int diff = target - array[i];
+            if(map.containsKey(diff))
+                return new int[]{map.get(diff),i};
 
             map.put(array[i],i);
         }
