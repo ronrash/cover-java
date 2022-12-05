@@ -10,11 +10,11 @@ public class BufferedreaderSample {
 
     private static void readAndCountFromAPDFUsingBufferedReader() throws IOException {
         StringBuilder stringBuilder;
-        try (FileReader bufferedReader = new FileReader("/Users/rohitprashar/Desktop/con.pdf")) {
+        try (FileReader fileReader = new FileReader("/Users/rohitprashar/Desktop/con.pdf")) {
 
             int line;
             stringBuilder = new StringBuilder();
-            while ((line = bufferedReader.read()) != -1) {
+            while ((line = fileReader.read()) != -1) {
 
                 // count the characters
                 stringBuilder.append((char) line);
