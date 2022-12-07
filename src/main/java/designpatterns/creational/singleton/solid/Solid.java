@@ -24,4 +24,9 @@ public class Solid {
     * */
 
 
+    public static void main(String[] args) {
+
+          // userdetails -- usercontroller -- userservice -- table
+        // bank account -- pojo -- bankid -- accnt number ,name phone
+    }
 }

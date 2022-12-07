@@ -16,35 +16,37 @@ public class Pairs {
 //        6-6,4-6
 //        2-6,4-8
 
-        File file = new File("/Users/rohitprashar/Downloads/react-aws/Input01.txt");
-        BufferedReader reader = new BufferedReader(new FileReader(file));
 
-        try {
-            reader = new BufferedReader(new FileReader(file));
-            String text = null;
 
+        try(BufferedReader reader = new BufferedReader(new FileReader("/Users/rohitprashar/Downloads/javares/src/main/resources/input01.txt"));) {
+            String text;
+            int count =0;
             while ((text = reader.readLine()) != null) {
 
                 String[] arr = text.split(",");
 
 
-                String[] firstPair = text.split("-");
-                String[] secondPair = text.split("-");
+                String[] firstPair = arr[0].split("-");
+                String[] secondPair = arr[1].split("-");
 
-                System.out.println(arr);
+                Integer a = Integer.parseInt(firstPair[0]);
+                int b = Integer.parseInt(firstPair[1]);
+                int c = Integer.parseInt(secondPair[0]);
+                int d = Integer.parseInt(secondPair[1]);
+
+                if(a >= c && a <=d  && b>=c && b <=d)
+                    count++;
+                if(c >= a && c <=b  && d>=a && d <=b)
+                    count++;
+
+
 
             }
+            System.out.println(count);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                if (reader != null) {
-                    reader.close();
-                }
-            } catch (IOException e) {
-            }
         }
 
     }

@@ -3,10 +3,11 @@ package leetcode;
 public class IsValidAnagram {
     public static void main(String[] args) {
 
-        String s = "anagram";
-        String t = "mnagraa";
+        String s = "aabb";
+        String t = "bbaa";
 
         System.out.println(isvalidAngram(s, t));
+        System.out.println(isNewvalidAngram(s, t));
 
     }
 
@@ -24,5 +25,30 @@ public class IsValidAnagram {
                 return false;
         }
         return true;
+    }
+
+    private static boolean isNewvalidAngram(final String s, final String t){
+            if(s.length()!=t.length())
+        {
+            return false;
+        }
+
+        int [] array = new int[26];
+            int count =1;
+         for(int i=0;i<s.length();i++)
+         {
+
+            final int x = s.charAt(i) - 'a';
+              array[x]++;
+
+            final int y = t.charAt(i) - 'a';
+             array[y]--;
+         }
+         for(int counter :array)
+         {
+           if(counter!=0)
+               return false;
+         }
+         return true;
     }
 }
