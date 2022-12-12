@@ -12,7 +12,6 @@ public class SampleProgramFiles {
 
     public static void main(String[] args) {
         // merge data of all txt files from resources folder
-
         // create a file
         //  use file to get names of all the files in output folder an the read and append in
 

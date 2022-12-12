@@ -8,6 +8,10 @@ public class InsertionSort
     // worst case is o(n2)
     // better than bubble sort as no of swaps are reduced
 
+//    This algorithm is one of the simplest algorithm with simple implementation
+//    Basically, Insertion sort is efficient for small data values
+//    Insertion sort is adaptive in nature, i.e. it is appropriate for data sets which are already partially sorted.
+
     public static void main(String[] args) {
         int[] array ={5,3,4,1,2};
 

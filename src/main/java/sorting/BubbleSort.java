@@ -19,7 +19,7 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] array = {3,4,2,5,1};
 
-        //ist swap -- 3,2,4,5,1
+        //ist swap -- 3,2,4,5,1 ---- 2,3,4,5,1 -- 2,3,4,1
            //           3,2,4,1,5
 
         bubbleSort(array);

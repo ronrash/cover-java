@@ -9,7 +9,7 @@ public class cyclicSort {
         //sort an array of a rang 1----10 -- where numbers are not sorted
 
        // int[] array = {3, 5, 2, 1, 4};
-        int[] array = {3,0,1};
+        int[] array = {3,2,1};
         cyclicSorting(array);
     }
 

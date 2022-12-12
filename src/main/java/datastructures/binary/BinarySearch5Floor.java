@@ -5,7 +5,7 @@ public class BinarySearch5Floor {
 
     public static void main(String[] args) {
         final int[] array = new int[]{10,20,30,40,50,60,70,80,90,100}; //10,20,30,40,50,60,70,80,90,100
-        final int target = 104;
+        final int target = 50;
         final int index = floorBs(array, target);
         System.out.println("floor is "+index);
 

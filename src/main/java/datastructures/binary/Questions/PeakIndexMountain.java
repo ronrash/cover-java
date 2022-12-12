@@ -4,11 +4,14 @@ public class PeakIndexMountain {
     /*
     * bitonic array  increasing 10,20,30,40,50,4,3,2,1  and then dreasing
     *  so the peak of the mountain is the largest elemnt
+    *  so the element which is the largest is greater than prev and next
     *
     * */
     public static void main(String[] args) {
 
         int[] array = new int[]{10,20,300,57,50,4,3,2,1};
+        int [] a;
+        a=new int[9];
 
         final int peakByBS = findPeakByBS(array);
         System.out.println(peakByBS);
