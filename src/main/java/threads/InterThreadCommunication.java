@@ -44,7 +44,7 @@ class ChildThreadInter implements  Runnable{
 
         // we can only uses wait notify inside synchronizeb methods or blocks
 
-        synchronized (this){
+        synchronized (this){ // this is a sync block
             //
             System.out.println("child thread starts execution ");
 
