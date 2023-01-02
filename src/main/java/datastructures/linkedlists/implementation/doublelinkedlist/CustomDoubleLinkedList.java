@@ -9,6 +9,7 @@ public class CustomDoubleLinkedList<T extends Comparable<T>> {
 
 
     // 5--->6-->7-->8
+    // 5-->
     public void insert(T data) {
         Node<T> newNode = new Node<>(data);
         if (headNode == null) {
@@ -71,7 +72,6 @@ public class CustomDoubleLinkedList<T extends Comparable<T>> {
         {
             slowPointer=slowPointer.getNextNode();
             fastPointer=fastPointer.getNextNode().getNextNode();
-
         }
         return slowPointer;
     }

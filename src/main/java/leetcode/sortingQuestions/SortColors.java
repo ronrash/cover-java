@@ -21,15 +21,36 @@ public class SortColors {
 
         // for the optimum solution have three pointer l m and right
         // swap 2 in rigth and o in left and skip for 1
+        //{2,0,2,1,1,0}; l=0,m=0,r=a.len-1 -- 0,0,1,1,2,2 ---
 
       //  bruteForce(a);
+        bruteForceUsingQueue(a);
         optimumSolution(a);
+        optimumSolutionNew(a);
 
         for(int i=0;i<10;i++)
         {
 
         }
 
+    }
+
+    private static void optimumSolutionNew(final int[] a) {
+        int left =0;
+        int right = a.length-1;
+        int mid =0;
+
+        while(mid<=right){
+         //
+
+
+        }
+    }
+
+    private static void bruteForceUsingQueue(final int[] a) {
+
+        // loop thru the array and check for 0 and then 1 and then 2
+        // we will have 3 queue
     }
 
     private static void optimumSolution(final int[] a) {

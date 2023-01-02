@@ -27,16 +27,10 @@ j
 :src/main/java/com/corejava/streams/StreamMapAndFilter.java,f/9/f9d24bdfcbf7fbcb306b6380e3dd365f9d792256
 ~
 Nsrc/main/java/com/corejava/streams/functionalInterfaces/ConsumerInterface.java,d/2/d2a4f395b85c5349471939909197c670d451028b
-h
-8src/main/java/com/corejava/corejava/inheritance/Dog.java,9/5/953cfc8d1a19a3ed9377182c847067bc391c3caa
 t
 Dsrc/main/java/com/corejava/regurlarExpression/RegularExpression.java,6/7/67829c6337a13908a810cf0747a76ccde12158c1
 _
 /src/main/java/com/corejava/streams/Streams.java,3/3/33eed3cba7ac04d0f4deaa6a88b8c5c186a60286
-x
-Hsrc/main/java/com/corejava/corejava/inheritance/thisandsuper/Parent.java,3/e/3efb2f2514cfb0a0cd824ae4d5b27c7ba2c957ec
-w
-Gsrc/main/java/com/corejava/corejava/inheritance/thisandsuper/Child.java,3/5/3533cd8f027a4a43053f56440621072b7a39643a
 _
 /src/main/java/com/corejava/streams/Address.java,4/0/40bc0d59cbd0956aef900f690028608875bf3fff
 o
@@ -51,8 +45,6 @@ v
 Fsrc/main/java/com/corejava/corejava/equalsandhascodes/MainExample.java,b/e/bed6291de9913e0ce9dafb7b6ad0354b0d58c30a
 |
 Lsrc/main/java/com/corejava/corejava/equalsandhascodes/EqualsAndHashcode.java,1/c/1c19fc5569a98d354db3bad5576d16ab1dda56da
-‘
-asrc/main/java/datastructures/linkedlists/implementation/questions/RemoveDuplicatesSortedList.java,3/e/3ea82b2d8531f36325a52a88672d66695f288e67
 i
 9src/main/java/com/corejava/streams/practice/Practice.java,a/4/a4707ba94d86ec9bc49dffc0029543d7ba0dd530
 i
@@ -61,8 +53,6 @@ j
 :src/main/java/com/corejava/streams/optional/Optional1.java,9/8/98253657f7ab3d78ca5d56b6390fd2001734cb7a
 q
 Asrc/main/java/com/corejava/streams/optional/OptionalExamples.java,1/b/1b892fd4860accf40c5a94f1d58a4676fea104dd
-‰
-Ysrc/main/java/datastructures/linkedlists/implementation/questions/MergeTowLinkedList.java,8/3/836092c75003c6f27095623bba33e2053914aafa
 Y
 )src/main/java/TestingCode/SampleCode.java,5/8/58707c62c128f7767a21d74c82ca4af6f7a81bf1
 k

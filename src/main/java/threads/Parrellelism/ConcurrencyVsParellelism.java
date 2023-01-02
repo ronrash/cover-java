@@ -40,12 +40,13 @@ public class ConcurrencyVsParellelism {
 
         // example of parallelism
         // Make them Capital
-        final List<String> stringList = Arrays.asList("rohit", "swati", "shabu", "ashivin");
+        final List<String> stringList
+                = Arrays.asList("rohit", "swati", "shabu", "ashivin");
 
         final List<String> namesInUpperCase = stringList.
-                        parallelStream()  // fork/Join
-                        .map(String::toUpperCase)
-                        .collect(Collectors.toList());
+                parallelStream()  // fork/Join
+                .map(String::toUpperCase)
+                .collect(Collectors.toList());
 
         System.out.println(namesInUpperCase);
 

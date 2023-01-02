@@ -1,4 +1,4 @@
-package datastructures.linkedlists.implementation.questions;
+package datastructures.linkedlists.questions;
 
 import java.util.LinkedList;
 

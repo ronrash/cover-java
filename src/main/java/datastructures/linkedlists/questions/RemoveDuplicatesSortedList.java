@@ -1,4 +1,4 @@
-package datastructures.linkedlists.implementation.questions;
+package datastructures.linkedlists.questions;
 
 public class RemoveDuplicatesSortedList {
     public static void main(String[] args) {
