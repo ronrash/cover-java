@@ -71,7 +71,7 @@ public class CustomQueueUsingArray<T>{
 
 
     private void resize(final int size) {
-        // arrays are not dynamic
+        // arrays are not dynamic this will take o(n) complexity to make the array resuze when we dequue an element
         T[] copyArray = (T[]) new Object[size];
 
         // copy the elements from old to new array

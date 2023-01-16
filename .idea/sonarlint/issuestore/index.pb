@@ -53,8 +53,6 @@ j
 :src/main/java/com/corejava/streams/optional/Optional1.java,9/8/98253657f7ab3d78ca5d56b6390fd2001734cb7a
 q
 Asrc/main/java/com/corejava/streams/optional/OptionalExamples.java,1/b/1b892fd4860accf40c5a94f1d58a4676fea104dd
-Y
-)src/main/java/TestingCode/SampleCode.java,5/8/58707c62c128f7767a21d74c82ca4af6f7a81bf1
 k
 ;src/main/java/com/corejava/streams/mapreduce/MapReduce.java,2/c/2ca80abb563ba4d83226988f6585147a6c4401cb
 d
@@ -69,3 +67,9 @@ q
 Asrc/main/java/datastructures/arrays/Questions/FindWealthiest.java,5/5/55d478c5c78af7ff01ef33f55bf988330c639a43
 q
 Asrc/main/java/datastructures/arrays/Questions/findMaxInArray.java,a/5/a5e48f60f97a9fd427f291c0228474452ce4478e
+h
+8src/main/java/datastructures/stacks/StackUsingArray.java,b/9/b9aae16f5f7beb0279b67f0f383173d9b12b254b
+d
+4src/main/java/datastructures/queues/DeckExample.java,1/f/1fc8e81eb1bd13c2bb0962377862fd1d2e3017b1
+d
+4src/main/java/datastructures/stacks/CustomStack.java,f/a/fa30f94f37255dcaebc36246073a2f679b6ad4fb

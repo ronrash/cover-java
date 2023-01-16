@@ -7,7 +7,7 @@ public class DeckExample {
 
     /*
     *  faster than stacks and linkedList
-    *  not thread safe
+    *  not thread safe // hence perfomance is good
     *  null elements are nt allowed
     *  insertion and removal can hapen from both ends
     * used in trees bfs to print from let to right and right to left
@@ -24,6 +24,7 @@ public class DeckExample {
         deque.addLast(30);
 
         deque.push(40);
+
 
         System.out.println(deque);//[40,20,10,30]
 
