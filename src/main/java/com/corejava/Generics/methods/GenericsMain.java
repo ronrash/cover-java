@@ -17,7 +17,7 @@ public class GenericsMain {
      *
      * */
 
-    // before compilation
+    // ProductCatalog compilation
     public <T> List<T> genericMethod(T[] list) {
         return new ArrayList<>();
     }
@@ -31,7 +31,7 @@ public class GenericsMain {
         return list.stream().sorted().collect(Collectors.toList());
     }
 
-    // before compile
+    // ProductCatalog compile
     public <T extends Building> void genericMethod1(T t) {
         System.out.println(t);
 

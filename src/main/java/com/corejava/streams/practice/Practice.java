@@ -9,6 +9,7 @@ public class Practice {
         final List<Integer> integerList = List.of(1, 2, 3, 4, 5, 6,8,10);
 
 
+
         // find square of the first 3 evern numbers
          integerList.stream().filter(elem-> elem%2==0)
                  .limit(3)

@@ -11,7 +11,7 @@ public class ListExample {
         List<StudentNew> studentNewList = Arrays.asList(new StudentNew("rohit",32,"C"),
                 new StudentNew("rahul",33,"B"),new StudentNew("pallavi",33,"D"),new StudentNew("priya",70,"B"));
 
-        System.out.println("before"+studentNewList);
+        System.out.println("ProductCatalog"+studentNewList);
         studentNewList.stream()
                 .filter(studentNew -> studentNew.getCode().equalsIgnoreCase("B"))
                 .forEach(studentNew -> studentNew.setCode("BB"));

@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class GenericsMethods {
     /*
-    Generic methods have a type parameter (the diamond operator enclosing the type) before the return type of the method declaration.
+    Generic methods have a type parameter (the diamond operator enclosing the type) ProductCatalog the return type of the method declaration.
     Type parameters can be bounded
     Generic methods can have different type parameters separated by commas in the method signature.
     Method body for a generic method is just like a normal method.

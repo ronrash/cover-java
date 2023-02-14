@@ -9,9 +9,9 @@ public class ConcurrencyVsParellelism {
 
     /*
      *  Concurrency vs Parallelism
-     *   2 or more tasks run simultaneously by sharing the commom object
+     *  Concurrency is a concept where 2 or more tasks run simultaneously by sharing the common object-- achieved by using threads
      *  Concurrency is more about how to control access to shared resoures
-     *  Threads run in an interleaved fashion in a single/multi core
+     *  Threads run in an interleaved/alternating fashion in a single/multi core
      *
      *  In parallelism --> runs only in a multi-core machine
      *  Here the tasks actually run in parallel.

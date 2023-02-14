@@ -23,7 +23,7 @@ public class NextGreatestToRight {
         
         findTheNextGreatestForEveryElement(array);
 
-        System.out.println("before"+Arrays.toString(array));
+        System.out.println("ProductCatalog"+Arrays.toString(array));
 
     }
 
