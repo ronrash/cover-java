@@ -1,5 +1,7 @@
 package com.corejava.corejava.equalsandhascodes;
 
+import java.util.Objects;
+
 public class EqualsAndHashcode {
 
     /*
@@ -8,11 +10,13 @@ public class EqualsAndHashcode {
     * */
     public static void main(String[] args) {
 
-//        Student e1 = new Student(1,"rohit");
-//        Student e2 = new Student(1,"paji");
-//
-//        System.out.println("shaloow compare "+(e1==e2));
-//        System.out.println("shaloww compare "+(e1.equals(e2)));
+        Employee e1 = new Employee(1,"rohit"); // reference is pointng to different objects
+        Employee e2 = new Employee(1,"prashar");
+
+        System.out.println("shaloow compare "+(e1==e2));
+        System.out.println("shaloww compare "+(e1.equals(e2)));
+
+        System.out.println(e1.hashCode()+" "+e2.hashCode());
     }
 }
 
@@ -25,21 +29,20 @@ class Employee{
         this.name = name;
     }
 
-    public int getId() {
-        return id;
+    @Override
+    public boolean equals(final Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        final Employee employee = (Employee) o;
+        return id == employee.id && Objects.equals(name, employee.name);
     }
 
-    public void setId(final int id) {
-        this.id = id;
+    @Override
+    public int hashCode() {
+        // what is a hashcode?
+        // hascode genereate ann integer value ,return the hashcode/ integer value of an object/instance
+        //This method is supported for the benefit of hash tables such as those provided by HashMap.
+        // f two objects are equal according to the equals(Object) method, then calling the hashCode method on each of the two objects must produce the same integer result.
+        return Objects.hash(id, name);
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(final String name) {
-        this.name = name;
-    }
-
-
 }

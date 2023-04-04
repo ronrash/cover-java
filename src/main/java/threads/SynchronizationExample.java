@@ -32,33 +32,38 @@ public class SynchronizationExample {
 
     public static void main(String[] args) {
 
-        Thread thread1 = new Thread("Thread-1");
-        Thread thread2 = new Thread("Thread-2");
+        Player player1 = new Player();
+        Thread1 thread1 = new Thread1("jack",player1);
+        Thread1 thread2 = new Thread1("john",player1);
+
         thread1.start();
         thread2.start();
 
-        Player player1 = new Player("Kohli");
-       // Player player2 = new Player("sachin");
+    }
+}
+class Thread1 extends Thread{
+    Player player;
+    String name;
 
 
-
+    public Thread1(final String name,Player player) {
+        this.name = name;
+        this.player=player;
     }
 
-
+    public void run()
+    {
+        player.display(name);
+    }
 }
 
 class Player {
-    private String name;
 
-    public Player(final String name) {
-        this.name = name;
-    }
-
-    public void display()
+    public synchronized void display(String name )
     {
         for(int i=0;i<5;i++)
         {
-            System.out.println(this.name+" "+Thread.currentThread().getName());
+            System.out.println(name+" "+Thread.currentThread().getName());
         }
 
     }

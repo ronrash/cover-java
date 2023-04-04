@@ -8,6 +8,8 @@ public class SampleThread {
     //thread etending and implemet runnable interface
     // prevent thread execution --> yeild join and sleep
 
+    // join method -- the main thread will wait for other threads to finish execution
+
     public static void main(String[] args) {
 
         System.out.println("Main Thread starts "+Thread.currentThread().getName());
@@ -21,6 +23,15 @@ public class SampleThread {
         // this object implements the thread
         Thread anotherChildThread = new Thread(new AnotherChild());
         anotherChildThread.start();
+
+        // these line will be executed by the main thread it will wait for the threads to finish the execution
+        try {
+            childThread.join();
+            anotherChildThread.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
 
         // after start we have 2 new threads
         for(int i=0;i<10;i++)

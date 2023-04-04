@@ -16,7 +16,7 @@ public class ComparableAndComparator {
 //        Objects that implement this interface can be used as keys in a sorted map or as elements in a sorted set, without the need to specify a comparator
 
     // Comparable has compareTo(Object object)
-    //Comparator is used for default natural sorting order
+    //Comparator is used for own natural sorting order
     // has compare(Object object1,Object object2 )
 
     public static void main(String[] args) {
@@ -26,6 +26,8 @@ public class ComparableAndComparator {
 //        Collections.sort(stringList);
 //        Util.sortList(list);
 //        Util.sortList(stringList);
+
+        Integer integer = Integer.MIN_VALUE;
 
         int [] array = new int[]{2,1,5,3};
         Arrays.sort(array);

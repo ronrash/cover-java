@@ -6,7 +6,7 @@ public class Locks {
 
     /*
      * java.utl.concurrent.locks
-     *  Lock Interface --> lock object is similar to implict lock to execute synchrozie method
+     *  Lock Interface --> lock object is similar to implict lock to execute synchronize method
      *  ReentrantLOck --> direct child class of object immplements Lock Interface
      *
      * */
@@ -30,7 +30,7 @@ class Display {
 
 
     public void wish() {
-            reentrantLock.lock();
+        reentrantLock.lock();
         try {
 
             for (int i = 0; i < 10; i++) {

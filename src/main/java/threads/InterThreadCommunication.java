@@ -8,6 +8,7 @@ public class InterThreadCommunication {
     // thread only releases the lock in these three methods wait,notify and notifyAll
 
     // wait and notify is based on producer and consumer methods as well
+    // this only occurs in the synchronized block
 
     /*
     * The best example for this is Producer Vs Consumer --> both are accessing the queue object

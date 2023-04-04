@@ -6,10 +6,18 @@ public class Array1 {
     public static void main(String[] args) {
 
 
-        int[] array = new int[]{1, 2, 3, 4, 5};
+        int[] array = new int[]{1, 2, 3, 4, 5}; // declaration and intialization
+        int[] arrr= new int[10]; //declaration
+        String [] names ={"rohit","swati"};
+        for(int i=1;i<=10;i++)
+        {
+            arrr[i-1]=i*10;
+        }
+        System.out.println(Arrays.toString(arrr));
+        System.out.println(Arrays.toString(names));
 
-        for (int i : array) {
-            System.out.println(i);
+        for (int i : array) { // enhanced for loop
+            System.out.print(i);
         }
         // we can use
         // converts an array to string

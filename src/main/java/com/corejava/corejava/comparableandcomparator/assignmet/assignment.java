@@ -2,6 +2,7 @@ package com.corejava.corejava.comparableandcomparator.assignmet;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
@@ -24,9 +25,27 @@ public class assignment {
      Collections.sort(studentesList,(studentes1, studentes2)-> studentes1.getMarks()> studentes2.getMarks()?-1: studentes1.getMarks()< studentes2.getMarks()?1:0);
         System.out.println(studentesList);
 
+
+      // sorting based on names in reverse order
+
+      Collections.sort(studentesList,new MyOwnCompparator());
+        System.out.println(studentesList);
     }
 
 
+}
+
+class MyOwnCompparator implements Comparator<Studentes>
+{
+
+    @Override
+    public int compare(final Studentes s1, final Studentes s2) {
+        // comparision and sorting based on marks
+        // return based on names
+        // return s1.getName().compareTo(s2.getName()); // natural sorting order
+         return s2.getName().compareTo(s1.getName()); // reverse sorting order
+       // return s1.getMarks()>s2.getMarks()?-1: s1.getMarks()<s2.getMarks()?-1:0;
+    }
 }
 
 class Studentes {
@@ -57,6 +76,11 @@ class Studentes {
 
     public int getMarks() {
         return marks;
+    }
+
+    public String getName()
+    {
+        return name;
     }
 
     @Override

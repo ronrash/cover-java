@@ -45,5 +45,10 @@ public class Array2d {
             System.out.println(Arrays.toString(a));
         }
 
+        // we can directly print a 2d array
+        int [][] twoDArray = new int[][]{{1,2,3},{4,5,6}};
+        System.out.println("printing a 2d array");
+        System.out.println(Arrays.deepToString(twoDArray));
+
     }
 }

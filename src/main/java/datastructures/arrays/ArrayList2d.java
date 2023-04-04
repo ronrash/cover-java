@@ -2,6 +2,7 @@ package datastructures.arrays;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class ArrayList2d {
     public static void main(String[] args) {
@@ -18,7 +19,8 @@ public class ArrayList2d {
         {
             for(int col=0;col< list.size();col++)
             {
-                list.get(row).add(j++);
+                Random random = new Random();
+                list.get(row).add(random.nextInt(10));
             }
         }
 
