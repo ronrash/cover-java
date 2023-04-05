@@ -10,6 +10,13 @@ import com.corejava.corejava.Util;
 
 public class ComparableAndComparator {
 
+    // Comparable                                                          Comparataor
+    // single sorting sequence ie. only one property can be used          multiple sorting sequence --
+    // eg student has id name -- only one can be used
+    // actual class is modified                                       // doesnt affect the orginal class
+    // java.lang                                                      java.util
+
+
 //    The comparable interface imposes a total ordering on the objects of each class that implements it.
 //    This ordering is referred to as the class's natural ordering, and the class's compareTo method is referred to as its natural comparison method.
 //        Lists (and arrays) of objects that implement this interface can be sorted automatically by Collections.sort (and Arrays.sort).
@@ -66,13 +73,20 @@ public class ComparableAndComparator {
         //  Collections.sort(empList, (e1, e2) -> e1.getId() < e2.getId() ? 1 : e1.getId() > e2.getId() ? -1 : 0);
         Collections.sort(empList, (e1, e2) -> e2.getName().compareTo(e1.getName()));
         // or else we can do this as well
-        Collections.sort(empList, new MyComparator());
+
+        // here using the Comparator we can sort based on id or name
+        Collections.sort(empList, new IdComparator());
         Util.sortList(empList);
+        // now sort based on the name
+        Collections.sort(empList, new NameComparator());
+        Util.sortList(empList);
+
+        Collections.sort(empList,(e1,e2)->e2.getName().compareTo(e1.getName()));
     }
 
 }
 
-class MyComparator implements Comparator<Emp> {
+class IdComparator implements Comparator<Emp> {
     @Override
     public int compare(final Emp emp1, final Emp emp2) {
         // if name
@@ -80,6 +94,15 @@ class MyComparator implements Comparator<Emp> {
         // if by id
         return emp1.getId() > emp2.getId() ? 1 : emp1.getId() < emp2.getId() ? -1 : 0;
 
+    }
+}
+
+class NameComparator implements Comparator<Emp>
+{
+    // comparing based on the name
+    @Override
+    public int compare(final Emp e1, final Emp e2) {
+        return e1.getName().compareTo(e2.getName());
     }
 }
 

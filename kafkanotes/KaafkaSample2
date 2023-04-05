@@ -1,0 +1,22 @@
+The 4 core apis used by kafka are
+producer,consumer,stream,cnnector api
+
+Consumer offset --> topics where where the consumer has last consumed message it has the details
+consumer has read from eg PaymentTopic -- and has read from offet 0-20 and then goes down and then when it comes up it will start reading messages from offset 21
+
+Consumer Groups -- >ConsumerPayment --> grp1 --> reading from PaymenTopic{ partitions 0 and 1}
+                    ConsumerPayment --> grp1 --> reading from PaymenTopic {partitions 2 and 3}
+                    ConsumerBooking --> grp2 --> reading from BookingTopic {partition 0 and 1}
+                    ConsumerBookingIdle --> grp1 --> reading from BookingTopic {partition 1 and 2}
+
+Consumer Groups grp1 there can be multiple consumer instances of same group reading from same topic on different partitions
+COnsumer poll is single threaded      TestTopic{p0,p1,p2,p3} --{grp1-ConsumerA po}  consumer A has 4 instances of same group
+                                                               {grp1 ConsumerA p1} {grp1 ConsumerA p2} {grp1 ConsumerA p2}
+
+                                                               {grp2 -COnsumer B p0,p1} -- Consumer B has 2 instances first insatce is reading from p0 and p1
+                                                               {grp2 -COnsumer B p2,p3} -- Consumer B has 2 instances second instance is reading from p2 and p3
+
+Each Application will have unique consumer groups
+Brokers manage these consumer groups -->
+
+Kafka wrtes the message to the file system --> lik in our machine if it is installed in our machine
