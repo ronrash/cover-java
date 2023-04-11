@@ -14,14 +14,20 @@ dockerfile is a file which has all the instructions for to create a docker image
 go to that specific folder and build a docker image
 docker build -t rondocker2191/credit-card .  --> -t tag name rondocker2191 - username , credit-card --> repository
 
-#run docker image
-docker run -d -p 8081:8080 rondocker2191/credit-card
+#run docker image hostport:containerport
 
+docker run -d -p 8081:8080 rondocker2191/credit-card
+all the images/containers run inside the docker network
 #push to docker hub
 docker push rondocker2191/credit-card  -- this will go ahead and create a repository in your docker hub account with credit-card name
 
 Under this we can create multiple versions and tag them as per our requirement
 version- docker run -d -p 8081:8080 rondocker2191/credit-card:0.0.1-RELEASE
+
+running multiple versions/releases on the local machine on different ports
+docker run -d -p 8081:8080 rondocker2191/credit-card:0.0.1-RELEASE
+docker run -d -p 8082:8080 rondocker2191/credit-card:0.0.2-RELEASE
+docker run -d -p 8083:8080 rondocker2191/credit-card:0.0.3-RELEASE
 
 
 Developer builds an image and you can run the image wherever a container runtime is installed

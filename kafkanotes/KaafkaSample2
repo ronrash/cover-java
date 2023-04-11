@@ -19,4 +19,10 @@ COnsumer poll is single threaded      TestTopic{p0,p1,p2,p3} --{grp1-ConsumerA p
 Each Application will have unique consumer groups
 Brokers manage these consumer groups -->
 
+Commit Log
 Kafka wrtes the message to the file system --> lik in our machine if it is installed in our machine
+Each partition will have its own log,
+
+Retention Policy
+how long messages are retained in these files --
+property is log.retention.hours in server.properties for 7 days

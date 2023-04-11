@@ -3,6 +3,9 @@ The whole idea is to automate the entire process of provisioning servers
 Terraform is used for Infrastructure as code.
 provision software/servers  on the cloud.
 You can provision/provide virtual servers, load balancers, provide storage,databases.
+you can create a number of resources in the cloud,like virtual servers, load balancers,databases, networking configuration,
+using terraform configuration
+
 
 Typically, TerraForm is used to do server provisioning.
 929109527990

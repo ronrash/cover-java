@@ -1,4 +1,6 @@
- Kubernetes opne source
+ Kubernetes open source
+ manages 100s of instance of 100s of microservices
+ standard platform for any infrastructure
 - container management tool- automates deploying scaling and managing containerized application
 manages our containers at runtime -- used for  deploying scaling load balancing scheduling
 

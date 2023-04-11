@@ -22,11 +22,13 @@ Kafka has a sized component called a cluster.
 
 Inside a cluster, we’ve got several servers, also known as brokers (usually at least three brokers to provide enough redundancy.)
 
-when a message gets sent to a broker, it gets sent to a particular topic.Topics allow us to categorize data. The data can eventually get broken into several partitions.
+when a message gets sent to a broker, it gets sent to a particular topic.Topics allow us to categorize data.
+ The data can eventually get broken into several partitions.
 
 By splitting the topic into multiple partitions, we’re facilitating scalability, as each partition can be read by a separate consumer.
 
-Each broker is responsible for receiving messages from producers and committing those messages to disk. The broker is also responsible for answering consumers’ fetch requests and serving them.
+Each broker is responsible for receiving messages from producers and committing those messages to disk.
+The broker is also responsible for answering consumers’ fetch requests and serving them.
 
 While designing a Kafka system, it’s always a wise decision to factor in topic replication. As a result, its topics’ replicas from another broker can solve the crisis,
  if a broker goes down. Broker1 has Topic 1 and 10 partitions ,  its replica is in Broker2, so on and so forth. It has got a replication factor of 2; it means it will have one additional copy other than the primary one. It is not possible to have the number of replication factor more than the number of available brokers.

@@ -6,5 +6,12 @@ docker push rondocker2191/credit-card  -- this will go ahead and create a reposi
 
 # build a docker image
 docker build -t rondcoker2191/credid-card .
+then push it to odkcer hub
+docker push rondocker2191/credit-card
+
+
+Why Docker Kubernetes
+Docker containerising apps .. standard/ same packaging for all types of applications
+just have the docker machine and can run all the apps
 
 
