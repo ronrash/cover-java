@@ -1,9 +1,15 @@
 SpringBoot interview Questions
 
-why spring?
-Spring provides dependency injection and help to develop loosely coupled applications
+why spring framework ?
+Spring framework provides dependency injection and help to develop loosely coupled applications
 
 Spring boot ??
+Using Spring Boot We can develope a lot of appliations
+Web,
+Rest Api
+Full Stack
+Microservices
+
 helps develop applications faster--
 removes boilerplate code - manages beans --
 shortens codee length
