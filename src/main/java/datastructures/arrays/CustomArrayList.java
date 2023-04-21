@@ -9,7 +9,7 @@ public class CustomArrayList<T> {
 
 
     private Object[] array;
-    private transient static Integer DEFAULT_SIZE = 10;
+    private static Integer DEFAULT_SIZE = 10;
     private int size;
 
     public CustomArrayList() {
@@ -43,6 +43,23 @@ public class CustomArrayList<T> {
         return array[index];
     }
 
+    public void remove(int index)
+    {
+        if(index < 0 || index > array.length)
+            throw new IndexOutOfBoundsException();
+
+        // copy all the elements to a new array and that is why weh have the size of the new array as original array size -1
+        Object[] tempArray = new Object[array.length-1];
+        int k=0;
+        for(int i=0;i< array.length;i++)
+        {
+            if(!(array[i]==array[index]))
+                tempArray[k++]=array[i];
+
+        }
+        array=tempArray;
+    }
+
     private boolean isArrayFull() {
         return array.length == size;
     }
@@ -53,11 +70,14 @@ public class CustomArrayList<T> {
       //  System.out.println(customArrayList.get(30));
 
 
-        for(int i=0;i<12;i++)
+        for(int i=1;i<=5;i++)
         {
             customArrayList.add(i*10);
         }
 
-        System.out.println(customArrayList.get(11));
+        System.out.println(customArrayList.get(4));
+
+         customArrayList.remove(4);
+        System.out.println(customArrayList);
     }
 }

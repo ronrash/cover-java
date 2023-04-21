@@ -16,7 +16,8 @@ public class TwoSum {
     public static void main(String[] args) {
         int[] array ={3,2,3};   //
         int target=6;
-        final int[] ints = twoSum(array, target);
+        final int[] ints = findIndices(array, target);
+
         System.out.println(Arrays.toString(ints));
 
     }
@@ -33,5 +34,22 @@ public class TwoSum {
             map.put(array[i],i);
         }
         return new int[]{-1,-1};
+    }
+
+    private static int[] findIndices(final int[] array,int target)
+    {
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        int[] result = new int[2];
+        // iterate over the map and keep putting elements with their indices
+        for(int i=0;i<array.length;i++)
+        {
+            int complement = target -array[i];
+            if(hashMap.containsKey(complement))
+            {
+                return new int[]{hashMap.get(complement),i};
+            }
+            hashMap.put(array[i],i);
+        }
+        throw new IllegalArgumentException("No two integers add up to the target");
     }
 }

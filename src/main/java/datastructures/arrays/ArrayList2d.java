@@ -9,7 +9,7 @@ public class ArrayList2d {
 
         List<List<Integer>> list= new ArrayList<>(10);
         int j=0;
-
+        int changedValue=2;
         // initilaize the arraylist
         for(int i=0;i<3;i++)
         {
@@ -17,10 +17,11 @@ public class ArrayList2d {
         }
         for(int row =0;row< 3;row++)
         {
-            for(int col=0;col< list.size();col++)
+            for(int col=0;col<list.size();col++)
             {
                 Random random = new Random();
                 list.get(row).add(random.nextInt(10));
+                changedValue++;
             }
         }
 
