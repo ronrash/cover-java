@@ -8,10 +8,29 @@ public class RecursionSample {
 
     //
     public static void main(String[] args) {
-        int ans = fib(4);
+        int n=4;
+        int ans = fib(n);
+        System.out.println(ans);
+
+        // need to find a factorial
+        int factorial = fact(n);
+        System.out.println(factorial);
     }
 
-    private static int fib(final int i) {
+    private static int fact(final int n) {
+
+        if(n==1)
+        return n;
+
+        return n* fact(n-1);
+    }
+
+    private static int fib(int n) {
         // base condition
+        if (n < 2)
+            return n;
+
+        return fib(n - 1) + fib(n - 2);
+
     }
 }

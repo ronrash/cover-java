@@ -24,7 +24,7 @@ public class RotateArray {
 //
 //        System.out.println(Arrays.toString(arr));
 
-        rotateAnArrayKTimes(arr,4);
+        rotateAnArrayKTimes(arr,8);
     }
 
     private static void rotateAnArrayKTimes(final int[] a,  int k) {
