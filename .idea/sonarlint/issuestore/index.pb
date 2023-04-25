@@ -275,9 +275,6 @@ A
 bash commands.txt,c/b/cb7ee5c7f124a8ec4d867a553254477e9325b8dc
 7
 abc.txt,0/6/060e4b697d1846e3a7bec5a486b38a177b0542d4
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 O
 argocdnotes/argocd-repositories,c/b/cb8d4752f9b7b6ac4792f3f031895cf426896ce0
 J
