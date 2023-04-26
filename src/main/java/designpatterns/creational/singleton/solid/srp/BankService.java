@@ -3,7 +3,6 @@ package designpatterns.creational.singleton.solid.srp;
 import java.util.Random;
 
 public class BankService {
-
     public long deposit(long amount, String accountNo) {
         //deposit amount
         return 0;

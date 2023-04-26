@@ -80,3 +80,10 @@ The @Autowired annotation is used to mark the myService and myRepository fields 
 This allows the developer to focus on writing business logic, rather than worrying about object creation and configuration.
 * It also makes the application highly flexible and configurable, as the dependencies can be easily swapped or updated without requiring changes to the source code.
 * */
+
+// Drawbacks of reflection
+//Performance overhead -- requires a lot of inspection and object manipulation
+// Complexity -- since it introduces dynamic behaviour
+// security risks
+//Code obfuscation: Reflection can make it harder to obfuscate code, as it exposes the internal structure and behavior of the application at runtime.
+//        This can make it easier for attackers to reverse engineer and analyze the code, potentially leading to security vulnerabilities.

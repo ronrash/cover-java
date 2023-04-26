@@ -18,13 +18,13 @@ echo "hello world " >> file01.txt -- appends to the contents of the file
 cat less head tail -- for reading the contents of the file
 
 # copy
-cp *.txt ../examples  copies all text files
+cp *.txt ../examples  copies all text files to examples folder
 cp -r folder1 folder2 - copy contents of the directories
 
 #find
-find . -name file01.txt -- finds a file
-find . -type f -name file01.txt -- finds a specifi type pf file
-find . -type d -name file01.txt -- type of file, f means file , d means directory
+find . -name file01.txt -- finds a file in the current directory with name
+find . -type f -name file01.txt --> finds a specifi type pf file
+find . -type d -name file01.txt -- >type of file, f means file , d means directory
 find . -type f -iname query.sql  -- used for ignoring the case
 
 #grep

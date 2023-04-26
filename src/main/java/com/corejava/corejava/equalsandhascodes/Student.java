@@ -3,7 +3,7 @@ package com.corejava.corejava.equalsandhascodes;
 import java.util.List;
 import java.util.Objects;
 
-import com.corejava.streams.Address;
+import com.corejava.java8.streams.Address;
 
 public class Student {
 
@@ -25,6 +25,15 @@ public class Student {
         this.marks = marks;
         this.hobbies = hobbies;
         this.department = department;
+    }
+
+    public Student(final String name, final int age, final int marks, final String department, final List<String> hobbies, final List<Address> address) {
+        this.name = name;
+        this.age = age;
+        this.marks = marks;
+        this.department = department;
+        this.hobbies = hobbies;
+        this.address = address;
     }
 
     public String getName() {

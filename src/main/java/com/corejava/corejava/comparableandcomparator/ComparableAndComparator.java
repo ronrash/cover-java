@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
-import com.corejava.corejava.Util;
+
 
 public class ComparableAndComparator {
 
@@ -46,7 +46,6 @@ public class ComparableAndComparator {
 
         // default natural sorting order
         Collections.sort(studentList);
-        Util.sortList(studentList);
 
         // customized sorting
         System.out.println("--- reverse sort based on name---");
@@ -54,7 +53,6 @@ public class ComparableAndComparator {
 //        Util.sortList(studentList);
 
         Collections.sort(studentList, (s1, s2) -> s1.getName().compareTo(s2.getName()));
-        Util.sortList(studentList);
 
         // comparing or sorting person that does not implemet comparable interface
 
@@ -62,7 +60,6 @@ public class ComparableAndComparator {
                 new Person(1, "bae"), new Person(3, "apple"));
 
         Collections.sort(personList);
-        Util.sortList(personList);
 
         final List<Emp> empList = Arrays.asList(new Emp(2, "ron"),
                 new Emp(1, "bae"), new Emp(3, "apple"));
@@ -76,10 +73,8 @@ public class ComparableAndComparator {
 
         // here using the Comparator we can sort based on id or name
         Collections.sort(empList, new IdComparator());
-        Util.sortList(empList);
         // now sort based on the name
         Collections.sort(empList, new NameComparator());
-        Util.sortList(empList);
 
         Collections.sort(empList,(e1,e2)->e2.getName().compareTo(e1.getName()));
     }
