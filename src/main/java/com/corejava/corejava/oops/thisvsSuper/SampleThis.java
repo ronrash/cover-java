@@ -1,6 +1,5 @@
 package com.corejava.corejava.oops.thisvsSuper;
 
-import sun.jvmstat.perfdata.monitor.PerfStringVariableMonitor;
 
 public class SampleThis {
 

@@ -7,8 +7,6 @@ t
 Dsrc/main/java/com/corejava/regurlarExpression/RegularExpression.java,6/7/67829c6337a13908a810cf0747a76ccde12158c1
 o
 ?src/main/java/com/corejava/corejava/oops/CompositionSample.java,8/2/82304e5ed02e22e2df8743d8fbb53e7abef83179
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 b
 2src/main/java/iostreams/StringTokenizerSample.java,e/2/e28edee73a546254cbca0833c246759e74f24c2e
 T
@@ -31,8 +29,6 @@ o
 ?src/main/java/datastructures/stacks/questions/MaxHistogram.java,6/0/60d927c411cd84261f6fe16207ee27b44956ee7d
 Y
 )src/main/java/TestingCode/SampleCode.java,5/8/58707c62c128f7767a21d74c82ca4af6f7a81bf1
-[
-+src/main/java/iostreams/files/SendWord.java,a/0/a0e4d45847b71b2c2042578837cdb6e4af8def44
 o
 ?src/main/java/threads/Parrellelism/complteablefuture/Delay.java,7/f/7f21a254532ada23a5a253a27f02b8a553957128
 
@@ -93,8 +89,6 @@ y
 Isrc/main/java/com/corejava/corejava/oops/abstraction/SampleAbstract2.java,4/a/4a7c8be101e4fee3d54f393cfc3de559e12d6660
 n
 >src/main/java/com/corejava/corejava/methods/Samle01Method.java,3/9/397901ebc7f2aa0e2857284b3791f4e724a59312
-t
-Dsrc/main/java/com/corejava/corejava/oops/thisvsSuper/SampleThis.java,c/6/c6b5f174fb0c2df26a82701ecec632cea3007323
 m
 =src/main/java/com/corejava/corejava/oops/access/Sample01.java,f/7/f7d64b5a5c57a733f9865ac208d45ecc3b839d5b
 r
@@ -117,8 +111,6 @@ q
 Asrc/main/java/com/corejava/corejava/equalsandhascodes/Person.java,9/c/9c82edf01090b28e9c1a1c7c5712f132a10188b0
 y
 Isrc/main/java/com/corejava/corejava/equalsandhascodes/SampleHashCode.java,2/b/2b6d61b1b056241285d1d40948c91fba9b76d083
-|
-Lsrc/main/java/com/corejava/corejava/equalsandhascodes/EqualsAndHashcode.java,1/c/1c19fc5569a98d354db3bad5576d16ab1dda56da
 v
 Fsrc/main/java/com/corejava/corejava/equalsandhascodes/MainExample.java,b/e/bed6291de9913e0ce9dafb7b6ad0354b0d58c30a
 |
@@ -179,8 +171,6 @@ S
 #src/main/java/threads/DeadLock.java,7/3/73b35ed6adb36c22d593451f9ceb31d3480ce10d
 c
 3src/main/java/threads/InterThreadCommunication.java,6/d/6d4e659f4d595ba7464fc853b137dcf47a47573c
-R
-"src/main/java/collections/Map.java,8/2/82d963fcbbdd0f6c68723b0cb81782cbd24aa628
 _
 /src/main/java/collections/SampleCollection.java,f/6/f64ecf002ce0ca0fd9f1e046a77f9a73268d4ca6
 X
@@ -230,8 +220,6 @@ J
 e
 5src/main/java/com/corejava/Generics/GenericsMain.java,7/1/718763aa7d9410c5d63c1f77c9b323090f572e21
 w
-Gsrc/main/java/com/corejava/Generics/classes/CustomGenericArrayList.java,8/5/85a2ce3e44efcc0933ed4106d856489d2782e543
-w
 Gsrc/main/java/datastructures/binary/question2d/SearchInSortedArray.java,d/6/d6173453e1ff7dab25743eaadbc5b4cf191abe31
 p
 @src/main/java/datastructures/Trees/withoutgenerics/TreeNode.java,5/8/58201f6815e3aa1f658db8287874a6bf60489497
@@ -245,8 +233,6 @@ m
 =src/main/java/datastructures/Trees/withGenerics/TreeNode.java,4/a/4ae2526ea863b8fc12664151a8419ff7165273cb
 w
 Gsrc/main/java/datastructures/Trees/withGenerics/BinarySearchTree01.java,c/7/c728b0bd95bcf9d849ebae0ab4ca7dd6707386a9
-`
-0src/main/java/datastructures/queues/Queue01.java,d/d/dde064741d28e728a25200259276c142e4ad2b86
 d
 4src/main/java/datastructures/queues/DeckExample.java,1/f/1fc8e81eb1bd13c2bb0962377862fd1d2e3017b1
 k
@@ -255,8 +241,6 @@ f
 6src/main/java/datastructures/queues/CustomQueue03.java,6/c/6cef72aac69058c7aa1c212583834176cf60a6dd
 l
 <src/main/java/datastructures/arrays/SampleArrayMethods2.java,e/5/e5229fde000a942d36e0d1b71ee899f81c124cb0
-k
-;src/main/java/datastructures/arrays/SampleArrayMethods.java,8/9/899fe236bfe52690c72cb6cf0993a8b415d6279a
 d
 4src/main/java/datastructures/queues/CustomArray.java,b/1/b1e17cea8a118e9fbb276e740440f081e15db444
 `
@@ -311,8 +295,6 @@ d
 Ksrc/main/java/datastructures/Trees/Questions/AllQuestionsInBinaryTree2.java,7/c/7cf3ab2f4e4991c0752d97a48d78c74821d5132f
 h
 8src/main/java/com/corejava/corejava/stack/StackMain.java,e/4/e4dc7d218a69b20c5bf81d82164f3642c6112402
-`
-0src/main/java/datastructures/stacks/Stack01.java,c/c/cce24cf3c19bdc625910d18b8228e98396e8ddc7
 h
 8src/main/java/datastructures/stacks/StackUsingArray.java,b/9/b9aae16f5f7beb0279b67f0f383173d9b12b254b
 l

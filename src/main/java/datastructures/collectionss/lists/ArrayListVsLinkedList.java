@@ -1,4 +1,7 @@
 package datastructures.collectionss.lists;
 
-public class ListVsLinkedList {
+public class ArrayListVsLinkedList {
+    //    Al                    linkedList
+    // retreival process --     insertiona and deltion
+    // worst                   best
 }

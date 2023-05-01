@@ -29,7 +29,7 @@ public class QuickSort {
     * */
 
     public static void main(String[] args) {
-        int [] array =new int[]{5, 3, 8, 4, 2, 7, 1, 10};
+        int [] array =new int[]{5, 3, 8, 4, 2, 7, 1, 6};
 
         quickSort(array,0,array.length-1);
         System.out.println(Arrays.toString(array));
@@ -49,7 +49,7 @@ public class QuickSort {
     }
 
     private static int partition2( int[] array,int left, int right) {
-      //  {100, 2, 8, 4, 20, 7, 10, 3}  {}      pivot =3
+     // {}      pivot =3
      //  i      j
       // selec the rightmost elemet  as pivot
      int pivot = array[right];

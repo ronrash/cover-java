@@ -10,7 +10,7 @@ public class StreamsSumAverage {
 
         final Double collect = Arrays.asList(1, 2, 3, 4, 5, 6)
                 .stream()
-                .collect(Collectors.averagingInt(Integer::byteValue));
+                .collect(Collectors.averagingInt(Integer::intValue));
 
         System.out.println(collect);
 

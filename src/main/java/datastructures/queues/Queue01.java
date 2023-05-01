@@ -19,7 +19,7 @@ public class Queue01 {
 
     public static void main(String[] args) {
 
-        // Queue is an interface -- LinkedList implement the Queue interface
+        // Queue is an interface -- LinkedListSample implement the Queue interface
         // Adding an element is 0(1)
         // it is a double linked list which stores ref to the first and last element of the linked list
         //In a queue we keep adding items to the end of the list and remove them from the begginging 321

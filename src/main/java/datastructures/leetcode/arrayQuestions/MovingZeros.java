@@ -35,8 +35,12 @@ public class MovingZeros {
         *
         * */
         movingZerosWithEfficieny(array);
+      //  movingzers(array);
         System.out.println(Arrays.toString(array));
+
+
     }
+
 
     private static int[] movingZerosWithEfficieny(final int[] a) {
 
@@ -77,6 +81,33 @@ public class MovingZeros {
         {
             a[i]=0;
         }
+
             return a;
      }
+
+    private static int [] movingzers(final int[] a)
+    {
+        // indexs
+      int left =0;
+      int right = a.length-1;
+
+      while(left<right)
+      {
+          if(a[left]==0 && a[right]==0)
+              right--;
+
+          else if (a[left]==0 && a[right]!=0) {
+                int temp = a[right];
+                a[left]=temp;
+                a[right]=0;
+               left++;
+               right--;
+          }
+          else if( (a[left]!=0 && a[right]!=0)) {
+              left++;
+          }
+      }
+
+      return a;
+    }
 }

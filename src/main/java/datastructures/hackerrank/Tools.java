@@ -1,4 +1,4 @@
-package datastructures.leetcode.slidingWindow.fixedSize;
+package datastructures.hackerrank;
 
 import java.util.Arrays;
 import java.util.Collections;

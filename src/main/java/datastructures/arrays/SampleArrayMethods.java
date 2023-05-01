@@ -14,6 +14,7 @@ public class SampleArrayMethods {
         System.out.println(Arrays.toString(array));
 
         // copy the elements
+        int[] temp = new int[array.length];
         int[] secondArray = Arrays.copyOf(array, 2);
         System.out.println(Arrays.toString(secondArray)); // the second array has a length of 2
 

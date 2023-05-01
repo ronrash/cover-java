@@ -1,9 +1,10 @@
-package datastructures.collectionss;
+package datastructures.collectionss.lists;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
-import datastructures.linkedlists.implementation.singleLinkedList.List;
 
 public class ListSample {
     public static void main(String[] args) {
@@ -22,6 +23,10 @@ public class ListSample {
         * */
 
         // synchronized list
+String[] array ={"apples","oranges"};
+        List<String> fruits = List.of(array);
+        System.out.println(fruits);
+
 
     }
 }

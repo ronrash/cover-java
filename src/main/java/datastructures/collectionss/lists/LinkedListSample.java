@@ -1,4 +1,4 @@
-package datastructures.collectionss;
+package datastructures.collectionss.lists;
 
 
 import java.util.LinkedList;

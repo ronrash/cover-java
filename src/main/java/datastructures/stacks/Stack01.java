@@ -36,10 +36,12 @@ public class Stack01 {
         stringStack.push("swati");
         stringStack.push("myraa");
 
-//       while(!stringStack.isEmpty())
-//       {
-//           System.out.println(stringStack.pop());
-//       }
+       while(!stringStack.isEmpty())
+       {
+           System.out.println(stringStack.pop());
+       }
+
+
 
         int swati = stringStack.search("swati");
         System.out.println(swati);

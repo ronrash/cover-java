@@ -1,4 +1,4 @@
-package datastructures.leetcode.hackerrank;
+package datastructures.hackerrank;
 
 import java.util.Arrays;
 import java.util.List;

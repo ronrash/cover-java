@@ -16,7 +16,7 @@ public class CustomLinkedList {
     // we just need to access the first node of the list and then we can access the
     // bad for search and good for insertion adn deleteion at starting or middle elenets
 
-    // using LinkedList in java
+    // using LinkedListSample in java
     // this should be used when we have to manipulate data at starting and ending position
     public static void main(String[] args) {
         LinkedList<Integer> linkedList = new LinkedList<>();

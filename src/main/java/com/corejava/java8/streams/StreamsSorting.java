@@ -12,10 +12,10 @@ import com.corejava.corejava.equalsandhascodes.Student;
 public class StreamsSorting {
 
     public static void main(String[] args) {
-        System.out.println(Arrays.asList(1,2,3,4)
-        .stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()));
-List<Student> studentList= StudentUtility.getStudentList();
-        Collections.sort(studentList,new myComparator());
+        System.out.println(Arrays.asList(1, 2, 3, 4)
+                .stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()));
+        List<Student> studentList = StudentUtility.getStudentList();
+        Collections.sort(studentList, new myComparator());
         System.out.println(studentList);
 
         // usng streanss
@@ -23,7 +23,7 @@ List<Student> studentList= StudentUtility.getStudentList();
                 .sorted(Comparator.comparing(s -> {
                     return s.getAge();
                 }))
-                .collect(Collectors.groupingBy(Student::getName,Collectors.toList()));
+                .collect(Collectors.groupingBy(Student::getName, Collectors.toList()));
 
         System.out.println(collect);
     }

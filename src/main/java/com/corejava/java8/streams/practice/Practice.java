@@ -1,6 +1,7 @@
 package com.corejava.java8.streams.practice;
 
-import com.sun.tools.javac.util.List;
+
+import java.util.List;
 
 public class Practice {
     public static void main(String[] args) {

@@ -2,6 +2,7 @@ package com.corejava.java8.streams.mapreduce;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.OptionalDouble;
 import java.util.stream.IntStream;
@@ -48,6 +49,13 @@ public class MapReduce {
                 .filter(s -> s != null)
                 .reduce((s1, s2) -> s1.length() > s2.length() ? s1 : s2)
                 .orElse("default string");
+
+        Optional<String> reduce = Stream.of(null, "ab", "prashar", null)
+                .filter(Objects::nonNull)
+                .reduce((s1, s2) -> s1.length() > s2.length() ? s1 : s2);
+
+        reduce.ifPresent(System.out::println);
+
 
         System.out.println(default_string);
 

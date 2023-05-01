@@ -22,8 +22,31 @@ public class BubbleSort {
         //ist swap -- 3,2,4,5,1 ---- 2,3,4,5,1 -- 2,3,4,1
            //           3,2,4,1,5
 
-        bubbleSort(array);
+      //  bubbleSort(array);
+
+        bubbleSortNEew(array);
         System.out.println(Arrays.toString(array));
+    }
+
+    private static void bubbleSortNEew(final int[] array) {
+
+        for(int i=0;i< array.length-1;i++)
+        {
+            for(int j=0;j< array.length-1-i;j++)
+            {
+                if(array[j+1]<array[j])
+                {
+                    // swap(array[j],array[j+1]);
+                    int temp =array[j+1];
+                    array[j+1]=array[j];
+                    array[j]=temp;
+                }
+
+            }
+        }
+    }
+    private static void swap(int current , int next)
+    {
 
     }
 
@@ -50,4 +73,6 @@ public class BubbleSort {
               break;
         }
     }
+
+
 }

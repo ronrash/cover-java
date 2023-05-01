@@ -55,7 +55,7 @@ public class CustomGenericArrayList<T> {
 
     @Override
     public String toString() {
-        return "CustomArrayList{" +
+        return "CustomList{" +
                 "data=" + Arrays.toString(data) +
                 ", size=" + size +
                 '}';

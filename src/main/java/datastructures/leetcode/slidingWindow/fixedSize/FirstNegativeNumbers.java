@@ -1,4 +1,4 @@
-package datastructures.slidingWindow.fixedSize;
+package datastructures.leetcode.slidingWindow.fixedSize;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -11,7 +11,7 @@ public class EqualsAndHashcode {
     public static void main(String[] args) {
 
         Employee e1 = new Employee(1,"rohit"); // reference is pointng to different objects
-        Employee e2 = new Employee(1,"prashar");
+        Employee e2 = new Employee(1,"rohit");
 
         System.out.println("shaloow compare "+(e1==e2));
         System.out.println("shaloww compare "+(e1.equals(e2)));
@@ -34,7 +34,7 @@ class Employee{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         final Employee employee = (Employee) o;
-        return id == employee.id && Objects.equals(name, employee.name);
+        return id == employee.id ;
     }
 
     @Override
@@ -43,6 +43,6 @@ class Employee{
         // hascode genereate ann integer value ,return the hashcode/ integer value of an object/instance
         //This method is supported for the benefit of hash tables such as those provided by HashMap.
         // f two objects are equal according to the equals(Object) method, then calling the hashCode method on each of the two objects must produce the same integer result.
-        return Objects.hash(id, name);
+        return Objects.hash(id);
     }
 }

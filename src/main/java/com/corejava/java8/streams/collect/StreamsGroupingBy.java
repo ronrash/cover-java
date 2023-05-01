@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import com.corejava.corejava.equalsandhascodes.Student;
 import com.corejava.java8.streams.StudentUtility;
@@ -20,15 +21,26 @@ public class StreamsGroupingBy {
         // group students based on theier marks
 
      // group student by their department and average soceers
+//
+//        StudentUtility.getStudentList()
+//                .stream()
+//                .collect(groupingBy(Student::getDepartment, averagingDouble(Student::getMarks)))
+//        .entrySet()
+//        .forEach(e-> System.out.println(e.getKey()+" "+e.getValue()));
 
-        StudentUtility.getStudentList()
+
+        // i Hve a list of students
+        // find the average of the studnst s1{name -- average marks }
+
+        // sudents can be null and department can be null
+
+        Map<String, Double> map = StudentUtility.getStudentList()
                 .stream()
-                .collect(groupingBy(Student::getDepartment, averagingDouble(Student::getMarks)))
-        .entrySet()
-        .forEach(e-> System.out.println(e.getKey()+" "+e.getValue()));
+                .filter(student -> student != null)
+                .collect(groupingBy(student -> student.getDepartment() != null ? student.getDepartment() : "Default DEpartMent",
+                        averagingDouble(Student::getMarks)));
 
-
-
+        map.entrySet().forEach(e-> System.out.println(e.getKey()+" "+e.getValue()));
 
         final Map<Integer, Set<Student>> collect = StudentUtility.getStudentList()
                 .stream()
@@ -36,11 +48,11 @@ public class StreamsGroupingBy {
 
         // group students based on special key
 
-        final Map<String, List<Student>> map = StudentUtility.getStudentList()
+        final Map<String, List<Student>> maps = StudentUtility.getStudentList()
                 .stream()
                 .collect(groupingBy(student -> student.getName().startsWith("r") ? "R" : "NO-R"));
 
-        map.entrySet().stream()
+        maps.entrySet().stream()
                 .filter(e->!e.getKey().startsWith("R"))
                 .forEach(e ->{
                     final List<Student> list = e.getValue();

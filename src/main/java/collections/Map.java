@@ -4,8 +4,6 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 
-import jdk.nashorn.internal.ir.annotations.Immutable;
-
 public class Map {
 
     public static void main(String[] args) {

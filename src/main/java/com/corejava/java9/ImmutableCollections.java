@@ -1,9 +1,8 @@
 package com.corejava.java9;
 
+import java.util.List;
 import java.util.Set;
 
-import com.sun.tools.classfile.Opcode;
-import com.sun.tools.javac.util.List;
 
 public class ImmutableCollections {
 

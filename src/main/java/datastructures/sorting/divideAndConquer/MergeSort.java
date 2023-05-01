@@ -8,7 +8,7 @@ public class MergeSort {
     // Merge Sort O(nlogn) in worst case
 
     public static void main(String[] args) {
-        int [] array =new int[]{5, 3, 8, 4, 2, 7, 1, 10};
+        int [] array =new int[]{5, 3, 8, 4, 2, 6, 1, 9};
 
         mergeSort(array,0,array.length-1);
         System.out.println(Arrays.toString(array));
@@ -70,5 +70,6 @@ public class MergeSort {
         for (k = left; k <= right; k++) {
             array[k] = temp[k];
         }
+         array = Arrays.copyOf(temp, temp.length);
     }
 }
