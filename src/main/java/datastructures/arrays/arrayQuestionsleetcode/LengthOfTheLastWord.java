@@ -1,4 +1,4 @@
-package datastructures.leetcode.arrayQuestions;
+package datastructures.arrays.arrayQuestionsleetcode;
 
 public class LengthOfTheLastWord {
 

@@ -1,4 +1,4 @@
-package datastructures.hackerrank;
+package datastructures.hackerrank.easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,6 +21,17 @@ public class SparseArrays {
 
         // we need to fidn the count of querylist in string list [2,1,0] -- ab and abc is twice in striglist bc is 0 times hence [2,1,0]
         System.out.println(matchingStrings(stringList,queryList));
+
+        optimizedWay(stringList,queryList);
+    }
+
+    private static void optimizedWay(final List<String> stringList, final List<String> queryList) {
+
+        for (String s : queryList)
+        {
+            stringList.contains(s);
+
+        }
     }
 
     public static List<Integer> matchingStrings(List<String> strings, List<String> queries) {
@@ -39,7 +50,6 @@ public class SparseArrays {
             if(map.containsKey(s))
             {
                 list.add(map.get(s));
-
             }
             else{
                 list.add(0);

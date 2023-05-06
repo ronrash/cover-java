@@ -1,4 +1,4 @@
-package datastructures.leetcode.arrayQuestions;
+package datastructures.arrays.arrayQuestionsleetcode;
 
 import java.util.Arrays;
 import java.util.LinkedList;

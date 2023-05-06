@@ -3,6 +3,7 @@ package datastructures.collectionss.lists;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -22,10 +23,44 @@ public class ListSample {
         *
         * */
 
+        List<Integer> list = new ArrayList<>();
+        list.add(1);list.add(2);list.add(3);
+
+        List<Integer> list1 = new ArrayList<>();
+        list1.addAll(list);
+
+        System.out.println(list1);
+
+        List<Integer> list3 = new ArrayList<>();
+
+        list3.add(4);
+
+        list1.retainAll(list3);
+        System.out.println(list1);
+
+
         // synchronized list
-String[] array ={"apples","oranges"};
-        List<String> fruits = List.of(array);
+     String[] array ={"kiwi","apples"};
+        List<String> fruits = List.of(array); // immutable list
         System.out.println(fruits);
+     //   fruits.add("banana"); // we will get an error
+
+        ArrayList<String> groceries = new ArrayList<>(fruits);
+        groceries.add("milk");
+        System.out.println(groceries);
+
+        // sort as well
+        Collections.sort(groceries);
+        System.out.println(groceries);
+        groceries.sort(Comparator.reverseOrder());
+        System.out.println(groceries);
+
+        // convert this list to an array
+        String[] items = groceries.toArray(new String[groceries.size()]);
+        System.out.println(Arrays.toString(items));
+
+//        List<Integer> list = new ArrayList<>();
+      //  System.out.println(list.get(0));
 
 
     }

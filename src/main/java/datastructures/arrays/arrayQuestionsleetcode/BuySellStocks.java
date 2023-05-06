@@ -1,6 +1,4 @@
-package datastructures.leetcode.arrayQuestions;
-
-import com.sun.jdi.IntegerValue;
+package datastructures.arrays.arrayQuestionsleetcode;
 
 public class BuySellStocks {
 

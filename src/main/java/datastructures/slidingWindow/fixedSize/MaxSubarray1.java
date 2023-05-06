@@ -1,4 +1,4 @@
-package datastructures.leetcode.slidingWindow.fixedSize;
+package datastructures.slidingWindow.fixedSize;
 
 public class MaxSubarray1 {
 

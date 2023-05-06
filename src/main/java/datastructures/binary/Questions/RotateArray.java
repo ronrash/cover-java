@@ -14,8 +14,8 @@ public class RotateArray {
 
     public static void main(String[] args) {
 
-        int[] arr= {1,2,3}; // {5,6,7,1,2,3,4}
-        int k=4; // no of time to be rotated
+        int[] arr= {1,2,3,4,5}; // {5,6,7,1,2,3,4}
+        int k=3; // no of time to be rotated
 //        reverse(arr,0,arr.length-1);
 //        System.out.println(Arrays.toString(arr));
 //        reverse(arr,0,k-1);
@@ -24,7 +24,7 @@ public class RotateArray {
 //
 //        System.out.println(Arrays.toString(arr));
 
-        rotateAnArrayKTimes(arr,8);
+        rotateAnArrayKTimes(arr,3);
     }
 
     private static void rotateAnArrayKTimes(final int[] a,  int k) {

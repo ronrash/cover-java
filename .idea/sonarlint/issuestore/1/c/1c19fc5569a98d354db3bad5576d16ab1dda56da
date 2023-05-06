@@ -1,4 +1,6 @@
 
-N	java:S106"9Replace this use of System.out or System.err by a logger.(˜€œ‹
-N	java:S106"9Replace this use of System.out or System.err by a logger.(äŸÈó
-S	java:S106"9Replace this use of System.out or System.err by a logger.(óâûËıÿÿÿÿ
+U	java:S106"9Replace this use of System.out or System.err by a logger.(˜€œ‹8ÚÓÉ·ı0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(äŸÈó8ÛÓÉ·ı0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(óâûËıÿÿÿÿ8ÛÓÉ·ı0
+E
+java:S1068"(Remove this unused "name" private field.(Ë¥¼8ŞÓÉ·ı0

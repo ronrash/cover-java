@@ -21,10 +21,10 @@ public class Array2d {
                 array[row][col]=i++;
             }
         }
-        for (int row = 0; row < array.length; row++) {
+        for (final int[] ints : array) {
             // for each col in the row
-            for (int col = 0; col < array[row].length; col++) {
-                System.out.print(array[row][col] + " ");
+            for (final int anInt : ints) {
+                System.out.print(anInt + " ");
             }
             System.out.println(" ");
         }

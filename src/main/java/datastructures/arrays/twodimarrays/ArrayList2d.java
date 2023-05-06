@@ -1,4 +1,4 @@
-package datastructures.arrays;
+package datastructures.arrays.twodimarrays;
 
 import java.util.ArrayList;
 import java.util.List;

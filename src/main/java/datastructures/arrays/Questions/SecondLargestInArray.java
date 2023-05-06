@@ -28,6 +28,27 @@ public class SecondLargestInArray {
             }
         }
         System.out.println(secondLargest);
+        findSecondLargest(array);
 
+    }
+
+     static int findSecondLargest(final int[] a)
+    {
+        int largest= a[0];
+        int secondlargest =a[0];
+
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]>largest)
+            {
+                secondlargest=largest;
+                largest=a[i];
+            } else if (secondlargest<a[i] && secondlargest<largest) {
+                secondlargest=a[i];
+
+            }
+        }
+        System.out.println(secondlargest);
+        return secondlargest;
     }
 }
