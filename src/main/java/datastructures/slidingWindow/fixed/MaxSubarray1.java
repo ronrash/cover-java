@@ -1,4 +1,4 @@
-package datastructures.slidingWindow.fixedSize;
+package datastructures.slidingWindow.fixed;
 
 public class MaxSubarray1 {
 
@@ -12,7 +12,7 @@ public class MaxSubarray1 {
     public static void main(String[] args) {
 
         //Question -- find max in subarray of size 3
-        int[] a = {2, 5, 1, 8, 2, 9, 1};  // 2+5+1-- 8   // 5+1+8=14 ,,   1+8+2=11 ,, 8+2+9=19 //2+9+1=12
+        int[] a = {2, 5, 1, -2};  // 2+5+1-- 8   // 5+1+8=14 ,,   1+8+2=11 ,, 8+2+9=19 //2+9+1=12
         int windowSize = 3;
 
         System.out.println(slidingWindowMaxSubArray(a, windowSize));
