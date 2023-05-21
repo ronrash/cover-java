@@ -1,4 +1,4 @@
-package datastructures.collectionss;
+package com.corejava.corejava.collectionss;
 
 import java.io.Serializable;
 import java.util.ArrayList;

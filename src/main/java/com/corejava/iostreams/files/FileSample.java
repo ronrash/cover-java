@@ -1,4 +1,4 @@
-package iostreams.files;
+package com.corejava.iostreams.files;
 
 import java.io.File;
 import java.io.FileReader;

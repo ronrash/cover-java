@@ -1,4 +1,4 @@
-package datastructures.collectionss.lists;
+package com.corejava.corejava.collectionss.lists;
 
 import java.util.ArrayList;
 import java.util.List;

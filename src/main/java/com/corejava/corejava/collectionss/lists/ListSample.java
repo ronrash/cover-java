@@ -1,4 +1,4 @@
-package datastructures.collectionss.lists;
+package com.corejava.corejava.collectionss.lists;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +14,7 @@ public class ListSample {
           List also implements RandomAccess -- O(1) -- give me 10 th item or 1lakn itme
         * Underling dats stricture is dynamic array
         * duplicates are allowed null is allowed
-        * isnertion order is allowed
+        * isnertion order is preserved
 
          for insertion and deletion ArrayList is worse ,,
          linkedlist is better becoz it has address of next nodes
@@ -43,7 +43,10 @@ public class ListSample {
      String[] array ={"kiwi","apples"};
         List<String> fruits = List.of(array); // immutable list
         System.out.println(fruits);
-     //   fruits.add("banana"); // we will get an error
+        int apples = fruits.indexOf("apples");
+        System.out.println(apples);
+
+        //   fruits.add("banana"); // we will get an error
 
         ArrayList<String> groceries = new ArrayList<>(fruits);
         groceries.add("milk");

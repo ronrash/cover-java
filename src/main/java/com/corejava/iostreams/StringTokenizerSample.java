@@ -1,4 +1,4 @@
-package iostreams;
+package com.corejava.iostreams;
 
 import java.util.StringTokenizer;
 

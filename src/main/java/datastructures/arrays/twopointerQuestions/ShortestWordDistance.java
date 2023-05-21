@@ -1,4 +1,4 @@
-package datastructures.arrays.arrayQuestionsleetcode;
+package datastructures.arrays.twopointerQuestions;
 
 import java.util.Arrays;
 import java.util.List;

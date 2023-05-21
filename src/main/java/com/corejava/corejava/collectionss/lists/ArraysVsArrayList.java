@@ -1,4 +1,4 @@
-package datastructures.collectionss.lists;
+package com.corejava.corejava.collectionss.lists;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,6 +27,7 @@ public class ArraysVsArrayList {
         int[] arr = {1, 2, 3, 4};
 
         ArrayList<Integer> list = new ArrayList<>();
+        // this will create an immutable list
         ArrayList<Integer> integers3 = new ArrayList<>(List.of(1, 2, 3, 5));
 
         //lenght
@@ -59,6 +60,8 @@ public class ArraysVsArrayList {
         System.out.println(asList);
         integers3.set(0,200);// not allwo
         System.out.println(integers3);
+
+
 
     }
 }
