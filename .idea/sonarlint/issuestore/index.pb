@@ -179,10 +179,6 @@ e
 5src/main/java/collections/maps/ConcurrentHashMap.java,f/6/f69bb68d6fa8d5ba3135a76d3bfe5c231b8b8f04
 k
 ;src/main/java/collections/maps/MapsVsConcurrentHashMap.java,c/9/c98d101958989ce658d099b5d3c3091183bba1d1
-G
-docker-notes/docker.txt,5/7/577cbf12418f541674fbcc2cba5a1cd5b8aa11dd
-L
-docker-notes/docker-commands,7/f/7f256d9f75eed225fe50c178f59fc3b7ae77f550
 I
 kubernetes/Kubernetes.txt,5/7/5714125817c8c6682bd29fee4a34080eeb490faf
 K
@@ -422,3 +418,7 @@ O
 kubernetes/deployment-kube.yaml,f/3/f3b281a2545c54761a82d3a5b5658bae3ff1d046
 H
 kubernetes/kube-commands,3/d/3daf72219fad6736c0ab22abf25289d1662ece79
+k
+;src/main/java/datastructures/arrays/SampleArrayMethods.java,8/9/899fe236bfe52690c72cb6cf0993a8b415d6279a
+w
+Gsrc/main/java/datastructures/arrays/twopointerQuestions/Palindrome.java,7/4/744cac5e6353064f3f8453d0c2950cbe112f81c7
