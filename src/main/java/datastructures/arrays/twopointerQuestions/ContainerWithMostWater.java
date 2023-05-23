@@ -40,17 +40,14 @@ public class ContainerWithMostWater {
             {
              length=a[left];
              breadth=right-left;
-             int area = length*breadth;
-             maxarea = Math.max(area,maxarea);
              left++;
             }
             else {
                 length=a[right];
                 breadth=right-left;
-                int area = length*breadth;
-                maxarea = Math.max(area,maxarea);
                 right--;
             }
+            maxarea = Math.max(length*breadth,maxarea);
         }
         return maxarea;
     }
