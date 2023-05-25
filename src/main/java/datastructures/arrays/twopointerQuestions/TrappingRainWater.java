@@ -24,7 +24,7 @@ public class TrappingRainWater {
 
     private static void twoPointerSolutuion(final int[] a) {
 
-        int maxLeft = a[0];
+        int maxLeft = 100;
         int maxRight = a[a.length - 1];
         int left = 1;
         int right = a.length - 2;
