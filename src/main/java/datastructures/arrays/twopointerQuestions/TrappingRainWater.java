@@ -19,7 +19,12 @@ public class TrappingRainWater {
 
         extraSpaceSoultion(a);
         twoPointerSolutuion(a);
+        
+        somesolution(a);
 
+    }
+
+    private static void somesolution(final int[] a) {
     }
 
     private static void twoPointerSolutuion(final int[] a) {
