@@ -10,7 +10,7 @@ public class TrappingRainWater {
 
     // 2 techniques ist is having an auxiliry arrays and 2nd is two pointer technique
 
-// latest change in master
+// latest change in feature/coding
 
 
     public static void main(String[] args) {
