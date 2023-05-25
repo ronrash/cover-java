@@ -32,18 +32,12 @@ git pull -r origin main  -- this will pull changes from master
 git add .
 git rebase --continue and then give a commit message
 git push -f  --> forcefully
-
-
-
 fork a repository
 upstrem -- from where you hae forked a repository
 git remote add upstream https://.................
 
 create a new branch
-
 git merge team/cct-857 team/cct-876 --no-ff
-
-
 remove files from the staging area
 git rm --cached -r .
 git rm --cached -r fileName
