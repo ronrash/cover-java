@@ -5,6 +5,17 @@ https://www.baeldung.com/spring-data-jpa-stored-procedures
 https://www.baeldung.com/hibernate-identifiers
 https://www.baeldung.com/hibernate-identifiers
 
+
+JPA Java persistence api and is a standard from oracle to perform object relational mapping in java ee applications
+It has a specification and api -- specification is for orm providers like hibernate and openjpa
+api is for us developers to understand and learn we now need to just understand these api and the vendors
+will impleent the jpa specification.
+we will master jpa api and these providers like hibernate will implemnt them ,,
+so tomorrow we can change the provider without chage in code
+
+Spring data jpa removes all the boiler plate code -- no need for data access layers like dao daoimpl or jdbc queriees
+just create our rntity map it o repo
+
 SpringData Jpa--
 @Entity -- @Table  @Column  @Transactional
 https://www.baeldung.com/spring-transactional-propagation-isolation
