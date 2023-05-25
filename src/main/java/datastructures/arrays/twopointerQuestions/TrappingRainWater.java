@@ -10,6 +10,8 @@ public class TrappingRainWater {
 
     // 2 techniques ist is having an auxiliry arrays and 2nd is two pointer technique
 
+// latest change in master
+
 
     public static void main(String[] args) {
       // int[] a = {3,1,2,4,0,1,3,2};
