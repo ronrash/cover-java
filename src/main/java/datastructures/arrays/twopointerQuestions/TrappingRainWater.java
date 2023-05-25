@@ -17,7 +17,7 @@ public class TrappingRainWater {
       // int[] a = {3,1,2,4,0,1,3,2};
         int[] a = {0,1,0,2,1,0,1,3,2,1,2,1};
 
-        bruterForce(a);
+        bruterForceSolution(a);
         twoPointerSolutuion(a);
 
     }
@@ -54,7 +54,7 @@ public class TrappingRainWater {
         System.out.println(sum);
     }
 
-    private static void bruterForce(final int[] a) {
+    private static void bruterForceSolution(final int[] a) {
 
         // find maximum and minimum left
         int len = a.length;
