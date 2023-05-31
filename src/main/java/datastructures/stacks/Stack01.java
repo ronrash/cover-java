@@ -1,15 +1,16 @@
 package datastructures.stacks;
 
+import java.util.Deque;
 import java.util.Stack;
 
 public class Stack01 {
 
     /*
-     * Stacks are abstract data types and not data structres .
+     * Stacks are abstract data types and not data structures .
      * They can be implemented using linkedLists and arrays
      * LIFO -- last in first out --- methods push pop peek
      * Last elemnet is the head node --> have access to all the elements
-     * Java memory has stacks ,
+     *  Java memory has stacks ,
      *  Stacks store functions calls called frames  and local variables -- fast access ram and no fragmentation
      *  Graph algos rely heavuliy on stacks DFS is implemented using stacks
      *  find Eulerian cycles in a G(V,E) graph
@@ -40,6 +41,8 @@ public class Stack01 {
        {
            System.out.println(stringStack.pop());
        }
+
+
 
 
 

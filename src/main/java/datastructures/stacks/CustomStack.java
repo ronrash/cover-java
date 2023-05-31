@@ -15,13 +15,13 @@ public class CustomStack<T extends Comparable<T>> {
         count++;
     }
 
-    private T pop() {
+    private Object pop() {
         if(this.isEmpty())
         {
             System.out.println("Stack is empty ");
             return null;
         }
-        T data = headNode.getData();
+        Object data = headNode.getData();
         headNode = headNode.getNextNode();
         count--;
         return data;
@@ -71,14 +71,14 @@ public class CustomStack<T extends Comparable<T>> {
 
 class Node<T extends Comparable<T>> {
 
-    private T data;
-    private Node<T> nextNode;
+    private Object data;
+    private Node nextNode;
 
     public Node(final T data) {
         this.data = data;
     }
 
-    public T getData() {
+    public Object getData() {
         return data;
     }
 
@@ -86,7 +86,7 @@ class Node<T extends Comparable<T>> {
         this.data = data;
     }
 
-    public Node<T> getNextNode() {
+    public Node getNextNode() {
         return nextNode;
     }
 

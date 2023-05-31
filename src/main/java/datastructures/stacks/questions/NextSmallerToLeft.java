@@ -1,40 +1,39 @@
 package datastructures.stacks.questions;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
+
+import java.util.Arrays;
+import java.util.Stack;
 
 public class NextSmallerToLeft {
     public static void main(String[] args) {
-        int[] array = new int[]{1,3,2,4};
-        // output              [-1,1,1,2]
-        //
-        int [] aray = new int[]{6,2,5,4,5,1,6};
+        int[] a = new int[]{1, 3, 2, 4};// [-1,1,1,2]
 
-        Deque<Integer> stack = new ArrayDeque<>();
-        Deque<Integer> deque = new ArrayDeque<>();
+        nextSmallerToLeft(a);
 
-        // stack is used to keep track of the left side of the array or the right side of the array
-        // we are going from letf to right checking smaller to current array and insetring in the stack
-        for (final int j : aray) {
+
+    }
+
+    private static void nextSmallerToLeft(final int[] a) {
+        Stack<Integer> stack = new Stack<>();
+        int output[] = new int[a.length];
+        int k = 0;
+        for (int i = 0; i < a.length; i++) {
             if (stack.isEmpty()) {
-                deque.addLast(-1);
-            } else if (j > stack.peekFirst()) {
-                deque.addLast(stack.peekFirst());
-            } else if (stack.peekFirst() > j) {
-                // unless we find the greatest elemnt in the left side of a[i] current element we keep popping
-                while (!stack.isEmpty() && stack.peekFirst() > j) {
-                    stack.removeFirst();
+                output[k++] = -1;
+            } else if (a[i] > stack.peek()) {
+                output[k++] = stack.peek();
+            } else if (a[i] < stack.peek()) {
+                while (!stack.isEmpty() && a[i] < stack.peek()) {
+                    stack.pop();
                 }
-                if (stack.isEmpty()) {
-                    deque.addLast(-1);
-                } else {
-                    deque.addLast(stack.peekFirst());
+                if (stack.isEmpty())
+                    output[k++] = -1;
+                else {
+                    output[k++] = stack.peek();
                 }
             }
-            stack.addFirst(j);
+            stack.push(a[i]);
         }
-
-
-        System.out.println("list elements ie output ::"+deque);
+        System.out.println(Arrays.toString(output));
     }
 }

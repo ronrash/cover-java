@@ -11,18 +11,6 @@ o
 +src/main/java/strings/JavaStringSample.java,6/3/63e53000fe4fe0a453c98b993d8138351a36728d
 W
 'src/main/java/strings/StringSample.java,7/c/7c3f9e89e60c23cc85c065878ac6b262c6250a33
-d
-4src/main/java/datastructures/stacks/CustomStack.java,f/a/fa30f94f37255dcaebc36246073a2f679b6ad4fb
-v
-Fsrc/main/java/datastructures/stacks/questions/NextGreatestToRight.java,b/e/be4a5cdbcccffbaea70a975f143aeb665e59cabf
-x
-Hsrc/main/java/datastructures/stacks/questions/NearestSmallerToRight.java,e/6/e68c0502af006b47fb0ccd611387fa2643a0eda9
-t
-Dsrc/main/java/datastructures/stacks/questions/NextSmallerToLeft.java,f/6/f6ce1cfaae6f035a779e896854375a8681890f74
-s
-Csrc/main/java/datastructures/stacks/questions/StockSpanProblem.java,e/4/e4f3dca76c9d8797ae06e003fd407dbc373a13e7
-o
-?src/main/java/datastructures/stacks/questions/MaxHistogram.java,6/0/60d927c411cd84261f6fe16207ee27b44956ee7d
 Y
 )src/main/java/TestingCode/SampleCode.java,5/8/58707c62c128f7767a21d74c82ca4af6f7a81bf1
 o
@@ -75,8 +63,6 @@ Xsrc/main/java/designpatterns/creational/singleton/solid/dip/after/ProductReposi
 Usrc/main/java/designpatterns/creational/singleton/solid/dip/after/ProductCatalog.java,b/0/b04192976521d26107e191c02b3de50f23db3161
 …
 Usrc/main/java/designpatterns/creational/singleton/solid/dip/after/ProductFactory.java,b/5/b5bf8f5225de729291978faaff325a751e96e800
-v
-Fsrc/main/java/com/corejava/corejava/inheritance/challengeOne/Main.java,c/2/c27c853471c572426c8ea9d457a5b1d2082654d0
 k
 ;src/main/java/com/corejava/corejava/methods/MethodOver.java,6/7/6743f8f752cedee0cdae826e812debf4a5da9b35
 x
@@ -85,8 +71,6 @@ y
 Isrc/main/java/com/corejava/corejava/oops/abstraction/SampleAbstract2.java,4/a/4a7c8be101e4fee3d54f393cfc3de559e12d6660
 n
 >src/main/java/com/corejava/corejava/methods/Samle01Method.java,3/9/397901ebc7f2aa0e2857284b3791f4e724a59312
-m
-=src/main/java/com/corejava/corejava/oops/access/Sample01.java,f/7/f7d64b5a5c57a733f9865ac208d45ecc3b839d5b
 r
 Bsrc/main/java/com/corejava/corejava/datatype/SampleBigInteger.java,2/f/2f1e1ed890378cc01548e5ca7709e55718fb0027
 q
@@ -191,8 +175,6 @@ P
  kubernetes/kubernetes-deployment,3/d/3d2e7226b371096b43a9bf017f7d640cac1ab4f0
 <
 coreJava.txt,f/6/f6577474b329e30df15076a999cc687e0931764d
-C
-CircuitBreakers.txt,c/2/c2c6179fd999bad39d70e782f61eb65ae8454d4b
 7
 abc.txt,0/6/060e4b697d1846e3a7bec5a486b38a177b0542d4
 O
@@ -243,8 +225,6 @@ d
 Ksrc/main/java/datastructures/Trees/Questions/AllQuestionsInBinaryTree2.java,7/c/7cf3ab2f4e4991c0752d97a48d78c74821d5132f
 h
 8src/main/java/com/corejava/corejava/stack/StackMain.java,e/4/e4dc7d218a69b20c5bf81d82164f3642c6112402
-h
-8src/main/java/datastructures/stacks/StackUsingArray.java,b/9/b9aae16f5f7beb0279b67f0f383173d9b12b254b
 l
 <src/main/java/datastructures/binary/BinaryAgnosticOrder.java,f/b/fbf4d7e9a28eba2dfe51785ceb0261420b50dce6
 :
@@ -258,14 +238,6 @@ k
 ;src/main/java/datastructures/binary/BinarySearch5Floor.java,1/8/18f51a66e3bad44e27f388ce3bfc481fca96b16b
 l
 <src/main/java/com/corejava/reflections/ReflectionSample.java,6/5/65138178f5981237639141abf81df53a89b19507
-f
-6src/main/java/datastructures/stacks/CustomStack02.java,8/2/82d492db371683e6a9aca45368ec49103c8cb979
-q
-Asrc/main/java/datastructures/stacks/StackUsingArrayExtension.java,e/f/efd9eb23cb7f779233d71682e4f6441e2032743c
-u
-Esrc/main/java/datastructures/stacks/questions/NextGreatestToLeft.java,7/c/7c2306f909f6dd50061be9c1256689e0d12e9c50
-s
-Csrc/main/java/datastructures/stacks/questions/MaxAreaHistogram.java,c/f/cf98cb5a876e6cd59de5526e9907b6bba615ea62
 ‚
 Rsrc/main/java/datastructures/linkedlists/implementation/doublelinkedlist/Node.java,d/a/da11488f6e9b84d3a70787303949e361f2846633
 r
@@ -302,8 +274,6 @@ t
 Dsrc/main/java/datastructures/sorting/divideAndConquer/QuickSort.java,0/3/03679bcfe9cd75815292c1eba4c4f703616a1150
 €
 Psrc/main/java/datastructures/leetcode/sortingQuestions/SortAndFindTheMedian.java,0/a/0ad9f595c6c08150819604ae029d93282a2fe1a9
-`
-0src/main/java/datastructures/stacks/Stack01.java,c/c/cce24cf3c19bdc625910d18b8228e98396e8ddc7
 }
 Msrc/main/java/com/corejava/java8/streams/collect/StreamCollectingAndThen.java,d/6/d64a1c94162b95a12186edc15aabf05749937d55
 u
@@ -394,10 +364,6 @@ Csrc/main/java/datastructures/slidingWindow/fixed/SumOfKNUmbers.java,f/a/faeecc
 Vsrc/main/java/datastructures/slidingWindow/variable/SubArraySumForNegativeNumbers.java,9/2/925c57268a4500e58481c25d7d1f87588fcf32ea
 A
 bash commands.txt,c/b/cb7ee5c7f124a8ec4d867a553254477e9325b8dc
-ˆ
-Xsrc/main/java/com/corejava/corejava/comparableandcomparator/ComparableAndComparator.java,7/f/7f9244f8eb66d61f7ab99d509145212490c88c60
-d
-4src/main/java/datastructures/queues/DeckExample.java,1/f/1fc8e81eb1bd13c2bb0962377862fd1d2e3017b1
 …
 Usrc/main/java/com/corejava/corejava/comparableandcomparator/assignmet/assignment.java,2/e/2ec0cbe0e94e3ac8e612e375575b6a20357adb50
 u
@@ -410,26 +376,16 @@ j
 :src/main/java/com/corejava/java8/streams/myComparator.java,7/7/77a1405927c568cce13f382d5bf02dd3f9184464
 y
 Isrc/main/java/datastructures/recursion/questions/RecursionPalindrome.java,4/3/4323123c74f06659bd6fefa15a460a5a7d85e5e9
-N
-kubernetes/kk-notes/kube-notes,4/1/41ae2bb4a7d6a61317e2055b88ac76ac00e5f8c8
 l
 <src/main/java/com/corejava/java8/streams/StreamsSorting.java,6/7/678fd82f403ec54b50e4c7a09d7b16744f7611c6
 O
 kubernetes/deployment-kube.yaml,f/3/f3b281a2545c54761a82d3a5b5658bae3ff1d046
 H
 kubernetes/kube-commands,3/d/3daf72219fad6736c0ab22abf25289d1662ece79
-k
-;src/main/java/datastructures/arrays/SampleArrayMethods.java,8/9/899fe236bfe52690c72cb6cf0993a8b415d6279a
 E
 sql/primaryandforeign,6/d/6d6a0baa7912255e9032da9324cf7e0f3690887b
 <
 sql/subquery,7/e/7ec9d7b1c866bc9e7de9abec32d3f609b3d9dd49
-G
-docker-notes/docker.txt,5/7/577cbf12418f541674fbcc2cba5a1cd5b8aa11dd
-L
-docker-notes/docker-postgres,f/7/f7a2285911b466b038418d88a50fc0d533f73736
-L
-docker-notes/docker-commands,7/f/7f256d9f75eed225fe50c178f59fc3b7ae77f550
 v
 Fsrc/main/java/com/corejava/corejava/collectionss/lists/ListSample.java,e/7/e783bd660beb51857dc92a9d50a3a9b3ac1d0817
 9
@@ -438,7 +394,3 @@ H
 sql/aggregatesandgroupby,d/e/de3f23f890ff24fb0bc20f68e166161c894a6887
 H
 projects/project-modules,c/2/c21741106f29c6b1d4ec03005bf9a729988f4c9f
-ƒ
-Ssrc/main/java/datastructures/arrays/twopointerQuestions/ContainerWithMostWater.java,5/e/5e43e852fc6883a91657ba67c0b263c55d18c472
-x
-Hsrc/main/java/datastructures/arrays/twopointerQuestions/MovingZeros.java,2/4/24beb9c2503e7b30858edfe31a24225e4615cc24

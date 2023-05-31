@@ -2,8 +2,10 @@ package datastructures.stacks.questions;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Deque;
 import java.util.List;
+import java.util.Stack;
 
 public class NextGreatestToLeft {
 
@@ -17,19 +19,50 @@ public class NextGreatestToLeft {
 //    The usual push and pop operations are provided, as well as a method to peek at the top item on the stack,
 //    a method to test for whether the stack is empty, and a method to search the stack for an item and discover how far it is from the top.
 //    When a stack is first created, it contains no items.
-//    A more complete and consistent set of LIFO stack operations is provided by the Deque interface and its implementations,
+//    A more complete and consistent set of LIFO stack operations is provided by the SampleDeque interface and its implementations,
 //    which should be used in preference to this class. For example:
-//    Deque<Integer> stack = new ArrayDeque<Integer>();
+//    SampleDeque<Integer> stack = new ArrayDeque<Integer>();
 
 //    Stack Method
-//    Equivalent Deque Method
+//    Equivalent SampleDeque Method
 //    push(e) addFirst(e)
 //    pop() removeFirst()
 //    peek() peekFirst()
 
     public static void main(String[] args) {
-        int[] array = new int[]{1,3,2,4};
+        int[] array = new int[]{10, 3, 2, 4};//[-1,10,3,10]
 
+
+        nextGreaterToLeft(array);
+        nextGreaterToLeftNew(array);
+    }
+
+    private static void nextGreaterToLeftNew(final int[] a) {
+        Stack<Integer> stack = new Stack<>();
+        int output[] = new int[a.length];
+        int k = 0;
+        for (int i = 0; i < a.length; i++) {
+
+            if (stack.isEmpty()) {
+                output[k++] = -1;
+            } else if (a[i] < stack.peek()) {
+                output[k++] = stack.peek();
+            } else if (a[i] > stack.peek()) {
+                while (!stack.isEmpty() && a[i] > stack.peek()) {
+                    stack.pop();
+                }
+                if (stack.isEmpty()) {
+                    output[k++] = -1;
+                } else {
+                    output[k++] = stack.peek();
+                }
+            }
+            stack.push(a[i]);
+        }
+        System.out.println(Arrays.toString(output));
+    }
+
+    private static void nextGreaterToLeft(final int[] array) {
         Deque<Integer> stack = new ArrayDeque<>();
         List<Integer> list = new ArrayList<>();
 
@@ -53,8 +86,6 @@ public class NextGreatestToLeft {
             }
             stack.addFirst(j);
         }
-
-
-        System.out.println("list elements ie output ::"+list);
+        System.out.println(list);
     }
 }
