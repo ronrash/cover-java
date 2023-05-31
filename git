@@ -18,6 +18,9 @@ git checkout -b feature-new --> create and checkout to the new branch
 git branch -d feature-a --> -d to delete a branch
 
 
+// changes
+
+
 
 git restore --staged filename
 git log
