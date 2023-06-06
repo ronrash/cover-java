@@ -10,10 +10,10 @@ public interface StudentUtility {
 
     static List<Student> getStudentList() {
         Student s6 = null;
-        Student s7 = new Student("kayak", 30, 99, "null", null, null);
-        Student s8 = new Student("kayak", 30, 99, "null", null,
+        Student s7 = new Student("johnny", 30, 99, "null", null, null);
+        Student s8 = new Student("mahesh", 30, 99, "null", null,
                 Collections.singletonList(new Address("CR0 1HB", "", "")));
-        Student s9 = new Student("kayak", 30, 99, "null", Arrays.asList("cricket", "chess", "ladkibaazi"),
+        Student s9 = new Student("rajesh", 30, 99, "null", Arrays.asList("cricket", "chess", "ladkibaazi"),
                 Collections.singletonList(new Address("CR0 1HB", "", "")));
         Student s1 = new Student("rahul", 30, 90, Arrays.asList("cricket", "football", "gaming"),"CS");
         Student s2 = new Student("shamir", 31, 89, Arrays.asList("cricket", "chess", "ladkibaazi"),"CS");

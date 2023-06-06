@@ -79,6 +79,9 @@ kubectl delete all -l app=hello-world-rest-api
 kubectl get svc --watch
 kubectl diff -f deployment.yaml
 kubectl delete deployment hello-world-rest-api
+# to view the deployemnents
+# to delete the deployments
+kubectl get deployments
 kubectl get all -o wide
 kubectl delete replicaset.apps/hello-world-rest-api-797dd4b5dc
 

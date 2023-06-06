@@ -24,7 +24,10 @@ public class MaxAreaHistogram {
 
         int[] nearestSmallestToRight = nearestSmallestToRight(a);
 
+        System.out.println("nearest smalles to right"+Arrays.toString(nearestSmallestToRight));
+
         int[] nearestSmallestToleft = nearestSmallestToleft(a);
+        System.out.println("nearest smalles to ;etf"+Arrays.toString(nearestSmallestToleft));
         int k=0;
         for(int i=0;i<nearestSmallestToRight.length;i++)
         {
@@ -35,10 +38,6 @@ public class MaxAreaHistogram {
         // max in an array --fasterst way
 
         // loop thru both the length and width multiply them and find the max
-        for(int i=0;i<a.length;i++)
-        {
-
-        }
 
     }
 
