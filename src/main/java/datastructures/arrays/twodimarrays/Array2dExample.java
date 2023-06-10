@@ -49,5 +49,11 @@ public class Array2dExample {
         System.out.println("diagnol sum is "+diagnolSum);
         System.out.println("reversediagnolSum sum is "+reversediagnolSum);
         // give me sum of diagnols
+        int diagSum=0;
+        for(int i=0;i<list.size();i++)
+        {
+            diagSum =diagSum+list.get(i).get(i);
+        }
+        System.out.println("diagnol sum is "+diagSum);
     }
 }

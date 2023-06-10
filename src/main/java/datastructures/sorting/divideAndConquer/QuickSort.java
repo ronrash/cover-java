@@ -76,6 +76,8 @@ public class QuickSort {
        array[partitonIndex]=array[right];
        array[right]=temp;
 
+        System.out.println("every iteration  "+Arrays.toString(array));
+        System.out.println("index  "+partitonIndex);
        return partitonIndex;
     }
 
