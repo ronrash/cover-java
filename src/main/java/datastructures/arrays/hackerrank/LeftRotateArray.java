@@ -8,7 +8,7 @@ public class LeftRotateArray {
 
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
-        int d=4;
+        int d=2;
         System.out.println(leftRotate(d,list));
 
         // rotate an array left
