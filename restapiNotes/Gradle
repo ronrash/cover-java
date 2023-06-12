@@ -1,4 +1,5 @@
-Gradle is cross platform unlike maven which is only for java
+Gradle is cross platform unlike maven which is only for java ,, it can be used for c c++,python javascript
+ It uses a Groovy-based domain-specific language (DSL) or Kotlin for build script configuration,
 Speed is faster as compared to maven uses cache and only new compiled files
 
 Build.gradle -- dependencies
@@ -30,4 +31,54 @@ gradle tasks: This command lists all available tasks in the project, along with 
 
 gradle help: This command shows the help information for Gradle, including the available command-line options and some common tasks.
 
-gradle wrapper: This command generates a Gradle wrapper script that allows you to run Gradle builds without installing Gradle on your system. The wrapper script downloads the required Gradle version automatically and uses it to execute the build.
+gradle wrapper: This command generates a Gradle wrapper script that allows you to run Gradle builds without installing Gradle on your system.
+ The wrapper script downloads the required Gradle version automatically and uses it to execute the build.
+
+ Different tasks in gradle
+ plugins {
+     id 'java'
+ }
+
+ // Configure project and dependencies
+ repositories {
+     jcenter()
+ }
+
+ dependencies {
+     testImplementation 'junit:junit:4.12'
+ }
+
+ // Define tasks
+ task test {
+     group = 'verification'
+     description = 'Runs unit tests'
+     test {
+         useJUnit()
+     }
+ }
+
+ task build {
+     group = 'build'
+     description = 'Builds the project'
+     dependsOn test
+     doLast {
+         // Perform additional build steps if needed
+         println 'Build completed'
+     }
+ }
+
+ task clean(type: Delete) {
+     group = 'build'
+     description = 'Cleans the project'
+     delete 'build'
+ }
+
+ task package(type: Zip) {
+     group = 'build'
+     description = 'Packages the project'
+     dependsOn build
+     from 'src/main'
+     archiveFileName = 'project.zip'
+     destinationDir = file('build')
+ }
+

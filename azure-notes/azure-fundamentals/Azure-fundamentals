@@ -1,0 +1,65 @@
+Resource --> virtual servers ,db
+ResourceGrps-- > logical grouping of these resources
+
+Subscriptions-- billing unit with azure ,, ca
+Types
+pay as u go model
+enterprise
+free credits for startups
+separate subscriptions within an organization like sales,It finance
+
+management groups -- different subscriptions or resources for different groups like qa dev application hr finance
+
+----------------------------------------------------------------------
+Azure Compute services -- Execute the code in the cloud
+VMs,Aks,Aci(azure conatiner instance),App Services(web apps)
+
+Virtual Machine -- Infrastruture As Service Iaas  -- Aws EC2 -- its like ur  using ur local machine on cloud
+{no of cores ,cpu speed,ram size ,temp disk}
+
+VMss - Virtual Machine Scale Sets - LoadBalancer manages --> 2 or more vms with same configuration running the exact same code and directing traffic to thses
+Able to scale based on demand -- like 100 to 1000vms
+
+PAaS - Platform as service -
+You give ur code or package ur app and give to azure and they promise to run on whaever server configuration they are using in the background
+to run that but promise performance
+Its like abstraction to ur vms
+
+Aci
+Containers -- ur code is an image and basically it can be copied into ur dev or staging or prod as it is
+and the deployement processs is easier.
+Container instances are a simpler form and you cannot scale up many machines
+
+Aks -- runs on a cluster of servers
+
+----------------------------------------------------------------------
+
+Azure Networking services
+Virtual Network -- Computers communicating with each other located on same network
+
+Subnet -- sub division of these networks {these subnets have diff security settings for frontend servers,backedn server,database servers}
+It is a way of dividing ur own virtual network into security zones
+
+Vpn - connecting ur home network to ur office network
+
+Express Route - very fast and private . Eg when using azure services u can connect ur corporate network to these azure networks
+whihc are highly encrypted
+
+Dns -  take ur domain name and host it on azure
+
+Monitoring Management tools --> Azure Monitor Network Watcher And Express Route
+
+
+----------------------------------------------------------------------
+Virtual Machines - important key concepts
+images are like operating systems
+VM famiy -- Choose the right hardware
+Vm Size -- cpus ram
+Disks
+
+Script for installing a nginx server
+#!/bin/sh
+sudo su -- becoming a super user
+apt-get -y update
+apt-get -y install nginx
+echo "Welcome to in28minutes $(hostname)" > /var/www/html/index.html

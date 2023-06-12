@@ -80,4 +80,26 @@ public class BuySellStocks {
 
         return maxProfit<0?0:maxProfit;
     }
+
+    private void buySellStocksNormal(final int[] a){
+
+        if(a.length==0)
+        {
+            System.out.println("");
+        }
+
+
+        int maxProfit = Integer.MIN_VALUE;
+        int i =0;
+        for(int j=1;j<a.length;j++)
+        {
+
+            int diff = a[j]-a[i];
+            maxProfit=Math.max(diff,maxProfit);
+
+            if(a[j]>a[i])
+                i=j;
+        }
+        System.out.println(maxProfit);
+    }
 }

@@ -1,0 +1,4 @@
+Lombok is a Java library that helps reduce boilerplate code by providing annotations to automatically
+generate common code structures such as getters, setters, constructors, equals/hashCode methods, and more.
+
+It provides a level of abstraction and hence the developer should be aware of lombok and ts generated code to understand the underlying implementation.
