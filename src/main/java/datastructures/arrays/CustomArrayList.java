@@ -1,5 +1,7 @@
 package datastructures.arrays;
 
+import java.util.Arrays;
+
 public class CustomArrayList<T> {
 
     // add
@@ -53,7 +55,7 @@ public class CustomArrayList<T> {
         int k=0;
         for(int i=0;i< array.length;i++)
         {
-            if(!(array[i]==array[index]))
+            if(i!=index)
                 tempArray[k++]=array[i];
 
         }
@@ -78,6 +80,6 @@ public class CustomArrayList<T> {
         System.out.println(customArrayList.get(4));
 
          customArrayList.remove(4);
-        System.out.println(customArrayList);
+
     }
 }

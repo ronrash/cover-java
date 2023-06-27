@@ -35,11 +35,12 @@ public class SampleAbstract {
 }
 
 abstract class Sam{
-     final String name="hello";
+     final String name="hello"; // a constant
     static final String adderss="chatsworth";
+    protected int age=40; // subclasses can access
 
-    public  final int calSum(){
-        return 10;
+    public  final void calSum(){
+        System.out.println("value is 10");;
     }
 }
 
@@ -48,8 +49,10 @@ abstract class Sam2 extends Sam{} // an abstarct class can extend another abstra
 class SamAdd extends Sam{
     public static void main(String[] args) {
         SamAdd obj = new SamAdd();
+        System.out.println(obj.age);
         System.out.println(obj.name);
         System.out.println(Sam.adderss);
+        obj.calSum();
     }
 }
 

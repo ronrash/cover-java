@@ -28,7 +28,7 @@ public class CycleLinkedList {
         final ListNode headNode = ls1.getHeadNode();
             ListNode fastNode = headNode;
             ListNode slowNode = headNode;
-            while(fastNode!=null && fastNode.nextNode!=null)
+            while(slowNode.nextNode!=null && fastNode.nextNode.nextNode!=null)
             {
                 slowNode=slowNode.nextNode;
                 fastNode=fastNode.nextNode.nextNode;

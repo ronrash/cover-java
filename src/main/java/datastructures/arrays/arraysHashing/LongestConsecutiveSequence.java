@@ -6,10 +6,8 @@ import java.util.Set;
 public class LongestConsecutiveSequence {
     public static void main(String[] args) {
 
+        //
         int [] a= {0,3,7,2,5,8,4,6,0,1}; // [1,2,3,4] [100] [200]
-
-
-        longestConsecutiveSequence(a);
         longestConsecutiveSequenceBetterSolution(a);
 
     }
@@ -42,37 +40,6 @@ public class LongestConsecutiveSequence {
             }
         }
         System.out.println(finalLength);
-    }
-
-    private static int longestConsecutiveSequence(final int[] a) {
-
-        // put it all in a set
-        Set<Integer> set = new HashSet<>();
-        for(Integer i :a)
-        {
-          set.add(i);
-        }
-        int finalAnswer=0;
-        for(int i=0;i<a.length;i++)
-        {
-            if(!set.contains(a[i]-1)) // then this is the starting of a new sequence
-            {
-                int j=1;
-                int length=1;
-                int setVaueTobeRemoved=a[i];
-                while(set.contains(setVaueTobeRemoved+j))
-                {
-
-                    length++;
-                    j++;
-                    set.remove(a[i]+1);
-                }
-                set.remove(a[i]);
-              finalAnswer= Math.max(finalAnswer, length);
-            }
-        }
-        System.out.println(finalAnswer);
-        return finalAnswer;
     }
 
     //        Explanation:

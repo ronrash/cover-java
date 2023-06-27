@@ -2,13 +2,16 @@ package datastructures.recursion;
 
 public class RecursionSample {
 
+    // rescursion is a method where the solution to a bigger problem depends upon smaller instances of the same problem
+    // we have to define a base condition to avoid infinite loops
+    // every problem can be solved using iteration or recursion
     // recursion is a function calling itself
     // uses space
     // space complexity is not constant because every function call takes up memory and they are recursive
 
     //
     public static void main(String[] args) {
-        int n=4;
+        int n=8;
         int ans = fib(n);
         System.out.println(ans);
 

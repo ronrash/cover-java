@@ -1,0 +1,23 @@
+TestContainers -- Test conatiners are java library that supports
+
+
+
+
+// Testing the web/presentation layer using
+The @WebMvcTest annotation in Spring Boot is used for testing a specific controller by loading only the necessary components for testing the web layer.
+MockMvc and @MockBean are two important components in Spring Boot testing that facilitate unit testing of controllers.
+mockMvc -  class provided by spring which allows us to simulate http request and response for our controller
+mockBean - helps us to mock the servic class which itself has a lot of dependencies whihc does not need to be mocked ,,so that we can test the controller in isolations
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @MockBean
+    private PersonService personService;
+
+// Testing the service layer
+In the example above, @ExtendWith(MockitoExtension.class) enables Mockito's extension for the MyTestClass.
+It allows the use of annotations such as @Mock to create mock objects and @InjectMocks to inject the mocks into the class under test (MyClass).
+
+With @ExtendWith(MockitoExtension.class) in place,
+ you can use Mockito's features like mocking dependencies, defining mock behaviors, and verifying interactions within your test methods.
