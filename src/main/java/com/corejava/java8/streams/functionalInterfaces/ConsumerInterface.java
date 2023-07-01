@@ -7,6 +7,7 @@ public class ConsumerInterface {
 
     // functional Interface 4
     // 1. Consumer Interface
+
     //
 
   static   Consumer<String> stringConsumer =(s)->{

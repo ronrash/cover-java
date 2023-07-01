@@ -1,0 +1,11 @@
+IAM - Identiy And Access Mangement
+Iam is a global service - iam user is a root user with too many permisssions and we need to makes sure  it does not have many permissions and hence
+we create users -- groups users attach policies to the user or groups
+policy attached to the group is inherited by the users in that group
+
+
+Protect the users and group -- 1.PaaswordPolicy {paswword length/ char/alphanumeric} 2.MFA
+MultiFactorAuthentication
+Virtual MFA DEVICE google authenticator
+
+
