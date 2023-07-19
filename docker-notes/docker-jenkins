@@ -18,8 +18,10 @@ services:
       - "PWD/jenkins-data:/var/jenkins_home" // all the data of jenkins will be copied from docker to jenkins data folder of the host machine
     networks:  // netwrok where they will run
       - net
-networks:
+networks: // create a network
   net:
+
+s
 
 # run the docker logs -f <container-d > to see the initial admin password
 f80a21effc5c48fb89835eb7e23f139b
@@ -42,7 +44,8 @@ whoami --> returns jenkins
 # out put to a file
 echo "my name is $NAME" > /tmp/file.txt
 
-#createing a script file in the local folder
+#createing a script file in the local folder and connecting to the vms
+mkdir centos-dir
 
 #!/bin/bash
 

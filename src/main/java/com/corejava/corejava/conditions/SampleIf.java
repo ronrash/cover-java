@@ -1,6 +1,5 @@
 package com.corejava.corejava.conditions;
 
-import java.util.Scanner;
 
 public class SampleIf {
 
@@ -10,7 +9,7 @@ public class SampleIf {
 
 
       // condition(90);
-        condition(78);
+        condition(2);
       //  condition(70);
     }
 

@@ -27,10 +27,11 @@ public class ComparableAndComparator {
     // has compare(Object object1,Object object2 )
 
     public static void main(String[] args) {
-//        List<Integer> list = Arrays.asList(2, 4, 5, 1);
-//        List<String> stringList = Arrays.asList("b", "d", "a", "c");
-//        Collections.sort(list);
-//        Collections.sort(stringList);
+        // Integer and String class implement Comparable interface
+        List<Integer> integerList = Arrays.asList(2, 4, 5, 1);
+        List<String> stringList = Arrays.asList("b", "d", "a", "c");
+        Collections.sort(integerList); // o/p --> 1,2,4,5
+        Collections.sort(stringList); // o/p --> a,b,c,d
 //        Util.sortList(list);
 //        Util.sortList(stringList);
 
@@ -46,6 +47,7 @@ public class ComparableAndComparator {
 
         // default natural sorting order
         Collections.sort(studentList);
+        System.out.println(studentList);
 
         // customized sorting
         System.out.println("--- reverse sort based on name---");
@@ -73,6 +75,7 @@ public class ComparableAndComparator {
 
         // here using the Comparator we can sort based on id or name
         Collections.sort(empList, new IdComparator());
+        System.out.println(empList);
         // now sort based on the name
         Collections.sort(empList, new NameComparator());
 
@@ -87,7 +90,7 @@ class IdComparator implements Comparator<Emp> {
         // if name
 
         // if by id
-        return emp1.getId() > emp2.getId() ? 1 : emp1.getId() < emp2.getId() ? -1 : 0;
+        return Integer.compare(emp1.getId(), emp2.getId());
 
     }
 }

@@ -11,3 +11,36 @@ sets the password for the default "postgres" user as "postgres," and runs the co
 > docker run --name postgres-container -p 5439:5432 -e POSTGRES_PASSWORD=postgres -d postgres
 
 
+version: '3'
+services:
+  db:
+   image: postgres
+   restart: always
+   ports:
+   - "5439:5432"
+
+
+version: '3'
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5439:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres_db_new
+    volumes:
+      - "$PWD/postgres_data:/var/lib/postgresql/data // storing the entire data in here
+    networks:
+    net:
+
+volumes:
+  postgres_data: // create the folder
+networks:
+ net:
+
+
+docker-compose up -d // runs the docker comspose in the background
+

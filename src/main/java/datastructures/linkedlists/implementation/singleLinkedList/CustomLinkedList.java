@@ -22,9 +22,9 @@ public class CustomLinkedList<T extends Comparable<T>> implements List<T> {
     }
 
     private void insertAtBeginning(final T data) {
-        Node currentNode = new Node<>(data);
-        currentNode.setNextNode(headNode);
-        headNode = currentNode;
+        Node newNode = new Node<>(data);
+        newNode.setNextNode(headNode);
+        headNode = newNode;
     }
 
     private void insertAtEnd(final T data) {

@@ -16,11 +16,29 @@ public class MergeTowLinkedList {
         ls2.add(9);
         ls2.add(10);
         ls2.add(11);
-        mergeTwoLinkedList(l1,l2);
+        mergeTwoLinkedList(ls1,ls2);
     }
 
     private static void mergeTwoLinkedList(final CustomLinkedList l1, final CustomLinkedList l2) {
 
         // compare the elements of the linked list whichever one is greater put in the another custom list
+        CustomLinkedList l3 = new CustomLinkedList();
+        while(l1!=null && l2!=null)
+        {
+            if(l1.getHeadNode().getValue() <= l2.getHeadNode().getValue())
+            {
+                l1.getHeadNode().nextNode=l1.getHeadNode().getNextNode();
+                l3.add(l1.getHeadNode().getValue());
+            }
+            else{
+                l2.getHeadNode().nextNode=l1.getHeadNode().getNextNode();
+                l3.add(l2.getHeadNode().getValue());
+            }
+
+        }
+        while(l1.getHeadNode().getNextNode()!=null)
+        {
+            l3.add(l1.getHeadNode().getValue());
+        }
     }
 }

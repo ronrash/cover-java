@@ -16,11 +16,11 @@ public class ThreadPool {
      *   Callable has call method ,, return type is object and We can hold that using future
      *
      *   ExecutorService is good as we dont have to create and wait on the threads
-     *    Problem with executoService is that it still blocks -->> i,e it has to wait
+     *   Problem with executorService is that it still blocks -->> i,e it has to wait
      *   When we use get from callable we can use get(1.TimeUnit) --> but if this time lapses we will not  get the result
      *   Secondly we don not have a proper way to combine the furture
      *
-     *    Fork/JOin -- is an extension of executorService  is designed to achieve  data parallelism --works recursively
+     *   Fork/Join -- is an extension of executorService  is designed to achieve  data parallelism --works recursively
      *   ExecutorService --  is designed to achieve  task based  parallelism
      *
      * */
@@ -38,16 +38,16 @@ public class ThreadPool {
 //        tasks.stream()
 //                .forEachOrdered(task -> service.submit(task));
 
-        final List<NewTask> newTaskList = Arrays.asList(new NewTask(2),
-                new NewTask(3),
-                new NewTask(4)
+        final List<NewTask> newTaskList = Arrays.asList(new NewTask(10),
+                new NewTask(5),
+                new NewTask(3)
         );
-        ExecutorService service = Executors.newFixedThreadPool(3);
+        ExecutorService service = Executors.newFixedThreadPool(2);
         newTaskList.stream().forEach(newTask ->
                 {
                     final Future future = service.submit(newTask);
                     try {
-                        System.out.println(future.get());
+                        System.out.println("task number is "+newTask.num+" returns value : "+future.get());
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     } catch (ExecutionException e) {
@@ -57,6 +57,7 @@ public class ThreadPool {
                 }
 
         );
+        // shut the executor service
         service.shutdown();
     }
 }

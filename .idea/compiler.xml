@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="java-res" />
-        <module name="javares" />
         <module name="streamsss" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="react" target="9" />
+    </bytecodeTargetLevel>
   </component>
 </project>
