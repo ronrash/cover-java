@@ -38,11 +38,11 @@ public class ThreadPool {
 //        tasks.stream()
 //                .forEachOrdered(task -> service.submit(task));
 
-        final List<NewTask> newTaskList = Arrays.asList(new NewTask(10),
-                new NewTask(5),
-                new NewTask(3)
+        final List<NewTask> newTaskList = Arrays.asList(new NewTask("payment",10),
+                new NewTask("shopping",5),
+                new NewTask("registartion",3)
         );
-        ExecutorService service = Executors.newFixedThreadPool(2);
+        ExecutorService service = Executors.newFixedThreadPool(2); // the exec
         newTaskList.stream().forEach(newTask ->
                 {
                     final Future future = service.submit(newTask);
@@ -87,7 +87,9 @@ class NewTask implements Callable {
 
     String name;
     int num;
-    public NewTask(Integer num) {
+
+    public NewTask(final String name, final int num) {
+        this.name = name;
         this.num = num;
     }
 

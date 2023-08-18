@@ -13,7 +13,7 @@ public class Processor {
     public void producer() throws InterruptedException {
 
 
-        synchronized (lock) {
+        synchronized (lock) { // lock of this object
             while (true) {
                 if (list.size() == UPPER_LIMIT) {
                     // list is full then it has to wait for the consumer to be free

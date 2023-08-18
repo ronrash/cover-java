@@ -21,6 +21,8 @@ public class SampleInterface {
         // this default method is acessible to the class , we can also override this method
         exam.calculate();
 
+        System.out.println(Samp.calculateAdd(10,20)); // we can also access the staitc methods from an interface
+
         Test test = new Test();
         test.calculate(); // now this will call th eoverriden method
     }
@@ -29,11 +31,16 @@ public class SampleInterface {
 interface Samp{
     // data members are public static final
     // methods are public abstract
-     int age=10;
-     void m1();
+    public static final int age=10;
+     void m1(); // public and abstract
     // default methods
     default void calculate(){
         System.out.println("default cal method ");
+    }
+
+    static int calculateAdd(int x, int y)
+    {
+        return x+y;
     }
 }
 

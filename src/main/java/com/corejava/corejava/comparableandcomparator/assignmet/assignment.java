@@ -21,8 +21,10 @@ public class assignment {
 
      //   Collections.sort(studentList); throws a compiler error because Student object does not implement comparable interface
      // so we now have to use default comparator
-
-     Collections.sort(studentesList,(studentes1, studentes2)-> Integer.compare(studentes2.getMarks(), studentes1.getMarks()));
+    // list sort methd take in a comparator interface -- Integer class has a compare method similar to comrataor
+     studentesList.sort((studentes1, studentes2) -> Integer.compare(studentes2.getMarks(), studentes1.getMarks()));
+     Collections.sort(studentesList,(studentes1, studentes2)-> Double.compare(studentes2.getMarks(), studentes1.getMarks()));
+     studentesList.sort(Comparator.comparing(Studentes::getName));
         System.out.println(studentesList);
 
 

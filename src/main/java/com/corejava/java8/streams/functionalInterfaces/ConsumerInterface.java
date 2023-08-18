@@ -7,6 +7,8 @@ public class ConsumerInterface {
 
     // functional Interface 4
     // 1. Consumer Interface
+    // 2. Function Intefrace
+    // 3. predicate Interface
 
     //
 

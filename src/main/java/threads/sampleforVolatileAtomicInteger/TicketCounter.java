@@ -15,25 +15,23 @@ public class TicketCounter {
         Thread counter1 = new Thread(new TicketSeller());
         Thread counter2 = new Thread(new TicketSeller());
 
-        Thread counter3 = new Thread(new TicketSeller());
-        Thread counter4 = new Thread(new TicketSeller());
-
         // start two threads
         counter1.start();
         counter2.start();
-        counter3.start();
-        counter4.start();
 
         try{
             counter1.join();
             counter2.join();
-            counter3.join();
-            counter4.join();
+        if(ticketsSold.get()== 20)
+        {
+            // when the ticket count reaches 20  -- print sold out
+            System.out.println("Sold Out :: "+ticketsSold);
+        }
         }catch(InterruptedException e)
         {
             e.printStackTrace();
         }
-        System.out.println("ticket sold "+ ticketsSold.get());
+      //  System.out.println("ticket sold "+ ticketsSold.get());
       //  System.out.println("ticket sold "+ticketCounter);
     }
 
@@ -41,9 +39,9 @@ static class  TicketSeller implements Runnable{
 
     @Override
     public void run() {
-        for(int i=0;i<10;i++)
+        for(int i=0;i<100;i++)
         {
-            // increment the ticket count automtically
+            // increment the ticket count // meaning that the tickets are being sold and counter gets updated
           ticketsSold.incrementAndGet();
         //    ticketCounter++;
         }

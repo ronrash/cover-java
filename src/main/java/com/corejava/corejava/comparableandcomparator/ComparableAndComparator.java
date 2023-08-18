@@ -30,6 +30,7 @@ public class ComparableAndComparator {
         // Integer and String class implement Comparable interface
         List<Integer> integerList = Arrays.asList(2, 4, 5, 1);
         List<String> stringList = Arrays.asList("b", "d", "a", "c");
+        List<String> weekDays = Arrays.asList("b", "d", "a", "c");
         Collections.sort(integerList); // o/p --> 1,2,4,5
         Collections.sort(stringList); // o/p --> a,b,c,d
 //        Util.sortList(list);

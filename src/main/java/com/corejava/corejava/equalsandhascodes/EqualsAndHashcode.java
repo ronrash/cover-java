@@ -10,8 +10,8 @@ public class EqualsAndHashcode {
     * */
     public static void main(String[] args) {
 
-        Employee e1 = new Employee(1,"rohit"); // reference is pointng to different objects
-        Employee e2 = new Employee(1,"rohit");
+        Employee e1 = new Employee(1,"donny"); // reference is pointng to different objects
+        Employee e2 = new Employee(1,"donny");
 
         System.out.println("shaloow compare "+(e1==e2));
         System.out.println("shaloww compare "+(e1.equals(e2)));

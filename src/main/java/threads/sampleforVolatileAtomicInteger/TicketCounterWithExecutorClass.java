@@ -9,7 +9,7 @@ public class TicketCounterWithExecutorClass {
     private static AtomicInteger ticketsSold = new AtomicInteger(0);
 
     public static void main(String[] args) {
-        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(2);
+        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(20);
 
         fixedThreadPool.submit(new TicketSelling());
         fixedThreadPool.submit(new TicketSelling());
@@ -29,7 +29,7 @@ public class TicketCounterWithExecutorClass {
 
         @Override
         public void run() {
-            for(int i=0;i<10;i++)
+            for(int i=0;i<100;i++)
             {
                 // multiple threads access this atomic varibale but since this is atomic any transaction will be done in isolation
                 System.out.println(Thread.currentThread().getName());
