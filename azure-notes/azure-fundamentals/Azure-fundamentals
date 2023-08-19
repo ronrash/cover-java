@@ -1,14 +1,26 @@
 Resource --> virtual servers ,db
-ResourceGrps-- > logical grouping of these resources
+Generally resource indicate the region where they are created
+A resource is associated with only one subscription.
+ResourceGrps-- > logical grouping of these resources, they should have similar life cycle like deploy togethter and delete together
+Permissions are assigned at the reource level.
+These resource groups can be under a particalr subscrition
+A resource group is a logical container for Azure resources. Resource groups make the management of Azure resources easier.
+With a resource group, you can allow a user to manage all resources in the resource group, such as virtual machines, websites, and subnets.
+The permissions you apply to the resource group apply to all resources contained in the resource group.
 
 Subscriptions-- billing unit with azure ,, ca
 Types
+free 200 credits for first 30 days
 pay as u go model
 enterprise
 free credits for startups
+companies can have multiple subscriptions like dev Subscription , Qa Subscripton and HR Subscrition
 separate subscriptions within an organization like sales,It finance
-
 management groups -- different subscriptions or resources for different groups like qa dev application hr finance
+here are different payment options in Azure including pay-as-you-go (PAYG),
+Enterprise Agreement (EA), and Microsoft Customer Agreement (MCA) accounts. Your Azure costs are ‘per subscription’.
+You are charged monthly for all resources in a subscription. Therefore, to use different payment options per department,
+you will need to create a separate subscription per department. You can create multiple subscriptions in a single Azure Active Directory tenant.
 
 ----------------------------------------------------------------------
 Azure Compute services -- Execute the code in the cloud
@@ -35,6 +47,10 @@ Aks -- runs on a cluster of servers
 ----------------------------------------------------------------------
 
 Azure Networking services
+You can restrict traffic to multiple virtual networks in multiple subscriptions with a single Azure firewall.
+Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources.
+It’s a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
+Reference: https://learn.microsoft.com/en-us/azure/firewall/overview
 Virtual Network -- Computers communicating with each other located on same network
 
 Subnet -- sub division of these networks {these subnets have diff security settings for frontend servers,backedn server,database servers}
@@ -48,6 +64,10 @@ whihc are highly encrypted
 Dns -  take ur domain name and host it on azure
 
 Monitoring Management tools --> Azure Monitor Network Watcher And Express Route
+
+
+Azure App Service is a fully managed PaaS (Platform as a Service) service for developers.
+Reference: https://learn.microsoft.com/en-us/azure/app-service/overview
 
 
 ----------------------------------------------------------------------

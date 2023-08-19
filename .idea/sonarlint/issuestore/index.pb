@@ -520,8 +520,6 @@ G
 restapiNotes/SpringBoot,a/5/a545a25891e7dd6d0e82a5b13273caaa4dd354c8
 l
 <src/main/java/com/corejava/corejava/datatype/EnumSample.java,c/c/cc47507a23697f7c42344987212d8ce8be2d8a18
-s
-Csrc/main/java/com/corejava/corejava/datatype/CustomArrayList01.java,3/7/3798dda4b78d9303affe00fc34f5efdd5bcb5c83
 y
 Isrc/main/java/com/corejava/corejava/datatype/SampleAutoBoxingWrapper.java,5/d/5d753431d4c2a299c815e0e1f6356f0192f1378c
 r
