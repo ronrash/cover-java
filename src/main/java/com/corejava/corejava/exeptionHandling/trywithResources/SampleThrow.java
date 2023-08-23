@@ -16,7 +16,7 @@ public class SampleThrow {
 
         if(age<18)
         {
-            // program will terminate
+            // program will terminate becoz there is no catch block to catch this exception
             throw  new UserDefinedException("You cannot vote if your age is not above 18 ");
         }
     }
@@ -35,6 +35,7 @@ public class SampleThrow {
         }
         catch (UserDefinedException e)
         {
+            System.out.println("hello");
             System.out.println(e);
         }
         catch (RuntimeException e)

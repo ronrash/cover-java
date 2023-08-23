@@ -28,7 +28,7 @@ public class FixedSortingEnums {
         week.put("Saturday", 6);
 
    String s = "hello";
-   s.substring()
+
 
         // Use comparator for default sorting
 //        Comparator<String> weekComparator = new Comparator<String>() {

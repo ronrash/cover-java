@@ -3,6 +3,7 @@ package com.corejava.corejava.cleanCodesample;
 public class SampleJava17 {
 
     public static void main(String[] args) {
-        var name = "Vijay Rajput";
+        String name = "Vijay Rajput";
+        System.out.println(name);
     }
 }

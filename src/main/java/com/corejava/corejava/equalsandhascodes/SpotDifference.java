@@ -20,7 +20,7 @@ public class SpotDifference {
         WithEqualsAndHashCode obj5 = new WithEqualsAndHashCode(1,"dog");
         WithEqualsAndHashCode obj6 = new WithEqualsAndHashCode(1,"cat");
         WithEqualsAndHashCode obj7 = obj4;
-        System.out.println(obj4==obj5);// false
+        System.out.println(obj4==obj5);// false this checks refernce and not hascode
         System.out.println(obj4.hashCode()+" "+obj5.hashCode());
         System.out.println(obj4.equals(obj5)); // true // by equals method they are same becoz they have same contents
         System.out.println(obj4.equals(obj6)); // false

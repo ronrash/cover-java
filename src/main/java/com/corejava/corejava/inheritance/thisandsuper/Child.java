@@ -5,6 +5,7 @@ public class Child extends Parent{
 
     private String name;
     private String address;
+    private String email;
     public Child() {
         super();
         System.out.println("default constructor of child is called");

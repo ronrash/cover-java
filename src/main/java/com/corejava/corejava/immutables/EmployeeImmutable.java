@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public final class EmployeeImmutable {
-    //An object is immutable if its state cannot be changed
+    //An object is immutable if its state cannot be changed mmutable objects are thread-safe, as they cannot be modified concurrently by multiple threads.
     // Wrapper classes are immutable String is immutable
     // Mostly used in concurrent applicatuons ,bcz their state cannot be changed by thread interference
     // fprivateinal so that this class cannot be extended
@@ -72,20 +72,25 @@ public final class EmployeeImmutable {
     public static void main(String[] args) {
         List<String> stringList = new ArrayList<>();
         stringList.add("123");
+
         EmployeeImmutable employeeImmutable1 =
                 new EmployeeImmutable(1,
                         "rohit", new Date(),
                         Arrays.stream(new String[]{"123"}).collect(Collectors.toList()),
                         new Address(1,"bangalore"));
+
         EmployeeImmutable employeeImmutable =
                 new EmployeeImmutable(1,
                         "rohit", new Date(),
                         Arrays.stream(new String[]{"123"}).collect(Collectors.toList()),
                         new Address(1,"bangalore"));
-        employeeImmutable.getDoj().setDate(12);  // this will allow us to modif so change in getter
-        employeeImmutable.getMobile().add("456");
-        employeeImmutable.getAddress().setCity("pune");
+
+        employeeImmutable1.getDoj().setDate(12);  // this will allow us to modif so change in getter
+        employeeImmutable1.getMobile().add("456");
+        employeeImmutable1.getAddress().setCity("pune");
 // same for List
+
+        // the original contents are not changed
 
         System.out.println(employeeImmutable);
     }

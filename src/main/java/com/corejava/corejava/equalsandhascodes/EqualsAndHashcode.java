@@ -7,6 +7,17 @@ public class EqualsAndHashcode {
     /*
     *  if 2 objects are equal using the equals method then there hashcode must be same ,, but not vice versa
 
+  * why equals methdod --> content check
+  *  // A hashcode is an integer which is unique to an object/ instance .
+    // when an object or instance is created a hashcode is assigned to it nd this hashcode tells us
+    // whether multiple references  are pointing to a single instance or not
+    //It's a mechanism for comparison, in other words. This really is like an address for a house,
+
+* , object references are pointers or memory addresses that point to the location of an object in memory.
+*  when u create an object a memory refernce is created
+* The primary purpose of a hash code is to provide a way to efficiently organize objects in data structures like hash tables and hash maps.
+*  Hash codes are used as keys to determine where objects should be stored in these data structures.
+*
     * */
     public static void main(String[] args) {
 

@@ -1,5 +1,7 @@
 package com.corejava.corejava.datatype;
 
+import java.math.BigDecimal;
+
 public class SamplePrimitive {
 
     // 8 data types
@@ -34,10 +36,58 @@ public class SamplePrimitive {
     // USE BIGDECIMAL  class -- class is custom data type -- for precise calculations use BIGDECIMAL
 
     public static void main(String[] args) {
+
+        // overflow situation
+        int i = 1000000000;
+        System.out.println(i);
+        byte b = (byte) i; // casting the int value to byte -->
+        System.out.println(b); // this will cause an overflow
+
         double numberOfPounds = 200d;
         System.out.println(numberOfPounds);
 
         double convertedToKilogrms = numberOfPounds * 0.45359237;
-        System.out.println(convertedToKilogrms);
-    }
+        System.out.println("double value "+convertedToKilogrms);
+
+        BigDecimal bigDecimal = new BigDecimal(convertedToKilogrms);
+        System.out.println("big decimal value "+bigDecimal);
+        System.out.println(bigDecimal.setScale(2));
+
+        // byte: 8-bit signed integer size  i byte 8 bits
+        byte myByte = 127;  // range -128  - 127
+        // max value -127 and min value -128
+      //  byte b12= 128; // possible ost of precision  throws a compiler error
+
+        // short: 16-bit signed integer
+        short myShort = 32000;
+
+        // int: 32-bit signed integer
+        int myInt = 1000000;
+
+        // long: 64-bit signed integer
+        long myLong = 1234567890123L;
+
+        // float: 32-bit floating-point number
+        float myFloat = 3.14159f;
+
+        // double: 64-bit floating-point number
+        double myDouble = 2.71828;
+
+        System.out.println("byte: " + myByte);
+        System.out.println("short: " + myShort);
+        System.out.println("int: " + myInt);
+        System.out.println("long: " + myLong);
+        System.out.println("float: " + myFloat);
+        System.out.println("double: " + myDouble);
+
+        // byte 1 byte -128 -127
+        // short 2 byte -2^15
+        // int 4 byte 32 bit signed
+        // long 8 byte
+        // float is 4 byte
+        // double is 8 byte
+        // char 2 bytes
+
+
+        }
 }

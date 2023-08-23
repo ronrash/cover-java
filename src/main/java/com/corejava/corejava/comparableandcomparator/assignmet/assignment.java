@@ -25,7 +25,8 @@ public class assignment {
      studentesList.sort((studentes1, studentes2) -> Integer.compare(studentes2.getMarks(), studentes1.getMarks()));
      Collections.sort(studentesList,(studentes1, studentes2)-> Double.compare(studentes2.getMarks(), studentes1.getMarks()));
      studentesList.sort(Comparator.comparing(Studentes::getName));
-        System.out.println(studentesList);
+     studentesList.sort((st1,st2)-> st1.getMarks()< st2.getMarks()?-1: st1.getMarks()> st2.getMarks()?1:0);
+        System.out.println("this sorting is ascending"+studentesList);
 
 
       // sorting based on names in reverse order
