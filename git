@@ -7,24 +7,25 @@ git commit -m "SCMI-1303"
 git commit --amend --no-edit
 git reset commitid
 
-git branch
-git branch -r --> for remote
-gt branch -a  --> all branches
-git branch feature-a --> create baranches
+git branch -- to show which branch we are in
+git branch -r --> to check for all remote branches
+gt branch -a  --> to show all branches
+git branch feature-a --> create new branch
 git checkout feature-a --> switch to different branch
-git checkout -a --> checkout to previous branch
-3698801
 git checkout -b feature-new --> create and checkout to the new branch
 git branch -d feature-a --> -d to delete a branch
 
-
-// changes
-
-
-
-git restore --staged filename
+to go back to a commit
 git log
-git reset commitid
+git checkout <commitid>
+
+Head ??
+Head is the latest commit in a branch
+
+to reset to a commit
+git restore --staged filename
+git log -- check logs
+git reset <commitid>
 
 #rebase --
 when your master is ahead from your feature branch the rebase will pull changes from
