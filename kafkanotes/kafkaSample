@@ -1,4 +1,4 @@
-kafk distributed event streaming platform -- high throughput and fault tolernace , can store messages replication factor
+kafka distributed event streaming platform -- high throughput and fault tolernace , can store messages replication factor
 Topic — A bucket of messages (or events in case of kafka) where services may place or read messages from.
 Messages are organized and durably stored in topics. A topic is similar to a folder, and these messages are the files in that folder.
 Topics are multi-producer and multi-subscriber. Messages can be read as many times as needed, unlike traditional messaging systems,
