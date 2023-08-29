@@ -16,9 +16,9 @@ public class CarFleet {
 //The car starting at 0 does not catch up to any other car, so it is a fleet by itself.
 //The cars starting at 5 (speed 1) and 3 (speed 3) become a fleet, meeting each other at 6. The fleet moves at speed 1 until it reaches target.
 //Note that no other cars meet these fleets before the destination, so the answer is 3.
-        int[] position = {6,8};//
-        int[] speed = {3,2};
-        int target = 10;
+        int target = 12;
+        int[] position = {10, 8, 0, 5, 3};
+        int[] speed = {2, 4, 1, 1, 3};
         carFleet(position, speed, target);
     }
 

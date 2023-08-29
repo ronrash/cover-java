@@ -1,8 +1,6 @@
 stop all runninng containers
 docker stop $(docker ps -q) -- lists all the runninf conatiners
 
-
-
 #run docker image by pulling it directly from dockerHub
  docker run -d -p 8081:8080 rondocker2191/credit-card 
  

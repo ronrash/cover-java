@@ -1,8 +1,10 @@
 jenkins is a tool for running ci/cd
 
-configure jenkins using a docker 0r in aws
+configure jenkins using a docker 0r in aws or in azure
 
-jenkins configure global environements
+jenkins configure global environements.
+
+
 
 # create a jenkins job
 1. install maven and git plugins
@@ -15,7 +17,7 @@ jenkins configure global environements
 7.  Deploy ur jar --> Add build steps --> ececute a jar {jav a-jar path}
 8. Archive ur jar
 9. send email notificatiosn
-
+https://www.jenkins.io/doc/book/pipeline/syntax/
 Screenshot 2023-06-10 at 18.33.53![](../../Screenshot 2023-06-10 at 18.33.53.png)
 
 

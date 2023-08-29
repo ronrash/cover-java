@@ -9,12 +9,26 @@ public class ShortestWordDistanceinCircularArray {
     public static void main(String[] args) {
                                              //  0   1     2    3   4    5     6
         List<String> stringList = Arrays.asList("a0","a1","a2","a3","a4","a5","a6");
-        int startIndex =4;
-        String target = "a0";
+        int startIndex =5;
+        String target = "a1";
 
         // concatenating the array we can get to the
         shortestWordDistance(stringList,target,startIndex);
         shortestWordDistanceUsingOneLoop(stringList,target,startIndex);
+        int targetIndex =0;
+        int distance=0;
+        for(int i=0;i<stringList.size();i++)
+        {
+            if(stringList.get(i).equals(target))
+            {
+                targetIndex= i;
+           distance  = Math.abs(startIndex- targetIndex);
+              break;
+            }
+        }
+       int leftOver =stringList.size()- distance;
+        int min = Math.min(leftOver, distance);
+        System.out.println("shotest route is "+min);
     }
 
     private static void shortestWordDistanceUsingOneLoop(final List<String> stringList, final String target, final int startIndex) {

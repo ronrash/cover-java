@@ -21,6 +21,10 @@ git checkout <commitid>
 
 Head ??
 Head is the latest commit in a branch
+do a git log it will show the latest head -> main origin/main
+
+Detached Head ?
+when we checkout a commit and the git is unaware of the commit belongs to whihc branch , then it is called a detached head
 
 to reset to a commit
 git restore --staged filename

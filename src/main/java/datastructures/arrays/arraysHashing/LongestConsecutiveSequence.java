@@ -7,39 +7,61 @@ public class LongestConsecutiveSequence {
     public static void main(String[] args) {
 
         //
-        int [] a= {0,3,7,2,5,8,4,6,0,1}; // [1,2,3,4] [100] [200]
+       // int[] a = {0, 3, 7, 2, 5, 8, 4, 6, 0, 1}; // [1,2,3,4] [100] [200]
+        int[] a = {10, 9, 8, 5, 8, 4, 3, 2, 1};
         longestConsecutiveSequenceBetterSolution(a);
+        practice(a);
+
+        // steps put all the elemnts in a set as to remove the duplicates and then check for starting o the sequence
+        // loop until the end of that sequence using set
 
     }
 
     private static void longestConsecutiveSequenceBetterSolution(final int[] a) {
 
-        // steps put all the elemnts in a set and then check for starting o the sequence
-        // loop until the end of that sequence using set
-
         HashSet<Integer> set = new HashSet<>();
-        for(Integer num :a)
-        {
+        for (Integer num : a) {
             set.add(num); // O(1) constant time set uses hashing and it always takes []
         }
         // we have a set []
-        int finalLength =0;
-        for(Integer currentNumber :a)
-        {
+        int finalLength = 0;
+        for (Integer currentNumber : a) {
 
             // check if the currentNUmber is starting of the sequence
-            if(!set.contains(currentNumber-1)) // if the set does nt contain the number -1 then this number is the starting sequence
+            if (!set.contains(currentNumber - 1)) // if the set does nt contain the number -1 then this number is the starting sequence
             {
-                int length =1;
-                while(set.contains(currentNumber+1))
-                {
-                    currentNumber=currentNumber+1;
+                int length = 1;
+                while (set.contains(currentNumber + 1)) {
+                    currentNumber = currentNumber + 1;
                     length++;
                 }
-                finalLength = Math.max(finalLength,length);
+                finalLength = Math.max(finalLength, length);
             }
         }
         System.out.println(finalLength);
+    }
+
+    private static void practice(final int[] a) {
+        //
+        Set<Integer> set = new HashSet<>();
+        int finalCount = 0;
+        for (int i : a) {
+            set.add(i); // remove any duplicates
+        }
+        for (int i : a) {
+            if (!set.contains(i - 1)) {
+                int startingElem = i;
+                int count = 1;
+                while (set.contains(startingElem + 1)) {
+
+                    count++;
+                    startingElem = startingElem + 1;
+                }
+                if(count>=finalCount)
+                    finalCount=count;
+            }
+        }
+        System.out.println(finalCount);
     }
 
     //        Explanation:

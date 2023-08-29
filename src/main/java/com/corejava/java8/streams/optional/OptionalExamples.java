@@ -39,6 +39,8 @@ public class OptionalExamples {
         
          // this will print default becoz the stringOptional is empty
         System.out.println( stringOptional.orElse("default"));
+        // basically here it will check that if that object is not null
+        stringOptional.ifPresent(s-> System.out.println("do something withtat string object"));
 
 
         final Integer integer = Optional.ofNullable(customer.getId()).orElse(1);
@@ -51,13 +53,12 @@ public class OptionalExamples {
         Customer customer2 = new Customer(1,null, Arrays.asList(1234,8889));
         Customer customer3 = new Customer(1,"rohit", Arrays.asList(1234,8889));
         // new I wnato perform something on the value
-        final Optional<String> stringOptional1 = Optional.ofNullable(customer2.getName()).map(String::toUpperCase);
+          Optional.ofNullable(customer2.getName()).ifPresent(name->name.toUpperCase());
 
 
         // I want to do something if the optiona object is present o
-        String s1 = Optional.ofNullable(customer2.getName()).orElseThrow(()->new RuntimeException());
-        System.out.println("soemthing has returned here "+s1);
-        stringOptional1.ifPresent(s-> System.out.println(s));
+    //    String s1 = Optional.ofNullable(customer2.getName()).orElseThrow(()->new RuntimeException());
+     //   System.out.println("soemthing has returned here "+s1);
       // I want to set it i can either set null or a default value or keep it null
         final String s = Optional.of(customer2.getName()).orElse("");
         customer2.setName(s);

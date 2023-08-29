@@ -10,21 +10,21 @@ public class TrappingRainWater {
 
     // 2 techniques ist is having an auxiliry arrays and 2nd is two pointer technique
 
-// latest change in feature/coding
 
 
     public static void main(String[] args) {
       // int[] a = {3,1,2,4,0,1,3,2};
-        int[] a = {0,1,0,2,1,0,1,3,2,1,2,1};
+       // int[] a = {0,1,0,2,1,0,1,3,2,1,2,1};
+        int[] a = {3,1,0,1,2,1,0,3,0};
 
-        extraSpaceSoultion(a);
+    //    extraSpaceSoultion(a);
         twoPointerSolutuion(a);
 
     }
 
     private static void twoPointerSolutuion(final int[] a) {
 
-        int maxLeft = 100;
+        int maxLeft = a[0];
         int maxRight = a[a.length - 1];
         int left = 1;
         int right = a.length - 2;

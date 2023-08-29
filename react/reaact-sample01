@@ -38,7 +38,7 @@ public folder - it also has all the stati ontents of my folder
  set functions dont update the state immedialtely
 
  #useState->
-1. useState is a function from react which returns an array with 2 elements the current state value and the function which  controls that value
+1. useState is a function from react which returns an array with 2 elements the current state value and the function whichcontrols that value
 we pass a default value to the function,baiscally  we will set up the state and the state is preserved between re renders
 2. should be used inside a function body
 3. it preserves the value between re-renders
