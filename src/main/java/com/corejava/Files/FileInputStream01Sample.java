@@ -1,4 +1,4 @@
-package com.corejava.iostreams;
+package com.corejava.Files;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,7 +23,7 @@ public class FileInputStream01Sample {
      *  are wrappers on Inputstream and OutputStream
      *  Reader and writer are used for Byte nad character stream or character or text data
      *  File is handle for the folder where file is stored
-
+An InputStreamReader is a bridge between byte stream and character stream and can take a FileInputStream as a source.
      *  Exception throw FileNotFound and
      *
      *   file vs fileReader
@@ -36,7 +36,8 @@ public class FileInputStream01Sample {
      *  So, use FileReader if you intend to read streams of character and use the FileInputSream if you want to read streams of raw bytes.
      * It's better to use FileReader for reading text files because it will take care of converting bytes to characters
      * but remember that FileReader uses the platform's default character encoding.
-     * If you are reading a file that is encoded in a character encoding other than the host's default char encoding then you should use the InputStreamReader.
+     * If you are reading a file that is encoded in a character encoding other than the host's default
+     * char encoding then you should use the InputStreamReader.
 
 Read more: https://www.java67.com/2016/03/difference-between-filereader-vs.html#ixzz7mZaq8rjc
 

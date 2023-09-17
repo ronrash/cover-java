@@ -23,12 +23,12 @@ public class InterThreadCommunication {
         //creating a childThread
          ChildThreadInter childThreadInter = new ChildThreadInter();
         Thread thread = new Thread(childThreadInter);
-        thread.start();
+        thread.start(); // at this point there are 2 threads --> child thread and main thread
 
         // now i want the total value so i want the main thread to pause
         // waitt on current thread
 
-        synchronized (childThreadInter){
+        synchronized (childThreadInter){ // main thread gets the lockk of the object ChildThreadInter
             childThreadInter.wait();// main thread goes to waiting ,, once recives notification from child thread will start execution
 
             System.out.println("Total value is ::"+childThreadInter.total);

@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class TicketCounter {
 
-    // we have multiple counters and counter need to keep track of the tickeys sold
+    // we have multiple counters and counter need to keep track of the tickets sold
     // tickercounter
     private static AtomicInteger ticketsSold = new AtomicInteger(0);
   //  private static Integer ticketCounter = 0;
@@ -12,8 +12,8 @@ public class TicketCounter {
     public static void main(String[] args) {
 
         // create two threads or ticket counters
-        Thread counter1 = new Thread(new TicketSeller());
-        Thread counter2 = new Thread(new TicketSeller());
+        Thread counter1 = new Thread(new TicketSeller("PVR"));
+        Thread counter2 = new Thread(new TicketSeller("NON-PVR"));
 
         // start two threads
         counter1.start();
@@ -26,6 +26,7 @@ public class TicketCounter {
         {
             // when the ticket count reaches 20  -- print sold out
             System.out.println("Sold Out :: "+ticketsSold);
+
         }
         }catch(InterruptedException e)
         {
@@ -37,12 +38,21 @@ public class TicketCounter {
 
 static class  TicketSeller implements Runnable{
 
+
+     private String name;
+
+    public TicketSeller(final String name) {
+        this.name = name;
+    }
+
     @Override
     public void run() {
-        for(int i=0;i<100;i++)
+        for(int i=0;i<10;i++)
         {
             // increment the ticket count // meaning that the tickets are being sold and counter gets updated
+
           ticketsSold.incrementAndGet();
+            System.out.println("ticket soild by "+name+" "+ticketsSold.get());
         //    ticketCounter++;
         }
     }

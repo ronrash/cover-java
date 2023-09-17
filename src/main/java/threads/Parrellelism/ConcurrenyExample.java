@@ -1,8 +1,6 @@
 package threads.Parrellelism;
 
-import static threads.Parrellelism.complteablefuture.Delay.*;
-
-import threads.Parrellelism.complteablefuture.Delay;
+import static threads.complteablefuture.Delay.*;
 
 public class ConcurrenyExample {
 

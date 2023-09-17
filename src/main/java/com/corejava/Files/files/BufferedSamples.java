@@ -1,7 +1,6 @@
-package com.corejava.iostreams.files;
+package com.corejava.Files.files;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 

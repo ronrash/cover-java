@@ -1,4 +1,4 @@
-package com.corejava.iostreams;
+package com.corejava.Files;
 
 public class Strings {
 

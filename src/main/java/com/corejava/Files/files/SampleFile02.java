@@ -1,4 +1,4 @@
-package com.corejava.iostreams.files;
+package com.corejava.Files.files;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
 
-public class SampleProgramFiles {
+public class SampleFile02 {
 
     public static void main(String[] args) {
         // merge data of all txt files from resources folder

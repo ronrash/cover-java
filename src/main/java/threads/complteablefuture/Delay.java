@@ -1,4 +1,4 @@
-package threads.Parrellelism.complteablefuture;
+package threads.complteablefuture;
 
 public class Delay {
 

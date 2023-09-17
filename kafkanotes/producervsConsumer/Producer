@@ -1,0 +1,79 @@
+producer with keys and callbacks
+ create the properties ie set the properties to connect to the kafka server
+ Properties properties = new Properties();
+        properties.setProperty("bootstrap.servers", "cluster.playground.cdkt.io:9092");
+        properties.setProperty("security.protocol", "SASL_SSL");
+        properties.setProperty("sasl.jaas.config", "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"5ShaBfKcZ7qe77pRgo6fTd\" password=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29uZHVrdG9yLmlvIiwic291cmNlQXBwbGljYXRpb24iOiJhZG1pbiIsInVzZXJNYWlsIjpudWxsLCJwYXlsb2FkIjp7InZhbGlkRm9yVXNlcm5hbWUiOiI1U2hhQmZLY1o3cWU3N3BSZ282ZlRkIiwib3JnYW5pemF0aW9uSWQiOjc2NzE1LCJ1c2VySWQiOjg5MjUzLCJmb3JFeHBpcmF0aW9uQ2hlY2siOiJjNTNiZTJlYS0wNDk5LTRmYTctYmQ3NS1iZDVkOGYxYTBkMGIifX0.0nndoLgLTKgm3GJ2pfO22kQbAWgY93p704z7sAFPUQY\";");
+        properties.setProperty("sasl.mechanism", "PLAIN");
+        properties.setProperty("key.serializer", StringSerializer.class.getName());
+        properties.setProperty("value.serializer", StringSerializer.class.getName());
+
+Producer acknolegemet
+acks=0 means producer will not wait for acknowledgement
+acks=1 -->prodcuer will wait fro leader
+acks=all prodcuer will wait fro leaders and replicas
+
+min.insync.replicas=1: only the leader has to acknowledge
+min.insync.replicas=2:  the leader and one replica has to acknowledge
+
+this is the bare min , so that if the leader fails there is atleast one backup
+
+Kafka Topic Avialabilty
+acks=all and min.insync.replicas=2: this is recommended becoz we can afford for atleast on broker to go down
+
+that is why we should have a replication factor of 3 which means 3 partitions across 3 differemt serves
+the leader and the replicass will have to acknowledge ,, we will never loose data
+Producer retry -- incase of failure
+retries settings
+retries = min.insync.replicas
+
+Prodcuer timeout
+delivery.timeout.ms=120000 = 2 mins
+
+max.in.flight.requests.per.connection default -=5
+
+Idempotent prodcuer - makes sure no duplicate request are sent
+settings are default from kafka 3.0
+retries=Integer.MAX_VALUE(2^31)
+max.in.flight.requests=1  kafka version<1
+max.in.flight.requests=5  kafka version>5
+
+these setting are automatically applied after ur producer has started
+we can set properties prodcuerProps.put("enable.idempotence",true)
+
+what is the best prodcuer settings, since kafka 3.0 all the setting are by default but here is the below list
+
+acks=all
+min.insync.replicas =2 boker/topic level - ensure atleast 2 brokers are ther
+enable.idempotence=true
+retries=MAX_INT ()
+retry until delivery.timeout.ms is reached
+delivery.timeout.ms=120000 = 2 mins
+max.in.flight.requests.per.connection default = 5 ensures max performance while keeping message ordering
+
+
+
+
+Message compression in brokers -- compress messages by producer
+compression.type can be gzip,lz4,snappy,zstd
+
+compression.type=prodcuer -- the broker takes the compressed batch from the prodcuer client an writes the data to topics log file.
+compression.type=none     ---> all batches are decompressed by the broker
+compression.type=lz4 --> batches are compressed by the broker and the recompressed using compression algorithm
+
+it consumes more cpu cycles
+
+Improve the batching
+linger.ms and batch.size ??
+kafka producers send messages to the kafka brokers asap, it will have max.in.flight.request.per.connections=5 ie
+5 batches are in flight (being sent between prodcuer and kafka broker), if more messages are to be sent kafka is smart to start
+batching before next batch is sent  this helps increase thruput with very low latency
+
+linger.ms defualt =0 is how much time to wait before the next batch is sent, if we increase the time ,, more batch size can be sent at expense of latecny
+if batch is filled within liner,ms ,, increse bacth size
+
+batch.size is 16 kb -max no of bytes per batch
+msg > batch will not be bacthed ,coz batch is per partition ,so do not set th batch size to number like 32 or 6b kb or  too high ,, it wasts memory
+
+high thruput ??
+if linger.ms is high ,, prodcue will have time for bigger batch size and if tehre is spae memory increase batch size,, since u can monitor the batch and liner,ms

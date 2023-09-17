@@ -10,6 +10,8 @@ public class Processor {
     private static final Integer Lower_LIMIT = 0;
     private final Object lock = new Object();
     private int value =0;
+
+
     public void producer() throws InterruptedException {
 
 

@@ -1,4 +1,4 @@
-package com.corejava.iostreams;
+package com.corejava.Files;
 
 import java.io.FileReader;
 import java.io.IOException;

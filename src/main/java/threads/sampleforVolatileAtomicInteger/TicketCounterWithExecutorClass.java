@@ -9,27 +9,23 @@ public class TicketCounterWithExecutorClass {
     private static AtomicInteger ticketsSold = new AtomicInteger(0);
 
     public static void main(String[] args) {
-        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(20);
+        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(2);
 
         fixedThreadPool.submit(new TicketSelling());
         fixedThreadPool.submit(new TicketSelling());
-
         // shutdown the exector whene the tasks are submitted
-        fixedThreadPool.shutdown();
 
-        while(!fixedThreadPool.isTerminated())
-        {
-          // sout
-//            System.out.println("waiting for threads");
-        }
+        fixedThreadPool.shutdown();
+        if(ticketsSold.get()==20)
         System.out.println("Total tickets sold: " + ticketsSold.get());
+
     }
 
    static class TicketSelling implements Runnable{
 
         @Override
         public void run() {
-            for(int i=0;i<100;i++)
+            for(int i=0;i<20;i++)
             {
                 // multiple threads access this atomic varibale but since this is atomic any transaction will be done in isolation
                 System.out.println(Thread.currentThread().getName());

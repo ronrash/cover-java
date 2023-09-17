@@ -1,6 +1,6 @@
 package strings;
 
-public class StringSample {
+public class StringSample01 {
     public static void main(String[] args) {
 
         // String implements these interfaces Serializable,comparable, immutable

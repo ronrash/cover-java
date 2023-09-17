@@ -18,7 +18,7 @@ public class ConcurrencyVsParellelism {
      *  Here the tasks actually run in parallel.
      *  Decomposing the task into subtasks forking and then joining the results of the  tasks
      *  This is called FORK/JOIN
-     * Parallelism is more about using resources  to access the result faster
+     * Parallelism is more about using resources to access the result faster
      *
      * *  ExecutorService is good as we dont have to create and wait on the threads
      *    Problem with executoService is that it still blocks -->> i,e it has to wait
@@ -38,7 +38,12 @@ public class ConcurrencyVsParellelism {
      *   Concurrency                      Parrellelism
      *   concept where 2 o more tasks     task literally run parallel
      *   run simultaneously
+     *   It can be achived in a single     This can only be achievd in a multi core machine
+     *    or multipe cores
      *
+     * Concurrency is basically controlling
+     * how we acces shared objects between
+     * multiple threads
      *   using shared objects via threads       using more resources to access result faster
      *   to efficiently access shared resources
      * */
@@ -51,6 +56,7 @@ public class ConcurrencyVsParellelism {
         final List<String> stringList
                 = Arrays.asList("rohit", "swati", "shabu", "ashivin");
 
+        // this is not asynchronous this will totalyy depend upon the hardware
         final List<String> namesInUpperCase = stringList.
                 parallelStream()  // fork/Join framework // now depedning upon the number of cores the task will be divided
                 .map(String::toUpperCase)

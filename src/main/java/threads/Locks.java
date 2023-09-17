@@ -30,7 +30,7 @@ class Display {
 
 
     public void wish() {
-        reentrantLock.lock();
+        reentrantLock.lock(); // gets the lock of the object
         try {
 
             for (int i = 0; i < 10; i++) {
@@ -41,7 +41,7 @@ class Display {
         } catch (InterruptedException exception) {
             System.out.println(exception.getMessage());
         }
-          reentrantLock.unlock();
+          reentrantLock.unlock(); // release the lock of the object
     }
 }
 
