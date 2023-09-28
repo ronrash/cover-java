@@ -1,26 +1,32 @@
 producer with keys and callbacks
 
+Producer writes the data to a topic and it knows which broker has the topic and which partition is the leader
+messages with the same key goes to the same partition
+
 Producer acknolegemet
 acks=0 means producer will not wait for acknowledgement
 acks=1 -->prodcuer will wait fro leader
 acks=all prodcuer will wait fro leaders and replicas
 
 min.insync.replicas=1: only the leader has to acknowledge
-min.insync.replicas=2:  the leader and one replica has to acknowledge
+min.insync.replicas=2:  the leader and at leate one replica has to acknowledge
 
 this is the bare min , so that if the leader fails there is atleast one backup
 
 Kafka Topic Avialabilty
 acks=all and min.insync.replicas=2: this is recommended becoz we can afford for atleast on broker to go down
 
-that is why we should have a replication factor of 3 which means 3 partitions across 3 differemt serves
+that is why we should have a replication factor of 3 which means 3 partitions across 3 different serves
 the leader and the replicass will have to acknowledge ,, we will never loose data
-Producer retry -- incase of failure
+
+
+Producer retry -- incase of failure deelopers will need to handle the exceptions
 retries settings
 retries = min.insync.replicas
 
 Prodcuer timeout
-delivery.timeout.ms=120000 = 2 mins
+delivery.timeout.ms=120000 = 2 mins -- that is the prodcuer will keep prodcuing the message until 2 mins
+records will fail if they are not recievd by kafka within this time period
 
 max.in.flight.requests.per.connection default -=5
 
@@ -33,7 +39,8 @@ max.in.flight.requests=5  kafka version>5
 these setting are automatically applied after ur producer has started
 we can set properties prodcuerProps.put("enable.idempotence",true)
 
-what is the best prodcuer settings, since kafka 3.0 all the setting are by default but here is the below list
+what is the best prodcuer settings,
+since kafka 3.0 all the setting are by default but here is the below list
 
 acks=all
 min.insync.replicas =2 boker/topic level - ensure atleast 2 brokers are ther

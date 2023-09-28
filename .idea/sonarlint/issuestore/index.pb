@@ -292,8 +292,6 @@ c
 +restapiNotes/security/SpringSecurityWithJwt,3/f/3f75c6caadfd521c38313febc54a6a699e31db1e
 T
 $restapiNotes/security/SpringSecurity,6/a/6a2c5a93241bc93ce51587f37ee3b964af42c183
-H
-projects/design/Design01,1/5/15297eb21a24f3d304b794dd5404713dc28d249b
 X
 (restapiNotes/security/SpringSecurityOath,6/1/61049e86f0447f024dcecdeb43cb7d68fbf78d8c
 H
@@ -350,16 +348,10 @@ U
 %src/main/java/com/corejava/Java8.java,8/9/895312a10f41345c6af3203d80e134d0c944314f
 ]
 -src/main/java/com/corejava/ImmutableList.java,f/a/fa2e0e77f6b28430eadad9976982795eb134d665
-Q
-!restapiNotes/SringBootAnnotations,8/4/844bb73fd62d5e152b35f41cf0d33a86ab00e671
 B
 restapiNotes/Maven,a/7/a754d245682cb6e5fddf25f8edffe336ea76d272
-C
-restapiNotes/lombok,e/0/e0c4798abfc9231b25d50e4e6eb1a54056626e32
 H
 restapiNotes/SpringBatch,b/5/b5504c1f0cef1820b33518d81024650dec895735
-G
-restapiNotes/SpringBoot,a/5/a545a25891e7dd6d0e82a5b13273caaa4dd354c8
 \
 ,src/main/java/collections/maps/Sample01.java,2/9/29bd6270d5cf04e90044eba626a145f847e701bb
 f
@@ -384,8 +376,6 @@ j
 :src/main/java/com/corejava/java8/lambdas/SampleLambda.java,8/c/8cee502fa3855b1d0574f20c628e36c49e2db1be
 F
 restapiNotes/restNotes,a/6/a6b9f0caaee50f23ac83b0a20d7b12b95c94c401
-M
-restapiNotes/SampleSpringBoot,5/8/58185dcff90a3991947dccc82fd4c9bfcfba094d
 s
 Csrc/main/java/com/corejava/corejava/datatype/CustomArrayList01.java,3/7/3798dda4b78d9303affe00fc34f5efdd5bcb5c83
 M

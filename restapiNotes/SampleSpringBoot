@@ -9,6 +9,13 @@ When an exception occurs within any of the mapped controllers, Spring will look 
 
 But we highly recommend using Constructor injection over other types.
 Because it allows the application to initialize all required dependencies at the initialization time.
+   a.) Prevents using reflection
+
+   b.) Forces the object to be created with the injected parameter
+
+   c.) Lets to do the injection without using @Autowired annotation
+
+   d.) Lets the injected field to be defines as final so that the it favours immutability
 
 Here's an example of a @RestControllerAdvice class that handles a custom StudentNotFoundException:
 

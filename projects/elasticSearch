@@ -1,4 +1,4 @@
-ElasticSearch is  a full text search engine with an HTTP web interface.
+ElasticSearch is a full text search engine with an HTTP web interface.
 It is fast because instead of searching the text it searches the index.
 It's designed to handle large volumes of data and provide lightning-fast search capabilities.
 Elasticsearch uses a data structure called an "inverted index" to achieve its high-speed searching and querying capabilities.

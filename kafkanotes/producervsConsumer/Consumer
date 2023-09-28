@@ -1,3 +1,16 @@
+Consumer knows which topic/partition to read the data from and they read the data from low - high offset
+Each partition is assigned to only one consumer from agroup at a time. po is assigned to c0 frm grp1  c0 can read from another partiton but not same c1
+will read from another partition, c3 can be idle
+
+now this partition po can be assgined to another consumer from another grp
+conumer co from one grp s reading message , the offset value keeps track of this ,, the offset is commited to a topi c called __consumer_offsets topic
+these offsets are periodically commited the the __consumer_offset topic
+Java consumers will automatically coomit fsset alt least once
+
+Maximum number of consumers that can work on a kafka topic is equal to the partition number.
+The additional consumers will be idle, and won't do any job.For example with 4 partitions,
+if you add 6 consumers, 2 of the consumers will be idle, only 4 of them will consume data, each assigning to a single partition.
+
 Consumer offset is basically till which point the consumer in a consumer group have read messages from a topic partition.
 , a consumer offset represents the position or offset within a Kafka topic partition where a consumer group has read up to.
 This offset helps Kafka track the progress of consumers in reading messages from partitions.
@@ -10,7 +23,7 @@ Managing consumer offsets is crucial for ensuring data integrity and reliability
 Offset: Each message in a Kafka topic partition is assigned a unique offset,
 which is essentially a sequential ID. Consumers use these offsets to keep track of which messages they have already consumed.
 
-offsets are regualarly commited when u call the poll() method and the auto.commit.interval.ms has leapses
+offsets are regularly commited when u call the poll() method and the auto.commit.interval.ms has leapses
 auto.commit.interval.ms=5000 ie 5 seconds and enable.auto.commit=true
  make sure all message are committed before we poll again or else u can do it with a separate thread from time to time callling .commitSync  or commitAysnc
 To allows consumers in a group to resume at the right offset, I need to set group.id

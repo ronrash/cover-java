@@ -1,15 +1,28 @@
 Architecture:
 For scaling the e-commerce application, you can consider using a combination of the following architectural patterns:
 
-Microservices Architecture: Divide the application into smaller, independent services that can be developed, deployed, and scaled independently. Each service can handle a specific domain or functionality, such as user management, product catalog, shopping cart, order processing, etc. This allows for better scalability and flexibility.
+Microservices Architecture:
+Divide the application into smaller, independent services that can be developed, deployed, and scaled independently.
+Each service can handle a specific domain or functionality,
+such as user management, product catalog, shopping cart, order processing, etc.
+This allows for better scalability and flexibility.
 
-Event-Driven Architecture: Utilize an event-driven approach to handle asynchronous communication between different services. Events can be used to notify and trigger actions across services. This helps in decoupling components and allows for better scalability and fault tolerance.
+Event-Driven Architecture:
+Utilize an event-driven approach to handle asynchronous communication between different services.
+Events can be used to notify and trigger actions across services. This helps in decoupling components and allows for better scalability and fault tolerance.
 
-Caching: Implement caching mechanisms at various layers of the application to improve performance and scalability. Use in-memory caches like Redis for frequently accessed data, such as product information or user sessions. This reduces the load on the database and improves response times.
+Caching:
+Implement caching mechanisms at various layers of the application to improve performance and scalability.
+Use in-memory caches like Redis for frequently accessed data, such as product information or user sessions.
+This reduces the load on the database and improves response times.
 
-Load Balancing: Employ load balancing techniques to distribute incoming traffic across multiple instances of the application. This ensures that the workload is evenly distributed and prevents any single instance from becoming a bottleneck. Load balancers like NGINX or software load balancers provided by cloud platforms can be used.
+Load Balancing: Employ load balancing techniques to distribute incoming traffic across multiple instances of the application.
+This ensures that the workload is evenly distributed and prevents any single instance from becoming a bottleneck.
+Load balancers like NGINX or software load balancers provided by cloud platforms can be used.
 
-Horizontal Scaling: Scale the application horizontally by adding more instances or nodes of each service to handle increased traffic and load. This can be achieved by deploying multiple instances of each service behind a load balancer. Containerization technologies like Docker and orchestration tools like Kubernetes can simplify the deployment and scaling process.
+Horizontal Scaling: Scale the application horizontally by adding more instances or nodes of each service to handle increased traffic and load.
+ This can be achieved by deploying multiple instances of each service behind a load balancer.
+ Containerization technologies like Docker and orchestration tools like Kubernetes can simplify the deployment and scaling process.
 
 Design Patterns:
 Consider using the following design patterns to ensure a well-structured and scalable codebase:

@@ -17,6 +17,9 @@ part0     part1             part2
           part0 --replication
 topicB    topicB
 part1     part0
+
+At any time only one broker can be the leader for a given partition, prodcuers send data to only the broker that is the leader of the partition
+
 In Kafka, replication is implemented at the partition level. The redundant unit of a partition is called a replica.
 Each partition usually has one or more replicas over a few Kafka brokers in the cluster.
 

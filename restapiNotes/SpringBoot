@@ -1,5 +1,9 @@
 SpringBoot interview Questions
 
+Spring Boot -- easy to accelerate applications like web
+Basic Spring boot comes with
+spring-boot-starter-web -- dependencies which
+
 why spring framework ?
 Spring framework provides dependency injection and help to develop loosely coupled applications
 
