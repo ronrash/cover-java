@@ -1,0 +1,49 @@
+Create A Kubernetes Cluster
+https://github.com/stacksimplify/azure-aks-kubernetes-masterclass/tree/master/01-Create-AKS-Cluster
+
+Kuberenetes Services -- create a cluster aks-ron-deom
+Basics
+Subscription: Azure subscription 1
+Resource Group: Creat New: aks-rg1
+Cluster preset configuration: Standard
+Kubernetes Cluster Name: aksdemo1
+Region: (US) Central US
+Availability zones: Zones 1
+AKS Pricing Tier: Free
+Kubernetes Version: Select what ever is latest stable version
+Automatic upgrade: Enabled with patch (recommended)
+Node Size: Standard DS2 v2 (Default one)
+Scale method: Autoscale
+Node Count range: 1 to 5
+ip address - aks-ron-deom-dns-kwgoo8iz.hcp.centralus.azmk8s.io
+
+login to ur azure cluster
+# Template
+az aks get-credentials --resource-group <Resource-Group-Name> --name <Cluster-Name>
+az aks get-credentials --resource-group aks-rg1 --name aks-ron-deom
+
+# Replace Resource Group & Cluster Name
+az aks get-credentials --resource-group aks-rg1 --name aksdemo1
+
+# List Kubernetes Worker Nodes
+kubectl get nodes
+NAME                                STATUS   ROLES   AGE    VERSION
+aks-agentpool-11024587-vmss000000   Ready    agent   6h1m   v1.26.6
+aks-agentpool-11024587-vmss000001   Ready    agent   6h1m   v1.26.6
+kubectl get nodes -o wide
+
+Namespace is like a package --  is very important-- it means ur dev and qa or prod cluster will have different resources and all of them are separate
+namespace helps in that
+
+kubectl get namespaces
+NAME              STATUS   AGE
+calico-system     Active   6h3m
+default           Active   6h4m
+kube-node-lease   Active   6h4m
+kube-public       Active   6h4m
+kube-system       Active   6h4m
+tigera-operator   Active   6h3m
+
+# List Pods from all namespaces
+kubectl get pods --all-namespaces
+
