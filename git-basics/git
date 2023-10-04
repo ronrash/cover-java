@@ -32,8 +32,20 @@ how to handle git detached head ??
 git log --> we see c1 c2 c3 commits --> we got to c2 commit --> git checkout c2 --> now we are in detached head on c2 commit??
 do git log (HEAD)
 git branch --> u will see --> * (HEAD detached at 7453972)
-we make our changes in c2 commit {git add . , git commit -am " detached head commits "}
-then we create a new branch git branch detached-branch ,, and the switch to orginal branhc here it is main and then merge that detached branch
+we make our changes in c2 commit detached state  {git add . , git commit -am " detached head commits "}
+then we create a new detached branch-->  git branch detached-branch ,, and the switch to orginal branch  here it is main and then merge that detached branch
+
+steps
+git checkout <commit-id>  --> checkout to a new commit
+git log --> see deatched head
+git branch  --> see detached branch
+make chanegs and commit in detached state
+git add .
+git commit -m " detahced commit changes"
+git branch detached-head-branch --> create a new branch ths will put all changes to this branch
+git switch main --> checkout to main branch
+git merge detached-head-branch --> merge this branch to main to get all the changes
+
 
 checkout a specific commit
 git checkout coomit-id --> this may lead to a detached head
