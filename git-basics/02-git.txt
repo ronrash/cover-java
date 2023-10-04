@@ -1,5 +1,48 @@
-for got ignore
-*.log
-!test.log # this file should not be ignore
-.idea -- should be ignored
-aws/*  all fules should be ignored
+
+This is fast forward where we will not see a commit for merging feature to master
+ master --> c1 c2 -->c ut a feature branch --> c1, c2 , f1, f2
+now master does not have any commits ,, simply merge the changes into master either by git merge feature
+this will create 2 commit on top of master like c1,c2 f1,f2
+or squash with one commit --> git merge --squash feature --> we will have to commit this seprataley
+
+Recursive
+but when we merge feature like this ---> git merge  --no-ff feature --> this will creat an extra commit showing our merge to master
+c1,c2,f1,f2 and an extra megre commit like "Megre branch 'feature ' into master"
+
+Now if we have master  --- m1 m2          m3
+                                feature - m1 m2 f1 f2
+now if we merge feature to master ,, which also has moved on it will do a recursive merge
+git merge --squash feature --> m1 m2 , m3 , "merge feature into master"
+git merge feature --> m1,m2,f1,f2,m3, "merge feature into master"
+
+REBASE
+master -- m1 m2 --->m3{new commit is m3} feature branch is cut from m2
+feature   m1 m2 --->f1 f2
+
+after git rebase m3 will be added to the feature branch with new commit ids
+master -- m1 m2 m3
+feature   m1 m2 m3 f1 f2 -- these f1 and f2 and m3 commit ids will change
+
+after git merge --> f1 and f2 commits will be added with ids but this will not creata an extra commit kind of fast forward
+master -- m1 m2 m3 f1 f2
+feature   m1 m2 m3 f1 f2
+
+points to remember git rebase will avoid additional merge commits but create new commit ids or hashes for the same commits
+these commit m3 f1 f2 are will have different hash on different branches.
+
+
+when to apply git rebase
+1.when we have new commits in the master and we need those changes to work with our feature branch
+ie, fetaure relies on changes from master
+2.Rebase master into feature branch, this will affect the ids in ur feature branch
+3. feature is finished - u need fast forward ie no additional commit in master
+
+Rebase re-writes code history.
+
+Git Cherry PIck
+master m1 m2 m3
+feature m1 m2 f1 f2 f3 -->
+
+now if we want a specfic commit from feature -- copy the commit id -- switch to master/whichever branch u want
+git switch master
+git cherry-pic f2<commitid> master m1 m2 m3 f2 {but this f2 will have a diff commit id }

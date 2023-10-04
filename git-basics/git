@@ -53,7 +53,7 @@ create a new branch detached-head-branch --> create a new branch ths will put al
 git switch main --> checkout to main branch
 git merge detached-head-branch --> merge this branch to main to get all the changes
 
-# git reflog
+# git reflog -- reflog alllows us to get back lost information
 Reset A commit
 git checkout <commit-id>
 git restore --staged filename
@@ -61,13 +61,17 @@ git log -- check logs
 git reset <commitid>
 
 #similarly we can perform the same steps to when we delete a branch
-git checkout -b feature-branch
-add/commit  some file here---> git commit -am "some changes in feature" and then delete that branch --> got delete -D branchName,
-switch to master --> git switch master
-do a git reflog --> we will see our commit from the deleted branch {from here perform the same steps we did in detachec } ie checkout that commit,create branch
+git checkout -b feature-delete -- this is the branch we will delete and then using reflog retain the changes
+add/commit  some file here---> git commit -am "some changes in feature-delet" and then switch to main and delete that branch
+
+switch to master --> git switch master ,, delete the branch git branch -D feature-delete
+do a git reflog --> git reflog --> u can see ur commit from the delete branch
+{from here perform the same steps we did in detachec } ie checkout that commit, commit the changes, then create a branch and then merge those changes in master
 git checkout commitid
 git add . , git commit -m " the lost changes"
-create a branch git bran
+git branch feature-delete
+git switch feature-delete ,, add some more changes
+git swicth main ,, git  merge feature-delete
 
 
 

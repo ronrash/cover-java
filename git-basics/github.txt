@@ -1,0 +1,4 @@
+git init
+git remote add origin url --> origin name of the remote repo or alias to the remote url
+
+push a local branch git push origin branch-name
