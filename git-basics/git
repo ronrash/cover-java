@@ -28,6 +28,13 @@ when we checkout a commit and the git is unaware of the commit belongs to which 
 becoz the same commit can belong to 2 same commits on 2 diff branches
 then it is called a detached head
 
+how to handle git detached head ??
+git log --> we see c1 c2 c3 commits --> we got to c2 commit --> git checkout c2 --> now we are in detached head on c2 commit??
+do git log (HEAD)
+git branch --> u will see --> * (HEAD detached at 7453972)
+we make our changes in c2 commit {git add . , git commit -am " detached head commits "}
+then we create a new branch git branch detached-branch ,, and the switch to orginal branhc here it is main and then merge that detached branch
+
 checkout a specific commit
 git checkout coomit-id --> this may lead to a detached head
 to get out of this just checkout to a branhc
@@ -55,6 +62,7 @@ git checkout <commit-id>
 git restore --staged filename
 git log -- check logs
 git reset <commitid>
+
 
 #rebase --
 when your master is ahead from your feature branch the rebase will pull changes from
