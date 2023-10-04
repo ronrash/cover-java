@@ -33,7 +33,25 @@ git checkout coomit-id --> this may lead to a detached head
 to get out of this just checkout to a branhc
 git checkout branc-name
 
-undo changes
+undo changes from a file
+ git restore .
+
+# stash
+git stash
+git stash apply
+
+git stash list  -- shows a list of stashed changes
+git stash apply 1 or 0 or anything you wnat to apply
+
+add messages to ur stashes
+git stash push -m "latest changes"
+git stash list
+git stash pop 0  --> apply and remove the stashed changes
+git stash clear --> clears the entire stash
+
+# git reflog
+
+
 
 
 to reset to a commit
