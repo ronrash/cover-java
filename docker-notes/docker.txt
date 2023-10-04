@@ -1,4 +1,10 @@
-Docker -- containerization-- dockerizing the application
+Docker its a containerization/packaging tool which does not require ur os that is why it is different from virtual machines
+which need os to run several vms and hence they take upa lot of space which the docker does not.
+Now you can run ur dockereizez image on any machine as Docker is platform independant and better usage of resource
+app isolation -- so less security is required
+containers are fast to create replicate
+
+-- containerization-- dockerizing the application which has all the dependencies adn run time environment to run ur code
 create a docker image of the application be it java or javascript or python
 and run it wherever you want
 

@@ -9,7 +9,8 @@ This allows for better scalability and flexibility.
 
 Event-Driven Architecture:
 Utilize an event-driven approach to handle asynchronous communication between different services.
-Events can be used to notify and trigger actions across services. This helps in decoupling components and allows for better scalability and fault tolerance.
+Events can be used to notify and trigger actions across services.
+This helps in decoupling components and allows for better scalability and fault tolerance.
 
 Caching:
 Implement caching mechanisms at various layers of the application to improve performance and scalability.
@@ -27,16 +28,17 @@ Horizontal Scaling: Scale the application horizontally by adding more instances 
 Design Patterns:
 Consider using the following design patterns to ensure a well-structured and scalable codebase:
 
-Repository Pattern: Implement the repository pattern to separate data access logic from the business logic. This provides a consistent and decoupled way to interact with the database and allows for easy switching between different data storage implementations.
+Repository Pattern: Implement the repository pattern to separate data access logic from the business logic.
+ This provides a consistent and decoupled way to interact with the database and allows for easy switching between different data storage implementations.
 
-Service Layer Pattern: Use a service layer to encapsulate the business logic and orchestrate interactions between different components. Services can handle transaction management, validation, complex calculations, and coordination of multiple data operations.
+Service Layer Pattern: Use a service layer to encapsulate the business logic and orchestrate interactions between different components.
+Services can handle transaction management, validation, complex calculations, and coordination of multiple data operations.
 
-Dependency Injection (DI): Apply dependency injection to manage the dependencies between components. Use a DI framework like Spring's built-in dependency injection or a third-party library like Dagger to facilitate loose coupling and easier testing.
-
-Facade Pattern: Implement a facade layer that provides a simplified interface to the complex subsystems or services. The facade acts as a single entry point for client applications and abstracts away the underlying complexities.
-
+Dependency Injection (DI): Apply dependency injection to manage the dependencies between components.
+Use a DI framework like Spring's built-in dependency injection or a third-party library like Dagger to facilitate loose coupling and easier testing.
+Facade Pattern: Implement a facade layer that provides a simplified interface to the complex subsystems or services.
+The facade acts as a single entry point for client applications and abstracts away the underlying complexities.
 Observer Pattern: Utilize the observer pattern to implement event-driven communication between components. Services can publish events, and other interested components can subscribe to those events to take appropriate actions.
-
-Circuit Breaker Pattern: Implement the circuit breaker pattern to handle failures and prevent cascading failures in distributed systems. It helps in gracefully degrading the system's functionality when a service or component becomes unavailable.
-
+Circuit Breaker Pattern: Implement the circuit breaker pattern to handle failures and prevent cascading failures in distributed systems.
+It helps in gracefully degrading the system's functionality when a service or component becomes unavailable.
 These are just a few architectural patterns and design patterns that can be considered for building a scalable e-commerce application. The actual implementation and code would require a more detailed understanding of your specific requirements and the technologies you are using.

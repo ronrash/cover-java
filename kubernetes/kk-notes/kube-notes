@@ -4,6 +4,13 @@ docker ps --
 when we want to create any kubernetes resource object we use the command
 for example to create a pod
  kubectl create -f pod.yml
+kubectl is the command-line tool for interacting with Kubernetes clusters.
+create is the action to create a Kubernetes resource.
+-f specifies that you are providing a file.
+pod.yml is the YAML file containing the configuration for the pod you want to create.
+
+And on all these nodes
+we'll have the container runtime installed.
 
 
  Services in kubernets
