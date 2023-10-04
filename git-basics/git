@@ -41,7 +41,7 @@ git stash
 git stash apply
 
 git stash list  -- shows a list of stashed changes
-git stash apply 1 or 0 or anything you wnat to apply
+git stash apply 1
 
 add messages to ur stashes
 git stash push -m "latest changes"
@@ -50,11 +50,8 @@ git stash pop 0  --> apply and remove the stashed changes
 git stash clear --> clears the entire stash
 
 # git reflog
-
-
-
-
 to reset to a commit
+git checkout <commit-id>
 git restore --staged filename
 git log -- check logs
 git reset <commitid>
