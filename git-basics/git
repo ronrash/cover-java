@@ -42,16 +42,33 @@ git branch --> u will see --> * (HEAD detached at 7453972)
 we make our changes in c2 commit detached state  {git add . , git commit -am " detached head commits "}
 then we create a new detached branch-->  git branch detached-branch ,, and the switch to orginal branch  here it is main and then merge that detached branch
 
-steps
+steps to handle detached head
 git checkout <commit-id>  --> checkout to a new commit
 git log --> see deatched head
 git branch  --> see detached branch
 make chanegs and commit in detached state
 git add .
 git commit -m " detahced commit changes"
-git branch detached-head-branch --> create a new branch ths will put all changes to this branch
+create a new branch detached-head-branch --> create a new branch ths will put all changes to this branch
 git switch main --> checkout to main branch
 git merge detached-head-branch --> merge this branch to main to get all the changes
+
+# git reflog
+Reset A commit
+git checkout <commit-id>
+git restore --staged filename
+git log -- check logs
+git reset <commitid>
+
+#similarly we can perform the same steps to when we delete a branch
+git checkout -b feature-branch
+add/commit  some file here---> git commit -am "some changes in feature" and then delete that branch --> got delete -D branchName,
+switch to master --> git switch master
+do a git reflog --> we will see our commit from the deleted branch {from here perform the same steps we did in detachec } ie checkout that commit,create branch
+git checkout commitid
+git add . , git commit -m " the lost changes"
+create a branch git bran
+
 
 
 checkout a specific commit
@@ -75,12 +92,6 @@ git stash list
 git stash pop 0  --> apply and remove the stashed changes
 git stash clear --> clears the entire stash
 
-# git reflog
-to reset to a commit
-git checkout <commit-id>
-git restore --staged filename
-git log -- check logs
-git reset <commitid>
 
 
 #rebase --
