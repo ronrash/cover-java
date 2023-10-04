@@ -7,13 +7,20 @@ git commit -m "SCMI-1303"
 git commit --amend --no-edit
 git reset commitid
 
-git branch -- to show which branch we are in
+git branch --> to show which branch we are in
 git branch -r --> to check for all remote branches
 gt branch -a  --> to show all branches
 git branch feature-a --> create new branch
 git checkout feature-a --> switch to different branch
+git switch main --> swithced to this branch
 git checkout -b feature-new --> create and checkout to the new branch
 git branch -d feature-a --> -d to delete a branch
+
+# to restore changes in a file
+git restore . --> in the curent pat
+git restore filename --> restore changes in that file
+
+git clean -df --> clear all untracked files
 
 to go back to a commit
 git log

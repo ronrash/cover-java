@@ -1,1 +1,5 @@
-git rebase commands
+for got ignore
+*.log
+!test.log # this file should not be ignore
+.idea -- should be ignored
+aws/*  all fules should be ignored

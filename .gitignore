@@ -1,3 +1,5 @@
 *.class
 *.idea
 *.streamsss.imlgit
+*.log
+!test.log # this file should not be ignore
