@@ -53,8 +53,8 @@ Kuber-proxy -- network proxy which maintains network rules allowing network in n
 
 
 
-problem of multiple API calls that block for a long time aysnchroous code
-solve the problem of hitting the database multiple times
+problem of multiple API calls that block for a long time --- for that we need aysnchrous code
+solve the problem of hitting the database multiple times -- do caching
 
 Services -- Services give access to external world to our applications deployed in kubernetes clusters
 Workloads or pods -- where ur applications are deployed on the kubernetes cluster -- it has configuration to store your application
@@ -87,7 +87,7 @@ to see the deployment -- kubectlt get deployment --> rest-ap1
 
 Pods
 OUr Goal is to containerize our applications and then deploy our applications on the wokernodes inside kubernetes cluster.
-Kubernets does not do this directly ,, it is encapsulated in to a object called POD.
+Kubernetes does not do this directly ,, it is encapsulated in to a object called POD.
 Pods generally have one to one relationship with our containers ,ie one app container in one pod
  to scale up/down we increase/decrease the pods
 We cannot have multiple containers of same kind inside a single pod, but we can have different containers. these conatiners can tal withn the same network
@@ -121,5 +121,5 @@ Ingress Service
 K8s Load balancer will be mapped to the Azure Load balancer, and when we deploy the k8s load balancer a new public ip gets created and is asscocaited
 with that  the frontend ip configuration
 
-port - where the loadbalnce listens to external traffic
+port - where the loadbalancer listens to external traffic
 targetPort - container port where our aplication is running.
