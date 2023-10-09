@@ -1,4 +1,5 @@
 
+git log --graph --branch --oneline
 This is fast forward where we will not see a commit for merging feature to master
  master --> c1 c2 -->c ut a feature branch --> c1, c2 , f1, f2
 now master does not have any commits ,, simply merge the changes into master either by git merge feature
@@ -35,6 +36,14 @@ git pull --rebase origin team/SCMI resolve conflicts if there are any
 git add .
 git commit --amend --no-edit
 git rebase --continue
+
+if there is an error like tip of ur branch
+git push origin --force
+
+rebase to master
+git switch master
+git rebase feature master
+git push origin --force
 
 master -- m1 m2 --->m3{new commit is m3} feature branch is cut from m2
 feature   m1 m2 --->f1 f2

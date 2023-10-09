@@ -3,59 +3,40 @@ package datastructures.greedy;
 public class MaxProductArray {
     public static void main(String[] args) {
 
-        int[] array = {2,3,-2,4};
-
+//        int[] array = {2,3,-2,4};
+//        int[] array = {2,3,-2,-5,6,-1,4};
+        int[] array = {2,3,0,-5,6,-1,4};
+        // here we will have to check for 3 conditions
+        //1, for zero values
+        // 2. is for -ve number of -ve
+        // 3. positive number of -ve becoz - *- = +
         maxProductArray(array);
-        maxProduct(array);
     }
 
-    private static int maxProductArray(final int[] array) {
-
-        //
-        int currentProduct = array[0];
-        int maxProduct = array[0];
-        for(int i=1;i< array.length;i++)
+    private static void maxProductArray(final int[] array) {
+        /*
+        * left prefix and right prefix  and we will keep calultaing values from left side and the right side
+        *
+        * */
+        int leftProd =1;
+        int rightProd =1;
+        int j = array.length-1;
+        int maxProd = Integer.MIN_VALUE;
+        for(int i=0;i< array.length;i++)
         {
+            leftProd = leftProd*array[i];
 
-            if(array[i]<0)
-            {
-                currentProduct=1;
-                continue;
+            if(leftProd==0)
+                leftProd=1;
 
-            }
-            if(array[i]*currentProduct > currentProduct)
-            {
-                currentProduct = array[i]*currentProduct;
-            }
+            rightProd = rightProd*array[j];
+            if(rightProd==0)
+                rightProd=1;
 
-
-            maxProduct = Math.max(currentProduct,maxProduct);
+            maxProd = Math.max(leftProd,rightProd);
+            j--;
         }
-        System.out.println(maxProduct);
-        return maxProduct;
+        System.out.println("maximum Product in subrray is "+maxProd);
     }
 
-    public static int maxProduct(int[] nums) {
-        int maxProduct = nums[0];
-        int minProduct = nums[0];
-        int result = nums[0];
-
-        for (int i = 1; i < nums.length; i++) {
-            // If the current element is negative, swap maxProduct and minProduct
-            if (nums[i] < 0) {
-                int temp = maxProduct;
-                maxProduct = minProduct;
-                minProduct = temp;
-            }
-
-            // Update maxProduct and minProduct for the current element
-            maxProduct = Math.max(nums[i], maxProduct * nums[i]);
-            minProduct = Math.min(nums[i], minProduct * nums[i]);
-
-            // Update the final result
-            result = Math.max(result, maxProduct);
-        }
-        System.out.println(result);
-        return result;
-    }
 }

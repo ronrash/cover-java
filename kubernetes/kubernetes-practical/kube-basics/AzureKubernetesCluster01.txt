@@ -33,7 +33,24 @@ aks-agentpool-11024587-vmss000001   Ready    agent   6h1m   v1.26.6
 kubectl get nodes -o wide
 
 Namespace is like a package --  is very important-- it means ur dev and qa or prod cluster will have different resources and all of them are separate
-namespace helps in that
+namespace helps in that.
+Namespaces allow to split-up resources into different groups.
+Resource names should be unique in a namespace
+We can use namespaces to create multiple environments like dev, staging and production etc
+Kubernetes will always list the resources from default namespace unless we provide exclusively from which namespace we need information from.
+
+mainfest file
+apiVersion: v1
+kind: Namespace
+metadata:
+  name:dev3
+
+now under this namespace we can deploy all our manifest files
+
+kubectly apply -f kube-maifests/ -n dev3 --> deploy all the manifest files inside namespace dev3
+kubectly apply -f kube-maifests/ -n qa
+
+kubectly apply -f kube-maifests/ -n prod
 
 kubectl get namespaces
 NAME              STATUS   AGE

@@ -1,0 +1,2 @@
+local git repo https://github.com/ronrash/azure-devops-kubernetes-teraform
+create an azure container registry --> azrondevops.azurecr.io -- service name
