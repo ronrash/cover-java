@@ -8,6 +8,7 @@
 1.docker pull jenkins/jenkins -- this will pull the latest image from docker
 2.creates a folder jenkins-home
 3. used a docker-compose file to spin up the jenkins service
+
 services:
   jenkins:
     container_name: jenkins-container
@@ -21,7 +22,6 @@ services:
 networks: // create a network
   net:
 
-s
 
 # run the docker logs -f <container-d > to see the initial admin password
 f80a21effc5c48fb89835eb7e23f139b

@@ -522,3 +522,19 @@ d
 4src/main/java/datastructures/greedy/MaxSubArray.java,f/1/f1e8c605170af4f545c3563b06d4a52f651944c2
 h
 8src/main/java/datastructures/greedy/MaxProductArray.java,0/d/0d80d07adb971a42111e4fb541d4afe31224c8c8
+I
+shell-scripting/ifelse.sh,9/1/913ddb2866278434c82b6a218413315d1bb37352
+K
+docker-notes/docker-jenkins,8/2/8270b8c581a849bf3d60ae70f69783181bccb693
+P
+ docker-notes/docker-compose-file,b/2/b266d376abc9923fed6429f9ece266ebe79c037e
+L
+docker-notes/docker-commands,7/f/7f256d9f75eed225fe50c178f59fc3b7ae77f550
+I
+docker-notes/Docker-Basic,b/b/bbba67f0e9c420ddfa974224cdfffbe48189c66b
+N
+shell-scripting/01-notes-shell,7/9/7955fc23eae463fbc3f2230463df50cc6707cb6e
+R
+"shell-scripting/01-shell-script.sh,1/b/1b95f2b199a349ace00dd8e63a54f2666cbd10fc
+K
+docker-notes/DockerfileJava,7/b/7bbaae2e3222fd53d973df51b8c8da8250c6dde4

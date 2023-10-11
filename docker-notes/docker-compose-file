@@ -1,4 +1,5 @@
 docker compose file is basically a definition file which services we want and what is their dependency
+
 mkdir jenkins-dir
 cd jenkins-dir
 vim docker-compose.yml

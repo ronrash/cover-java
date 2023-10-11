@@ -1,7 +1,7 @@
 stop all runninng containers
 docker stop $(docker ps -q) -- lists all the runninf conatiners
 
-#run docker image by pulling it directly from dockerHub
+# run docker image by pulling it directly from dockerHub
  docker run -d -p 8081:8080 rondocker2191/credit-card 
  
 #push to docker hub
@@ -16,7 +16,6 @@ docker push rondocker2191/credit-card
 Why Docker Kubernetes
 Docker containerising apps .. standard/ same packaging for all types of applications
 just have the docker machine and can run all the apps
-
 
 To start a container  for example to start in local
 docker start postgres-container

@@ -45,6 +45,8 @@ git switch master
 git rebase feature master
 git push origin --force
 
+git rebase
+
 master -- m1 m2 --->m3{new commit is m3} feature branch is cut from m2
 feature   m1 m2 --->f1 f2
 

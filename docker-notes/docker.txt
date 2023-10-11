@@ -1,5 +1,6 @@
 Docker its a containerization/packaging tool which does not require ur os that is why it is different from virtual machines
 which need os to run several vms and hence they take upa lot of space which the docker does not.
+
 Now you can run ur dockereizez image on any machine as Docker is platform independant and better usage of resource
 app isolation -- so less security is required
 containers are fast to create replicate
