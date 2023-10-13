@@ -10,8 +10,9 @@ rm file* -- remove all file with the name starting as file
 echo "hello wolrd" > file01.txt    -- creates and write content to the file
 cat file01.tx -- shows the contents of the files
 
+# echo command
 > will override >> will append
-echo "hello world " > file01.txt -- overrides
+echo "hello world " > file01.txt -- create the files and overrides its contents
 echo "hello world " >> file01.txt -- appends to the contents of the file
 
 # reading the files

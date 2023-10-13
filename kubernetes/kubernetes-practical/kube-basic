@@ -1,12 +1,4 @@
-deploy these tw files on kubernets cluster
-# Create Deployment
-kubectl apply -f Deployment.yml
-kubectl get deploy
-kubectl get rs
-kubectl get po
 
-# Create LoadBalancer Service
-kubectl apply -f LoadBalancer.yml
 
 # List Service
 kubectl get svc
@@ -22,6 +14,9 @@ login to ur azure cluster
 az aks get-credentials --resource-group <Resource-Group-Name> --name <Cluster-Name>
 az aks get-credentials --resource-group aks-rg1 --name aks-ron-deom
 
+# look at the nodes it has
+kubectl get nodes -o wide
+
 # Delete Deployment
 kubectl get deploy
 kubectl delete deploy app1nginxaks
@@ -29,4 +24,3 @@ kubectl delete deploy app1nginxaks
 # Delete Service
 kubectl get svc
 kubectl delete svc app1nginxaks
-

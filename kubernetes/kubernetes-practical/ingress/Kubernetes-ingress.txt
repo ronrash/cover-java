@@ -1,5 +1,8 @@
-Ingress is used for reverse proxy -- that it give load balancers a common ip address or helps us to configure the load balancers.
-Ingress is an application/ software deployed sometimes along with the load balancer inside a pod ,it helps in routing/rules based on uri/hostname/
+Ingress exposes http or https routes from outside the cluster to the services inside the cluster
+Traffic routing is controlled by the rules defined isnided the ingress controller
+that it give load balancers a common ip address or helps us to configure the load balancers.
+Ingress is an application/ software deployed sometimes along with the load balancer inside a pod
+,it helps in routing/rules based on uri/hostname/
 we can define tls/ssl configuration rules in our manifest files
 
 
