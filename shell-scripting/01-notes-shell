@@ -8,7 +8,7 @@ execute this file ./ <name-of the file>
 or sh <name-of-the-file>
 
 touch vs vim vs cat
-touch -- creates a file
+touch -- creates a file also updates a file
 vim --> creates and opens a file
 cat --> opens the contents of a file
 chmod -- grant permission

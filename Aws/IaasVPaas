@@ -1,4 +1,12 @@
 Iaas Infrastructuire as a service
+Infrastructure as code (IaC) is the process of managing and provisioning infrastructure
+(networks, virtual machines, load balancers, and connection topology) through CODE/Config Files.
+E:g
+Vagrant for local
+Terraform for Cloud
+Ansible for Servers
+
+Cloudformation for AWS
 Use Only Infrastructure from cloud like using vm virtual machine services to deploy ur app/databases
 Cloud Provider is responsible for Hardware,Netwroking and Virtualization
 Lets say u want to deploy a java application on a linux instance

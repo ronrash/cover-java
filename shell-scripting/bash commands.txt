@@ -1,14 +1,29 @@
 Bash commands
-ls -a -- to see details
+# list
+ls -a  list all the files and the hidden files
+ls -l list details about more files
+ls -ltr
+drwxr-xr-x    d- mean its a folder
+first 3 rwr -- read write and execute
+next 3 r-x -- guest can read but cannot write or execute
+next 3 r-x  -- everyone else can read but not write or execute
 man -- to see manual
 mkdir
-touch -- create file
-tree - to see the folder structiure
+
+touch # create/ update a  file
+touch xyz.xls # create if not exist but also updates the timestamp
+tree -> to see the folder structiure
+in a linux distribution
+xdg-open fileName --> to open a file in any other linux distribution
+
 mv example/folder . -- moving to current folder
 rm -rf -- delete
+rm file01 --> removes file01
 rm file* -- remove all file with the name starting as file
 echo "hello wolrd" > file01.txt    -- creates and write content to the file
 cat file01.tx -- shows the contents of the files
+cat file01.txt file02.txt  shows contents of 2 files wgether
+cat file01.txt file02.txt > file03.txt witres contents of 2 files into another file
 
 # echo command
 > will override >> will append
@@ -19,8 +34,17 @@ echo "hello world " >> file01.txt -- appends to the contents of the file
 cat less head tail -- for reading the contents of the file
 
 # copy
-cp *.txt ../examples  copies all text files to examples folder
-cp -r folder1 folder2 - copy contents of the directories
+cp *.txt ./examples/folder21  copies all text files to folder21 inside path examples/folder21 folder
+cp -r folder1/ folder2/  copy all the  contents of the directories becoz its a directory
+cp folder1/file01 folder2/    copying files from folder1 to folder2
+cp b* bfolder  copy all the file starting with b to bfolder
+cp -R folder1/ folder2    copy all the  contents from folder1 to folder 2
+
+#mv
+rm folder2
+mv folder1/ folder2/ move does not require recursive moves folder1 to folder2
+
+mv folder1 ../. moves folder 1 one step back from folder2 to current working directory
 
 #find
 find . -name file01.txt -- finds a file in the current directory with name

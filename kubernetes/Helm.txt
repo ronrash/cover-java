@@ -1,4 +1,4 @@
-Helm is a package manager for kubernetes, helps ot define,install upgrade complex kubernetes applicatiosn
+Helm is a package manager for kubernetes, helps at define,install upgrade complex kubernetes applications
 These packages are called charts
 They can be versioned,shared and published
 

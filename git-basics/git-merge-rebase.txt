@@ -16,7 +16,7 @@ now if we merge feature to master ,, which also has moved on it will do a recurs
 git merge --squash feature --> m1 m2 , m3 , "merge feature into master"
 git merge feature --> m1,m2,f1,f2,m3, "merge feature into master"
 
-git merge master team/mcc --no-ff  -- this will create a merge commit
+git merge master team/CCT-1545 --no-ff  -- this will create a merge commit
 So, the above command means that you want to merge the changes from the master branch into the team/mcc branch
 and create a merge commit, even if a fast-forward merge would be possible.
 This approach helps maintain a clear separation of feature development (in the team/mcc branch)

@@ -1,6 +1,11 @@
 stop all runninng containers
 docker stop $(docker ps -q) -- lists all the runninf conatiners
 
+docker system prune -a
+this will remove all stopped containers
+all networks not used by atleast one container
+all build cache
+
 # run docker image by pulling it directly from dockerHub
  docker run -d -p 8081:8080 rondocker2191/credit-card 
  
