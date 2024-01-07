@@ -6,10 +6,11 @@ public class LinearSearchRecursion {
 
     public static void main(String[] args) {
 
-        int[] a = new int[]{10,2,3,3,7,8,3,9,3};
+      //  int[] a = new int[]{10,2,3,3,7,8,3,9,3};
+        int[] a = new int[]{1,2,3};
 
 
-        System.out.println( linearSearch(a,9,0));
+        System.out.println( linearSearch(a,3,0));
 
         // return the index or -1
         System.out.println(linearSearch2(a,10,0));
@@ -41,7 +42,7 @@ public class LinearSearchRecursion {
         if (a[index]==target)
             return true;
 
-        return linearSearch(a,target,++index);
+        return linearSearch(a,target,index+1);
     }
 
     private static int linearSearch2(final int[] a, final int target,int index) {

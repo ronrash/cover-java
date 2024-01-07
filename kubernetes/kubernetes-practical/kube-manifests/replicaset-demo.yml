@@ -17,3 +17,8 @@ spec: # replicas selector{matchLabels},template{metadata-{labels}}
       containers:
         - name: my-helloworld-app
           image: stacksimplify/kube-helloworld:1.0.0
+
+
+
+describe a replicaset 
+kubectl describe rs <name-of-rs>

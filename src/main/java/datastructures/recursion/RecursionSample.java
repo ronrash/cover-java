@@ -11,9 +11,9 @@ public class RecursionSample {
 
     //
     public static void main(String[] args) {
-        int n=8;
+        int n=5;
         int ans = fib(n);
-        System.out.println(ans);
+        System.out.println("fibonacci sum is " +ans);
 
         // need to find a factorial
         int factorial = fact(n);

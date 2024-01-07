@@ -3,7 +3,7 @@ package datastructures.recursion;
 public class RecursionPrint {
     public static void main(String[] args) {
 
-       // printRecursion(5);
+       printRecursion(5);
         printRecursionReverse(5);
     }
 

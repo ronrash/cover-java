@@ -3,7 +3,7 @@ package datastructures.recursion;
 public class RecursionBasic {
 
     /*
-     * fibonncaci
+     *  fibonncaci
      *
      *   0,1,2,3,5,8,13
      *  f(n)=f(n-1)+f(n-2)

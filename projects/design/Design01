@@ -1,5 +1,5 @@
 Architecture:
-For scaling the e-commerce application, you can consider using a combination of the following architectural patterns:
+For scaling the e-commerce application, ycombination of the following arou can consider using a chitectural patterns:
 
 Microservices Architecture:
 Divide the application into smaller, independent services that can be developed, deployed, and scaled independently.

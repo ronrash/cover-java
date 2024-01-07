@@ -1,4 +1,4 @@
-
+remove git init rm -rf .git
 git log --graph --branch --oneline
 This is fast forward where we will not see a commit for merging feature to master
  master --> c1 c2 -->c ut a feature branch --> c1, c2 , f1, f2

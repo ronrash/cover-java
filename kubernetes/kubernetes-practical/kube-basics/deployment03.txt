@@ -19,12 +19,14 @@ kubectl rollout status deployment/my-first-deployment
 # Verify Deployment
 kubectl get deploy
 
-Verify the Events and understand that Kubernetes by default do "Rolling Update" for new application releases.
+Verify the Events and understand that Kubernetes by default
+do "Rolling Update" for new application releases.
 With that said, we will not have downtime for our application.
 
 check the replica set and pods
 
-We have the rollout history, so we can switch back to older revisions using revision history available to us.
+We have the rollout history,
+so we can switch back to older revisions using revision history available to us.
 
 kubectl rollout history deployment/<Deployment-Name>
 kubectl rollout history deployment/my-first-deployment

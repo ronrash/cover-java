@@ -14,9 +14,9 @@ public class AllQuestionsInBinaryTree2 {
         binryTree.insert(3);
         binryTree.insert(5);
         binryTree.insert(7);
-        // kth Samllest Itme in this Binary Tre without using a astack
+        // kth Samllest Itme in this Binary Tre without using a a stack
         int k = 3;
-    //    Node kthSmallestItemInBinaryTree = binryTree.kthSmallestItemInBinaryTree(binryTree.rootNode, k);
+        Node kthSmallestItemInBinaryTree = binryTree.kthSmallestItemInBinaryTree(binryTree.rootNode, k);
      //   System.out.println(kthSmallestItemInBinaryTree.getData());
 
 
@@ -24,7 +24,8 @@ public class AllQuestionsInBinaryTree2 {
         System.out.println("Smallest Node is " + binryTree.smallestNode().getData());
 
 
-        // Algo is that if k is smaller than the no of node in left then kth itme s in left subtree alternately k is greater than it should be in right
+        // Algo is that if k is smaller than the no of node in left
+        // then kth itme s in left subtree alternately k is greater than it should be in right
 
 
         // traverlsal inorder preoder postorder ,level order
