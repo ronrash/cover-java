@@ -37,6 +37,8 @@ public class EnumSample {
         // we cannot use the new keyword
 
         Items[] items = Items.values();
+        System.out.println(Items.CHEESE.name()); // CHEESE
+        System.out.println(Items.CHEESE.getPrice());
         for(Items item:items)
         {
             System.out.println(item.name()+" "+item.getPrice());

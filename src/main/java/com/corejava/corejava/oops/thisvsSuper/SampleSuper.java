@@ -16,10 +16,11 @@ public class SampleSuper {
 }
 
 class Animal {
-    String colour ="black";
+    String colour ="black"; // default access specifier
 
     public void hello()
     {
+        System.out.println(colour);
         System.out.println("animal class");
     }
 

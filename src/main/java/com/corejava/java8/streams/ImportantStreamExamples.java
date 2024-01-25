@@ -16,6 +16,8 @@ public class ImportantStreamExamples {
 
     public static void main(String[] args) {
         List<String> postcodes = getPostcodes();
+        
+        // list of string hai ,, we need to have , in between then best is 
 
 
         String collect = postcodes.stream().collect(Collectors.joining(","));
@@ -26,9 +28,9 @@ public class ImportantStreamExamples {
         List<String> mypostcodes = Arrays.asList("CR0 1HB","CR0 5UA","SE2 2PH","BR1 2HS");
     }
 //        return getResultedHearings()
-//                .map(Hearings::getDefendants)
-//                .filter(Objects::nonNull)
-//                .flatMap(Collection::stream)
+//                .map(Hearings::getDefendants) // List<DefendantOBjects >
+//                .filter(Objects::nonNull) // checks for any object null
+//                .flatMap(Collection::stream) // again maikea a collection out of it 
 //                .filter(d -> defendantId.equals(d.getId()))
 //                .map(Defendants::getJudicialResults)
 //                .filter(Objects::nonNull)
@@ -64,15 +66,23 @@ public class ImportantStreamExamples {
 
 
         List<Student> studentList = StudentUtility.getStudentList();
-        Stream<Student> studentStream = studentList.stream().filter(Objects::nonNull);
-        List<String> postcode = studentStream.
-                filter(student -> student.getAddress() != null)
+//        Stream<Student> studentStream = studentList.stream().filter(Objects::nonNull);
+//        List<String> postcode = studentStream.
+//                filter(student -> student.getAddress() != null)
+//                .flatMap(student -> student.getAddress().stream())
+//                .map(address -> address.getPostcode())
+//                .collect(toList());
+
+// list of student objects ,, we need to get the postcodes matching CR0
+        List<String> postcodes = studentList.stream()
+                .filter(student -> student.getAddress() != null) // this has just filtered out the students whose address is not null
                 .flatMap(student -> student.getAddress().stream())
                 .map(address -> address.getPostcode())
+                .filter(add -> add.startsWith("CR0"))
                 .collect(toList());
 
 
-        return postcode;
+        return postcodes;
                // students can be null
     }
 }

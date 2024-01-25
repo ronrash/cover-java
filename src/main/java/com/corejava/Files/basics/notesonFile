@@ -3,6 +3,11 @@ There are 2 packages java.io and java.nio
 java.io -- reading data from external resources
 file -- file i basically a handler used by the operating system to keep track of the file
 
+
+
+
+
+
 Reader
 FileReader
 Writer

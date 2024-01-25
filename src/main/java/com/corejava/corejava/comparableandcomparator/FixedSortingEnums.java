@@ -5,7 +5,9 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.TreeMap;
+import java.util.stream.Collectors;
 
 public class FixedSortingEnums {
     static List<String> weekdays = Arrays.asList("Sunday", "Monday", "Saturday", "Thursday", "Wednesday", "Tuesday", "Friday");
@@ -26,6 +28,15 @@ public class FixedSortingEnums {
         week.put("Thursday", 4);
         week.put("Friday", 5);
         week.put("Saturday", 6);
+
+        // sort using streams
+        // week is hashamp and i need to sort this by map value
+        // map----> [k,V] // stream thru this map and sort the map values insode another map
+
+        List<String> sortedListBasedOnActualWeek = week.entrySet().stream().sorted(Map.Entry.comparingByValue())
+                .map(Map.Entry::getKey).collect(Collectors.toList());
+        System.out.println("sorted list ::"+sortedListBasedOnActualWeek);
+
 
    String s = "hello";
 
@@ -61,7 +72,29 @@ public class FixedSortingEnums {
 
         System.out.println(weekmap);
 
+        System.out.println("----------------------");
 
+        HashMap<String,Integer> map = new HashMap<>();
+        map.put("akshay",21);
+        map.put("rohit",33);
+        map.put("swati",28);
+        map.put("ashwini",27);
+
+        System.out.println(map);
+
+        // sort this map based on key.. --> best is that string
+        TreeMap<String,Integer> stringIntegerTreeMap = new TreeMap<>(map);
+        System.out.println(stringIntegerTreeMap);
+
+        // sort based on the values lower to higher
+        TreeMap<String,Integer> treeMap = new TreeMap<>(Comparator.comparing(map::get));
+        treeMap.putAll(map);
+        System.out.println(treeMap);
+
+        // sort based on the values higher to lower
+        TreeMap<String,Integer> treeMap1 = new TreeMap<>((v1,v2)->map.get(v2).compareTo(map.get(v1)));
+        treeMap1.putAll(map);
+        System.out.println(treeMap1);
 
     }
 }

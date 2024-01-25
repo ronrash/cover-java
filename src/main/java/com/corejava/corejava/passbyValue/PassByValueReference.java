@@ -4,7 +4,7 @@ public class PassByValueReference {
 
 
     /*
-    * java is alwasy pass by value and not reference
+    *  java is alwasy pass by value and not reference
     * var we pass the copy of the variable and not the
     *  objects -- we pass the pointer reference ie copy of the pointer reference and that changes the object values
     *  final -- actually means that the variable can be assigned only once

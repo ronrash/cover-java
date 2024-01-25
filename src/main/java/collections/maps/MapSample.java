@@ -22,11 +22,9 @@ public class MapSample {
     *                 {
     *                     object getKey()
     *                     object getValue()
-    *
     *                     }
     *                }
-    *
-    *
+
     * */
     public static void main(String[] args) {
         HashMap<String, Integer> map = new HashMap<>() ; // create empty hashMap object with default size as 16

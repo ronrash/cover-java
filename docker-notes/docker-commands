@@ -13,7 +13,7 @@ all build cache
 docker push rondocker2191/credit-card  -- this will go ahead and create a repository in your docker hub account with credit-card name
 
 # build a docker image
-docker build -t rondcoker2191/credid-card .
+docker build -t rondcoker2191/credit-card .
 then push it to odkcer hub
 docker push rondocker2191/credit-card
 

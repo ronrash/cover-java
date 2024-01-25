@@ -5,17 +5,20 @@ import java.util.HashMap;
 public class SubArraySumForNegativeNumbers {
     public static void main(String[] args) {
 
-        int[] a= {10,15,-5,15,-10,-5,1,1,3};
+        int[] a= {10,15,5,-25,6,10,5,5,20,-41};
+        int[] a1 = {1, 2, 3, 4}; //
         int target = 5;
         // 15 -10 = 5 whihc is in position 3&4
 
         // y = y-k+k
-        int[] a1= {-2,-3,4,-1,-2,1,5,-3};
+      //  int[] a1= {-2,-3,4,-1,-2,1,5,-3};
 
-        subArraySum(a,target);
-        longestSubArrayOfSum(a1,7);
-        subArraySumUsingFreqMap(a,target);
-        bruteForce(a,target);
+      //  subArraySum(a,target);
+        longestSubArrayOfSum(a,5);
+      // subArraySumUsingFreqMap(a,target);
+       // bruteForce(a,target);
+        int maxLength = longestSubArraySun(a1, 6);
+        System.out.println("max length is "+maxLength);
     }
 
     private static void bruteForce(final int[] a, final int target) {
@@ -62,7 +65,7 @@ public class SubArraySumForNegativeNumbers {
         HashMap<Integer, Integer> map = new HashMap<>();
         while(i<a.length)
         {
-            sum+=a[i];
+            sum+=a[i]; // sum
 
             if(sum-target==0)
             {
@@ -111,5 +114,26 @@ public class SubArraySumForNegativeNumbers {
         System.out.println(maxLength);
     }
 
+    private static int longestSubArraySun(final int[] a, final int target){
+        int index=0;
+        int start =0;
+        int end=0;
+        int maxLength=0;
+        int sum=0;
+        while(index<a.length)
+        {
+           sum =sum+a[index];
 
+           if(sum==target)
+           {
+               end=index;
+               maxLength=Math.max(maxLength,(end-start)+1);
+               start=end+1;
+               sum=0;
+
+           }
+       index++;
+        }
+        return maxLength;
+    }
 }

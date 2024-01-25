@@ -36,7 +36,7 @@ docker run -d -p 8081:8080 rondocker2191/credit-card:0.0.1-RELEASE
 docker run -d -p 8082:8080 rondocker2191/credit-card:0.0.2-RELEASE
 docker run -d -p 8083:8080 rondocker2191/credit-card:0.0.3-RELEASE
 
-
+docker rmi -f $(docker images -q) -- delete all dangling images
 Developer builds an image and you can run the image wherever a container runtime is installed
 #runnning a docker image on local machine
 Run Docker from docker Hub

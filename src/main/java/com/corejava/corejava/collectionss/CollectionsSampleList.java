@@ -19,7 +19,7 @@ public class CollectionsSampleList {
     *    LIst<I> -- duplicates are allowed and insertion order is maintained
     *    Collection -- represents a group of individual objects (List ArrayList Vector Stack )
     *    Set -->Insertion order not there duplicate not allowd SortedSet->NavigableSet-> TreeSet HashSet
-    *   Map does not come under Collection interface --> group of objects represented as key vaue
+    *    Map does not come under Collection interface --> group of objects represented as key vaue
     *    HashMap --- Is an implementation
     *    Keys should
     *

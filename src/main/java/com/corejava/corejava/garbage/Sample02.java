@@ -4,7 +4,7 @@ public class Sample02 {
 
     // garabge collection is the process to free up memory not under developers control
     // although we could call up System.gc --> but this is a suggestion and the jvm may or may not use it
-    // objects on the heap whihc cannot be referenced from stack are eligible for garbage collection
+    // objects on the heap which cannot be referenced from stack are eligible for garbage collection
     // Java Virtual Machine (JVM) has a built-in Garbage Collector (GC) that is responsible for this process.
     // marks the objects live and and unreachable objects and slowly removes them from the garbage collector
 

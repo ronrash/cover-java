@@ -15,6 +15,6 @@ public class StreamsMap {
 
         final List<Map.Entry<String, Integer>> list = map.entrySet().stream().collect(Collectors.toList());
 
-        map.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(System.out::println);
+        map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
     }
 }

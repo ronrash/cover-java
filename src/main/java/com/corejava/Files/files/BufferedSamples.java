@@ -27,7 +27,7 @@ public class BufferedSamples {
         *
         * */
 
-        try( FileReader fileReader = new FileReader(("/Users/rohitprashar/Downloads/javares/src/main/resources/abct.txt"));
+        try( FileReader fileReader = new FileReader(("/Users/rohitprashar/Desktop/javares/src/main/resources/abc.txt"));
              BufferedReader bufferedReader = new BufferedReader(fileReader)) {
 
             // reads an entire line and retursn a string

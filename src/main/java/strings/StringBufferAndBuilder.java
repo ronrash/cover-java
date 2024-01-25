@@ -2,6 +2,8 @@ package strings;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class StringBufferAndBuilder {
     //To address the limiations of the immutable String class,
@@ -26,21 +28,20 @@ public class StringBufferAndBuilder {
         System.out.println(sentence);
 
         List<String> items = new ArrayList<>();
+
         items.add("apple");
+        items.add(null);
         items.add("banana");
         items.add("orange");
         items.add("grape");
 
-        StringBuilder csvBuilder = new StringBuilder();
+        String csvBuilder = items
+                .stream()
+                .filter(Objects::nonNull)
+                .collect(Collectors.joining(","));
 
-        for (String item : items) {
-            if (csvBuilder.length() > 0) {
-                csvBuilder.append(", ");
-            }
-            csvBuilder.append(item);
-        }
-
-        String csvString = csvBuilder.toString();
+        String csvString = csvBuilder;
         System.out.println("Comma-separated list: " + csvString);
+
     }
 }

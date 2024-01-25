@@ -19,9 +19,9 @@ public class SampleFile01 {
         *
         * */
 
-        File file = new File(".","files/sampletext.txt");
+        File file = new File(".","files/sampletext.txt"); // this is basically a file handler
         System.out.println("this will give the absolute path like doing pwd "+new File("").getAbsolutePath());
-        System.out.println(file.getAbsolutePath());
+        System.out.println(file.getAbsolutePath()); // this get the present working directory
         if(!file.exists())
         {
             System.out.println("file does not exist ");
@@ -36,7 +36,7 @@ public class SampleFile01 {
         With NIO2 you first need to get an instance of Path
         * */
 
-        Path path = Paths.get("files/test.txt");
+        Path path = Paths.get("files/test.txt"); // this is just a srting represenation
         System.out.println("Using path ");
         if(!Files.exists(path))
         {

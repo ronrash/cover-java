@@ -10,10 +10,12 @@ public class SampleImmutabel
     // feilds shoudl be private {private scope} and final becozonce the intialized the value cannot be changed
     // make sure nt return the original refernces for mutable obhects inside an Immutable object
     // no setters only getters
-   // Caching and Memoization: Immutable objects are useful in caching and memoization scenarios, where you want to store computed values without the risk of them being altered
+   // Caching and Memoization: Immutable objects are useful in caching and memoization scenarios,
+    // where you want to store computed values without the risk of them being altered
     //Enums: Enums in Java are inherently immutable.
     //String ,Wrappers classes when you change the value of the Wrapper classes it creates new objects hence the wrapper classes are always immutable.
-    //such as Collections.unmodifiableList(), Collections.unmodifiableSet(), and Collections.unmodifiableMap(). These collections prevent modifications after creation,
+    //such as Collections.unmodifiableList(), Collections.unmodifiableSet(), and Collections.unmodifiableMap().
+    // These collections prevent modifications after creation,
 
     public static void main(String[] args) {
         List<String> mutbaleList = new ArrayList<>();

@@ -49,14 +49,15 @@ public class PathSample {
     }
 
     private static void getSomeAttributes() {
-        Path path = Paths.get("sample/somefile.txt"); // This file does not exist , it will not throw an error
+        Path path = Paths.get("vagrant12/1231221312.txt"); // This file does not exist , it will not throw an error
         System.out.println("parent path " + path.getParent()); // this will show the current working directory
         System.out.println("absolute path " + path.toAbsolutePath()); //same
         System.out.println("Root " + path.getRoot()); // this means that this is relative path and there is no root directory
 
-
-
-
-
+//        The path Paths.get("sample/somefile.txt") does not check for the file's existence.
+//        It's just a representation of the path.
+//                path.getParent() would return the directory part of the path, which is "sample" in this case.
+//        path.toAbsolutePath() would return the absolute path, which is the full path from the root of the file system to the file.
+//        path.getRoot() would return null in this case, as "sample/somefile.txt" is a relative path and does not include a root component.
     }
 }

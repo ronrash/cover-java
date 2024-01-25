@@ -11,3 +11,32 @@ public class B extends A {
         // if i remove the access modifier to default i will not be able to access the method
     }
 }
+// File: MyClass.java in package1
+// package package1;
+
+class MyClass { // Default access specifier for class
+    void display() { // Default access specifier for method
+        System.out.println("Hello from MyClass in package1");
+    }
+}
+// File: Main.java in package1
+//package package1;
+
+//public class Main {
+//    public static void main(String[] args) {
+//        MyClass obj = new MyClass(); // Accessible within the same package
+//        obj.display(); // Accessible method
+//    }
+//}
+
+// File: Test.java in package2
+//package package2;
+//
+//        import package1.MyClass;
+//
+//public class Test {
+//    public static void main(String[] args) {
+//        MyClass obj = new MyClass(); // Compilation Error: MyClass not visible
+//        obj.display(); // Compilation Error: display() not visible
+//    }
+//}

@@ -40,7 +40,8 @@ public class IntermediateOperations {
 
 
         System.out.println(collect);
-
-
+//
+//        However, when using a collection like HashSet that relies on both equals and hashCode
+//        methods for determining equality and ensuring that there are no duplicates, you also need to override the hashCode method.
     }
 }

@@ -5,7 +5,7 @@ public class Sample01 {
     // java has three memory stack heap and metaspace
     // static variable are stored in metaspace
     // static object reference live on metaspace
-    // all classes and all threads have access to the metaspace andthat is why static variable can be accessed by any piece of code
+    // all classes and all threads have access to the metaspace and that is why static variable can be accessed by any piece of code
 
 
     // importnace of intern

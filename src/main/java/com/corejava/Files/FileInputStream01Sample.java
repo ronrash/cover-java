@@ -1,5 +1,6 @@
 package com.corejava.Files;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -7,6 +8,8 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.stream.Stream;
 
 public class FileInputStream01Sample {
 
@@ -23,7 +26,7 @@ public class FileInputStream01Sample {
      *  are wrappers on Inputstream and OutputStream
      *  Reader and writer are used for Byte nad character stream or character or text data
      *  File is handle for the folder where file is stored
-An InputStreamReader is a bridge between byte stream and character stream and can take a FileInputStream as a source.
+      An InputStreamReader is a bridge between byte stream and character stream and can take a FileInputStream as a source.
      *  Exception throw FileNotFound and
      *
      *   file vs fileReader
@@ -90,24 +93,48 @@ Read more: https://www.java67.com/2016/03/difference-between-filereader-vs.html#
     private static void readAmdWriteUsingFileInputAndOutPutStream() throws IOException {
 
         // using try with resources
-        FileReader fileReader  = new FileReader(new File("/Users/rohitprashar/Desktop/file021212212.txt"));
 
+        FileReader fileReader;
 
-        try (FileInputStream fileInputStream = new FileInputStream(new File("/Users/rohitprashar/Desktop/file01.txt"));
-             FileOutputStream fileOutputStream = new FileOutputStream(new File("/Users/rohitprashar/Desktop/file01.txt"))) {
-            System.out.println("Reading the file");
-            int i = 0;
-            // fileInputStream.read()  returns and int and reads one byte at a time
-            // convert that into a character
-            while ((i = fileInputStream.read()) != -1) {
-                System.out.print((char) i);
-                fileOutputStream.write((char) i);
+        {
+            try {
+                fileReader = new FileReader(("/Users/rohitprashar/Desktop/abcdef.txt"));
+                while (fileReader.ready()) {
+                    int lines = fileReader.read(); // reads char streams or char by char
+                    System.out.print((char) lines);
+                }
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
-    }
+        System.out.println();
+        // fileInputStream
+       try{
+           FileInputStream fileInputStream = new FileInputStream("/Users/rohitprashar/Desktop/abcdef.txt");
+           int i;
+         while( (i=fileInputStream.read())!=-1)
+         {
+             char c = (char)i;
+             System.out.print(c+" ");
+         }
+       }catch (IOException e){}
 
+       // byte to char stream -- read a line using bufferedreader and to write a line its best to use a printwriter
+        try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in) )){
+            Stream<String> lines = br.lines();
+            System.out.println(lines);
+
+            System.out.println(br.readLine());
+        }catch (IOException e){
+
+        }
+
+        try(BufferedReader br = new BufferedReader(new FileReader("/Users/rohitprashar/Desktop/abcdef.txt")))
+        {
+            while (br.ready())
+            System.out.println(br.readLine());
+        }catch (IOException e)
+        {}
+
+    }
 }

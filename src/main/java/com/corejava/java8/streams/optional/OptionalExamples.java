@@ -1,6 +1,8 @@
 package com.corejava.java8.streams.optional;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 
 public class OptionalExamples {
@@ -63,5 +65,8 @@ public class OptionalExamples {
         final String s = Optional.of(customer2.getName()).orElse("");
         customer2.setName(s);
         //sout
+
     }
 }
+
+

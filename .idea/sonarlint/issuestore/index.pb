@@ -252,8 +252,6 @@ p
 @src/main/java/designpatterns/creational/singleton/Singleton.java,6/0/608d5a80ff41c585a348efb5ace7c4ed08ad562e
 †
 Vsrc/main/java/designpatterns/creational/singleton/solid/dip/before/ProductCatalog.java,5/9/595063a1cd597e8df00b03efa324295199c9ed3c
-h
-8src/main/java/datastructures/arrays/CustomArrayList.java,4/4/449a44d5337586cf53839f4a555bdcfe17829bf9
 k
 ;src/main/java/datastructures/arrays/SampleArrayMethods.java,8/9/899fe236bfe52690c72cb6cf0993a8b415d6279a
 l
@@ -614,3 +612,13 @@ n
 >src/main/java/com/corejava/Generics/methods/TypeInference.java,3/f/3f01aece4e3ced689188d8d66288135eb9dcad64
 p
 @src/main/java/com/corejava/Generics/methods/BoundedGenerics.java,6/3/637e7b04401f1511821e05c545846485bad00ae5
+i
+9src/main/java/datastructures/arrays/CustomArrayList2.java,d/a/da454ea639ff5593e1580e17c1db8e4a6957312b
+v
+Fsrc/main/java/datastructures/arrays/custom/CustomArrayListGeneric.java,f/c/fcde4ecb5ceb21c0ae3865323a53f5ef238864db
+\
+,src/main/java/datastructures/arrays/App.java,f/2/f2e9fffb7ac56c59f97a4efa4beb48b2c3fb1a17
+L
+docker-notes/docker-postgres,f/7/f7a2285911b466b038418d88a50fc0d533f73736
+€
+Psrc/main/java/datastructures/recursion/arrayquestions/CheckingArrayIsSorted.java,d/c/dcdc2a3f5eb0f620153155d8fa3478da55097fe6

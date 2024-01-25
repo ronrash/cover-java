@@ -93,6 +93,10 @@ class IdComparator implements Comparator<Emp> {
         // if by id
         return Integer.compare(emp1.getId(), emp2.getId());
 
+        //  public static int compare(int x, int y) {
+        //        return (x < y) ? -1 : ((x == y) ? 0 : 1);
+        //    }
+
     }
 }
 

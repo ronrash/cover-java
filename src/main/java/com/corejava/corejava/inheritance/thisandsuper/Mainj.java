@@ -13,5 +13,8 @@ public class Mainj {
 
         System.out.println(  newChild.getAddress());
         System.out.println(  newChild.getName());
+        child.printParent();
+        int parentAge = child.parentAge; // we can access the public / protected parent methods and variables
+        // we can also override them
     }
 }

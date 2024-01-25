@@ -13,8 +13,8 @@ public class SpotDifference {
 
         System.out.println(obj1.hashCode() + " " + obj2.hashCode() + " " + obj3.hashCode());
 
-        System.out.println(obj1 == obj2);
-        System.out.println(obj1.getName().equals(obj2.getName()));
+        System.out.println(obj1 == obj2); // false
+        System.out.println(obj1.getName().equals(obj2.getName())); // true
 
         WithEqualsAndHashCode obj4 = new WithEqualsAndHashCode(1,"dog");
         WithEqualsAndHashCode obj5 = new WithEqualsAndHashCode(1,"dog");

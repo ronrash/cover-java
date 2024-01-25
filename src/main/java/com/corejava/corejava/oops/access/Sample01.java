@@ -3,7 +3,7 @@ package com.corejava.corejava.oops.access;
 public class Sample01 {
 
 //    Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
-//    Default: The access level of a default modifier is only within the package.
+//    Default: The access level of a default modifier is only within the package , it is called package private .
 //    It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
 //    Protected: The access level of a protected modifier is within the package and outside the package through child class.
 //    If you do not make the child class, it cannot be accessed from outside the package.

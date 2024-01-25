@@ -35,12 +35,12 @@ public class SampleAbstract {
 }
 
 abstract class Sam{
-     final String name="hello"; // a constant
+     final String name="hello"; // an instance vraibale
     static final String adderss="chatsworth";
     protected int age=40; // subclasses can access
 
     public  final void calSum(){
-        System.out.println("value is 10");;
+        System.out.println("value is ");;
     }
 }
 
@@ -79,7 +79,7 @@ abstract class C{
 
      void run(){
          System.out.println(" non abstract method in an abstract class with no abstract methods");
-    }  // non  abstract method
+}  // non  abstract method
 }
 
 abstract class  Bike{

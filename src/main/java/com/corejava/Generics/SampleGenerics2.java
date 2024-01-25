@@ -6,10 +6,12 @@ import java.util.List;
 public class SampleGenerics2 {
     public static void main(String[] args) {
         Box<Integer> box = new Box<>();
-        box.get();
+        box.set(20);
+        Integer integer = box.get();
+        System.out.println(integer);
         box.set(20);
         box.get();
-   Integer [] array = {1,2,3,};
+     Integer[] array = {1,2,3};
         box.printArray(array);
     }
 }
@@ -24,16 +26,16 @@ class Box<T>
        this.data = data;
     }
     public T get(){
-        System.out.println("geting "+this.data);
         return this.data;
     }
     // type Parameter to be used for readability
-    public  <T> void printArray(T[] array)
+    public <T> void printArray(T[] array)
     {
         for(T t:array)
         {
             System.out.println("hello "+ t);
         }
+
     }
    // Wildcard Type Arguments: Wildcards (?) are used when you want to work with multiple types,
     // but don't know which specific type will be used.
