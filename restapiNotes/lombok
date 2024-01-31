@@ -9,7 +9,7 @@ sequence -- weh have to create a sequence
 uuid --
 table -- based on the tanble
 
-@RequiredArgsConstuructor -- create a constructor for final and nonnull fields
+@RequiredArgsConstuructor -- creates a constructor for final and nonnull fields
 https://projectlombok.org/features/constructor
 @RequiredArgsConstructor generates a constructor with 1 parameter for each field that requires special handling.
  All non-initialized final fields get a parameter, as well as any fields that are marked as @NonNull that aren't initialized where they are declared.

@@ -27,7 +27,68 @@ Spring Core related annotaion
 it is made availabe to the ioc container when it sees it will create the bean and maintain the lifecylce for it -- usually when we use kafka or restTemplate
 
 @Qualifier -- tells ioc or application context / spring which bean to load when there are multiple implementations of a service
+this is an example of Qualifier annotation
+
+interface Engine{
+  void start();
+}
+
+@Component('gasEngine')
+class GasEngine implemnts Engine{
+
+  public void start()
+  {
+   sout("gas engine starting ")
+   }
+}
+@Component('electricEngine')
+class ElectricEngine implemnts Engine{
+
+  public void start()
+  {
+   sout("electric engine  starting ")
+   }
+}
+
+@Component
+public class Car {
+    private final Engine engine;
+
+    @Autowired
+    public Car(@Qualifier("electricEngine") Engine engine) {
+        this.engine = engine;
+    }
+
+    public void start() {
+        engine.start();
+        System.out.println("Car is running with electric engine.");
+    }
+}
+In this example, when Spring creates the Car bean, it knows that it needs an Engine bean.
+There are two Engine beans available (ElectricEngine and GasEngine).
+By using @Qualifier("electricEngine"), we are instructing Spring to inject the ElectricEngine bean, not the GasEngine bean.
+
 @Primary -- annotate the bean which u want to give priority and annotate It with this
+
+@Component
+@Primary
+public class PrimaryDatabaseConnection implements DatabaseConnection {
+    // ...
+}
+
+@Component
+public class SecondaryDatabaseConnection implements DatabaseConnection {
+    // ...
+}
+
+@Service
+public class DataService {
+    @Autowired
+    private DatabaseConnection connection; // Autowires PrimaryDatabaseConnection implementation must be used
+    // ...
+}
+
+
 @Lazy -- lazing loading of the Beans
 @Value -- to load any value from the properties file @Value("${mail.from}")
 @PropertySource

@@ -5,7 +5,8 @@ When you annotate a class with @RestControllerAdvice, it becomes a central place
 It allows you to define methods that will be invoked when exceptions of specific types are thrown, providing a consistent and uniform way to handle errors in your API.
 
 Typically, the methods within a @RestControllerAdvice class are annotated with @ExceptionHandler to specify the type of exception they handle.
-When an exception occurs within any of the mapped controllers, Spring will look for a matching @ExceptionHandler method in the @RestControllerAdvice class and invoke it to handle the exception.
+When an exception occurs within any of the mapped controllers,
+Spring will look for a matching @ExceptionHandler method in the @RestControllerAdvice class and invoke it to handle the exception.
 
 But we highly recommend using Constructor injection over other types.
 Because it allows the application to initialize all required dependencies at the initialization time.
