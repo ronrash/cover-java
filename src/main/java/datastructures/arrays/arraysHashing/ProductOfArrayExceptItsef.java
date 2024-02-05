@@ -1,5 +1,7 @@
 package datastructures.arrays.arraysHashing;
 
+import java.util.Arrays;
+
 public class ProductOfArrayExceptItsef {
 
     public static void main(String[] args) {
@@ -20,6 +22,7 @@ public class ProductOfArrayExceptItsef {
             leftProduct = leftProduct * a[i];
             leftArray[i] = leftProduct;
         }
+        System.out.println("This is the left Array "+Arrays.toString(leftArray));
         for (int i = a.length - 1; i >= 0; i--) {
             rightProduct = rightProduct * a[i];
             rightArray[i] = rightProduct;
@@ -27,6 +30,7 @@ public class ProductOfArrayExceptItsef {
         //   int[] a = {1,2,3,4};// output is [24,12,8,6]
         //[1,2,6,24]
         //[24,24,12,4]
+        System.out.println("This is the right  Array "+Arrays.toString(rightArray));
         for (int i = 0; i < a.length; i++) {
             if (i == 0) {
                 a[i] = 1 * rightArray[i + 1];

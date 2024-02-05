@@ -1,4 +1,4 @@
-package datastructures.leetcode.hashmapQuestions;
+package datastructures.hashmaps.hashmapQuestions;
 
 import java.util.Arrays;
 import java.util.HashMap;

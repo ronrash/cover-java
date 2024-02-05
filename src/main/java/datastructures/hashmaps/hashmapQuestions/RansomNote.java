@@ -1,4 +1,4 @@
-package datastructures.hashmaps;
+package datastructures.hashmaps.hashmapQuestions;
 
 import java.util.HashMap;
 
