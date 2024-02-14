@@ -3,9 +3,9 @@ package datastructures.arrays.arrayQuestionsleetcode;
 public class HouseRobber {
 
     public static void main(String[] args) {
-       // int[] a = {2,7,9,3,1};
+        int[] a = {2,7,9,3,1};
 
-        int[] a = {2,1,1,2};
+       // int[] a = {2,1,1,2};
         int robbery = rob(a);
         System.out.println("roberry worth is "+rob(a));
 

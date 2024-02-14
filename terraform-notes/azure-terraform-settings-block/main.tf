@@ -41,5 +41,15 @@ resource "random_pet" "aksrandom" {
 
 }
 
+# Update main.tf with Terraform State Storage Configure Terraform State Storage
+terraform {
+  backend "azurerm" {
+    resource_group_name   = "terraform-storage-rg"
+    storage_account_name  = "terraformstatexlrwdrzs"
+    container_name        = "tfstatefiles"
+    key                   = "terraform.tfstate"
+  }
+}
+
 # Terraform Initialize
 #terraform init

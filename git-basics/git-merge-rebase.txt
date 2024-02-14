@@ -1,16 +1,17 @@
 remove git init rm -rf .git
 git log --graph --branch --oneline
+
 This is fast forward where we will not see a commit for merging feature to master
- master --> c1 c2 -->c ut a feature branch --> c1, c2 , f1, f2
-now master does not have any commits ,, simply merge the changes into master either by git merge feature
+ master --> c1 c2 -->cut a feature branch --> c1, c2 , f1, f2
+now master does not have any commits ,, simply merge the changes into master either by -->git merge feature
 this will create 2 commit on top of master like c1,c2 f1,f2
 or squash with one commit --> git merge --squash feature --> we will have to commit this seprataley
 
 Recursive
-but when we merge feature like this ---> git merge  --no-ff feature --> this will creat an extra commit showing our merge to master
+but when we merge feature like this ---> git merge  --no-ff feature --> this will create an extra commit showing our merge to master
 c1,c2,f1,f2 and an extra megre commit like "Megre branch 'feature ' into master"
 
-Now if we have master  --- m1 m2          m3
+Now if we have master  ---> m1 m2          m3
                                 feature - m1 m2 f1 f2
 now if we merge feature to master ,, which also has moved on it will do a recursive merge
 git merge --squash feature --> m1 m2 , m3 , "merge feature into master"

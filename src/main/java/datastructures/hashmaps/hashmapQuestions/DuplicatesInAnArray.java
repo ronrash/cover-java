@@ -2,8 +2,10 @@ package datastructures.hashmaps.hashmapQuestions;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class DuplicatesInAnArray {
 
@@ -20,6 +22,7 @@ public class DuplicatesInAnArray {
         //
 
         findCountOfEachWord(a);
+        findDuplicates(a);
 
         // removing duplicates in an array
         // using set
@@ -35,9 +38,9 @@ public class DuplicatesInAnArray {
         System.out.println(map);
     }
 
-    public static List<Integer> findDuplicates(int[] nums) {
+    public static Set<Integer> findDuplicates(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
-        List<Integer> duplicates = new ArrayList<>();
+        Set<Integer> duplicates = new HashSet<>();
 
         for (int num : nums) {
             map.put(num, map.getOrDefault(num, 0) + 1);
@@ -48,7 +51,7 @@ public class DuplicatesInAnArray {
                 duplicates.add(entry.getKey());
             }
         }
-
+        System.out.println(duplicates);
         return duplicates;
     }
 }

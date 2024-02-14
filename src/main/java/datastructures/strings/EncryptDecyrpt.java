@@ -14,7 +14,7 @@ public class EncryptDecyrpt {
         StringBuilder result = new StringBuilder();
 
         if (words.length >= 2) {
-            String fristWord = words[0];
+            String firstWord = words[0];
             String lastWord = words[words.length - 1];
 
             // reverse them
@@ -23,7 +23,7 @@ public class EncryptDecyrpt {
                 sb.append(words[j]);
             }
             sb.append(" ");
-            sb.append(fristWord);
+            sb.append(firstWord);
         }
 
         // loop hel2o world

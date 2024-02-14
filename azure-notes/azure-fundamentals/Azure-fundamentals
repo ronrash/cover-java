@@ -20,7 +20,8 @@ management groups -- different subscriptions or resources for different groups l
 here are different payment options in Azure including pay-as-you-go (PAYG),
 Enterprise Agreement (EA), and Microsoft Customer Agreement (MCA) accounts. Your Azure costs are ‘per subscription’.
 You are charged monthly for all resources in a subscription. Therefore, to use different payment options per department,
-you will need to create a separate subscription per department. You can create multiple subscriptions in a single Azure Active Directory tenant.
+you will need to create a separate subscription per department.
+You can create multiple subscriptions in a single Azure Active Directory tenant.
 
 ----------------------------------------------------------------------
 Azure Compute services -- Execute the code in the cloud
@@ -29,13 +30,22 @@ VMs,Aks,Aci(azure conatiner instance),App Services(web apps)
 Virtual Machine -- Infrastruture As Service Iaas  -- Aws EC2 -- its like ur  using ur local machine on cloud
 {no of cores ,cpu speed,ram size ,temp disk}
 
-VMss - Virtual Machine Scale Sets - LoadBalancer manages --> 2 or more vms with same configuration running the exact same code and directing traffic to thses
+VMss - Virtual Machine Scale Sets - LoadBalancer manages --> 2 or more vms with same configuration
+running the exact same code and directing traffic to thses
 Able to scale based on demand -- like 100 to 1000vms
 
-PAaS - Platform as service -
+PAaS - Platform as service - App Services
 You give ur code or package ur app and give to azure and they promise to run on whaever server configuration they are using in the background
 to run that but promise performance
 Its like abstraction to ur vms
+
+Azure Functions is a serverless computer service that allows a piece of code to be deployed and
+executed without needing server infrastructure or any configurations.
+Azure function apps - to run small peices of code on cloud --
+eg move all files from one container to another conatiner
+   call an external api to clear cache
+
+Azure App Service is a fully managed PaaS (Platform as a Service) service for developers.
 
 Aci
 Containers -- ur code is an image and basically it can be copied into ur dev or staging or prod as it is
@@ -51,23 +61,31 @@ You can restrict traffic to multiple virtual networks in multiple subscriptions 
 Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources.
 It’s a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
 Reference: https://learn.microsoft.com/en-us/azure/firewall/overview
-Virtual Network -- Computers communicating with each other located on same network
 
+Virtual Network -- Computers communicating with each other located on same network
 Subnet -- sub division of these networks {these subnets have diff security settings for frontend servers,backedn server,database servers}
 It is a way of dividing ur own virtual network into security zones
-
 Vpn - connecting ur home network to ur office network
-
 Express Route - very fast and private . Eg when using azure services u can connect ur corporate network to these azure networks
 whihc are highly encrypted
-
 Dns -  take ur domain name and host it on azure
+Monitoring Management tools --> Azure Monitor, Network Watcher And Express Route
 
-Monitoring Management tools --> Azure Monitor Network Watcher And Express Route
+DDos - Distributed denial of service attack protection
+load balancer - distribute traffic
+app gateway -  higher level of load balancer with an optional load balancer
+cdn - content delivery network -- stores common static files  on the edge for better customer xperience
 
+Azure Frond door service --> loadbalancer +cdn +firewll 3 in one
 
 Azure App Service is a fully managed PaaS (Platform as a Service) service for developers.
 Reference: https://learn.microsoft.com/en-us/azure/app-service/overview
+
+Peering or newtwork peering --> allowing resources in diff networks to talk to each other
+this can be done in same regions or across regions
+
+Public and private endpoints
+
 
 
 ----------------------------------------------------------------------

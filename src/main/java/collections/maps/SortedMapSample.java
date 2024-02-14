@@ -3,6 +3,7 @@ package collections.maps;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.TreeMap;
 
 public class SortedMapSample {
@@ -24,9 +25,11 @@ public class SortedMapSample {
         map.put(2,2);
         map.put(1,1);
 
-        TreeMap<Integer, Integer> integerTreeMap = new TreeMap<>();
-        integerTreeMap.put(10,10);
+        TreeMap<Integer, Integer> integerTreeMap = new TreeMap<>((a,b)->Integer.compare(b,a)); // sorting in reverse manner
+        integerTreeMap.put(4,10);
         integerTreeMap.put(5,5);
+        integerTreeMap.put(6,5);
+        System.out.println(integerTreeMap);
         TreeMap<Integer, Integer> treeMap3 = new TreeMap<>(map) ; // initilaize with another map now this will sort this map according to the keys
         TreeMap<Integer, Integer> treeMap4 = new TreeMap<>(integerTreeMap) ; // inttialized with sorted map
 
@@ -45,6 +48,15 @@ public class SortedMapSample {
         newMap.put("rahul","trichy");
         newMap.put("akash","bangalore");
 
+        // sort this map based on its keys
+        TreeMap<String,String> basedonKeys = new TreeMap<>();
+        basedonKeys.putAll(newMap);
+        System.out.println("newMap is sorted based on keys in descedning order"+basedonKeys.descendingMap());
+
+        // sort this based on values
+        TreeMap<String,String> basedonValues = new TreeMap<>((key1,key2)->newMap.get(key2).compareTo(newMap.get(key1)));
+        basedonValues.putAll(newMap);
+        System.out.println("newMap is sorted based on values in descedning order"+basedonValues);
         // this will give us in unsorted way the keys that is the names will not be sorted
         // if i want to sort this based on keys/names i can use treemap -- keys are string string are homogenoue and comaprable it will wokr
         System.out.println(newMap);
@@ -72,5 +84,77 @@ public class SortedMapSample {
         System.out.println(treeMap2);// default soring order base on keys
 
 
+        Teacher t1 = new Teacher(1,"aonam");
+        Teacher t2 = new Teacher(2,"dogna");
+        Teacher t3 = new Teacher(3,"sarita");
+        Teacher t4 = new Teacher(4,"zwati");
+
+        // suppoes the map has objects
+        Map<Teacher, String> objectMap  = new HashMap<>();
+        objectMap.put(t1,"Maths");
+        objectMap.put(t2,"Hindi");
+        objectMap.put(t3,"Bio");
+        objectMap.put(t4,"English");
+
+        // sorth these based on the names of picked up the first object and then sorted
+        TreeMap<Teacher,String> teacherStringTreeMap = new TreeMap<>((key1,key2)->key2.getName().compareTo(key1.getName()));
+        teacherStringTreeMap.putAll(objectMap);
+        System.out.println("Teachers are sorted based on their names "+teacherStringTreeMap);
+
+        // sorting based on values -- so i picked up the map values
+        TreeMap<Teacher,String> teacherStringTreeMapValues = new TreeMap<>((key1,key2)->objectMap.get(key1).compareTo(objectMap.get(key2)));
+        teacherStringTreeMapValues.putAll(objectMap);
+        System.out.println("Teachers are sorted based on their department values "+teacherStringTreeMapValues);
+    }
+}
+
+class Teacher {
+    private int id;
+    private String name;
+
+    public Teacher(final int id, final String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(final int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    @Override
+    public boolean equals(final Object anotherObject)
+    {
+        if(this==anotherObject)
+            return true;
+        else if (this.getClass()==anotherObject.getClass() || anotherObject==null)
+            return false;
+        else {
+            Teacher obj = (Teacher) anotherObject;
+            return obj.getId()==this.getId() && this.getName().equalsIgnoreCase(obj.getName());
+        }
+    }
+    @Override
+    public int hashCode(){
+        return Objects.hash(id,name);
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

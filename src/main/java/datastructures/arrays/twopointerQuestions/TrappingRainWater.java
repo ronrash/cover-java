@@ -14,8 +14,8 @@ public class TrappingRainWater {
 
     public static void main(String[] args) {
       // int[] a = {3,1,2,4,0,1,3,2};
-       // int[] a = {0,1,0,2,1,0,1,3,2,1,2,1};
-        int[] a = {3,1,0,1,2,1,0,3,0};
+        int[] a = {0,1,0,2,1,0,1,3,2,1,2,1};
+     //   int[] a = {3,1,0,1,2,1,0,3,0};
 
     //    extraSpaceSoultion(a);
         twoPointerSolutuion(a);

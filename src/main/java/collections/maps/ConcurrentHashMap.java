@@ -20,7 +20,7 @@ public class ConcurrentHashMap {
     all segments are thread safe fast performance 16
 
     Important Questions
-    Can twi threads write from the same segment ?
+    Can two threads write from the same segment ?
     No thread acquires lock on the segment in put() operation and at a time only one thread can write from the segment
     but the thread can do a write operation on some other segment
 

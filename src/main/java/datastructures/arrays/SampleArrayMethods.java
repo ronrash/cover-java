@@ -16,9 +16,10 @@ public class SampleArrayMethods {
         // copy the elements
         int[] temp = new int[array.length];
         int[] secondArray = Arrays.copyOf(array, 2);
+        int[] thirdArray = Arrays.copyOf(array,array.length);
         System.out.println(Arrays.toString(secondArray)); // the second array has a length of 2
 
-        int[] thirdArray = Arrays.copyOf(array, array.length);
+        int[] newArray  = Arrays.copyOf(array, array.length);
         System.out.println(Arrays.toString(thirdArray)); // third array of same elements as seond array
 
         int[] fourthArray = Arrays.copyOf(thirdArray, 20);// length of third array is 10 -- so it will copy all the elemnst into the 4th arrray and remaining places will be defaulted

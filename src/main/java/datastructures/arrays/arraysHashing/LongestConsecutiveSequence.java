@@ -8,7 +8,8 @@ public class LongestConsecutiveSequence {
 
         //
        // int[] a = {0, 3, 7, 2, 5, 8, 4, 6, 0, 1}; // [1,2,3,4] [100] [200]
-        int[] a = {10, 9, 8, 5, 8, 4, 3, 2, 1};
+     //   int[] a = {10, 9, 8, 5, 8, 4, 3, 2, 1};
+        int[] a ={19,11,20,10,5,3,2,1};
         longestConsecutiveSequenceBetterSolution(a);
         practice(a);
 

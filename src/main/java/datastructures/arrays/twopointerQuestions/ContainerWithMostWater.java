@@ -1,8 +1,13 @@
 package datastructures.arrays.twopointerQuestions;
 
 public class ContainerWithMostWater {
+
+    //The "container with most water" problem involves finding the largest
+    // possible area that can be formed by two vertical lines on a graph,
+    // given a series of non-negative integers representing the height of the lines.
     public static void main(String[] args) {
-        int[] a = {1,1};//{12,11}
+        //int[] a = {1,1};//{12,11}
+        int[] a = {1, 8, 6, 2, 5, 4, 8, 3, 7};
         int maxArea = maxArea(a);
         System.out.println(maxArea);
 

@@ -34,6 +34,7 @@ public class HashMapMethods {
 
         map.putIfAbsent("Cherry",20);
         map.putIfAbsent("Orange",200);
-        System.out.println(map);
+//        map.
+//        System.out.println(map);
     }
 }

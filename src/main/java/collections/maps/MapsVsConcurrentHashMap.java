@@ -2,6 +2,7 @@ package collections.maps;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class MapsVsConcurrentHashMap extends Thread{
@@ -28,7 +29,7 @@ public class MapsVsConcurrentHashMap extends Thread{
     *
     *
     * */
-    static Map<Integer,String> map = new ConcurrentHashMap<>();
+    static Map<Integer,String> map = new HashMap<>();
 
     public void run(){
         try {
@@ -55,11 +56,11 @@ public class MapsVsConcurrentHashMap extends Thread{
 
         // we wil get an exception because the child thread will try to access the objects whihc is held by the another thread
         // resolve this by conurrentHashMap
-
-        for(Object o : map.entrySet())
+        Set<Integer> set = map.keySet();
+        for(Map.Entry<Integer,String> entry: map.entrySet())
         {
-            System.out.println(o);
-            Thread.sleep(1000);
+            System.out.println(entry.getKey());
+
         }
         System.out.println(map);
     }
