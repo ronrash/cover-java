@@ -758,3 +758,7 @@ _
 Wsrc/main/java/datastructures/arrays/twodimarrays/SearchInARowSortedAndColumnSorted.java,2/5/2501ab95db5967a1e8cdb921765466eedf29684b
 s
 Csrc/main/java/datastructures/arrays/twodimarrays/SearchInArray.java,b/e/be1a1a4ab70acb1c56b89597cec6308e37d48362
+x
+Hsrc/main/java/datastructures/arrays/Questions/DeleteElementsInArray.java,d/6/d69b44d34cac0b29d94179f6f3a484e1f326eede
+U
+%azure-notes/azure-fundamentals/Az-900,2/f/2f53e3e25472f5373f14beba08ae40ed6a1143c6

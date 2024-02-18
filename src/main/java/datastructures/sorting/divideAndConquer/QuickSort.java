@@ -27,6 +27,7 @@ public class QuickSort {
     *
     *
     * */
+    public   static int count =0;
 
     public static void main(String[] args) {
         int [] array =new int[]{5, 3, 8, 4, 2, 7, 1, 6};
@@ -76,7 +77,7 @@ public class QuickSort {
        array[partitonIndex]=array[right];
        array[right]=temp;
 
-        System.out.println("every iteration  "+Arrays.toString(array));
+        System.out.println("iteration "+ ++count+  " "+Arrays.toString(array));
         System.out.println("index  "+partitonIndex);
        return partitonIndex;
     }

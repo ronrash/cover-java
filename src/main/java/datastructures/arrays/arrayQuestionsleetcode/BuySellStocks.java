@@ -23,10 +23,6 @@ public class BuySellStocks {
         // secondelem move forward
         // maxPorfit =5
 
-
-
-
-
         int a[] = {7, 1,5, 3, 6, 4};
     //   int[] a= {7,8,5,3,6,4};
         // max profit is 5

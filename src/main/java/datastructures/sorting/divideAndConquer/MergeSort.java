@@ -70,6 +70,5 @@ public class MergeSort {
         for (k = left; k <= right; k++) {
             array[k] = temp[k];
         }
-         array = Arrays.copyOf(temp, temp.length);
     }
 }
