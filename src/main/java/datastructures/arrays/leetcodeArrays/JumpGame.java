@@ -1,9 +1,9 @@
-package datastructures.arrays.leetcodeArray;
+package datastructures.arrays.leetcodeArrays;
 
-public class JUmpGame {
+public class JumpGame {
     public static void main(String[] args) {
-        int[] nums = new int[]{2,1,1,1,1};
-        System.out.println(        canJumpE(nums));
+        int[] nums = new int[]{2,1,1,1,1,0};
+        System.out.println( canJumpE(nums));
     }
 
 

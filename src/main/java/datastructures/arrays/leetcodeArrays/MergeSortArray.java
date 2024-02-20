@@ -1,4 +1,4 @@
-package datastructures.arrays.leetcodeArray;
+package datastructures.arrays.leetcodeArrays;
 
 import java.util.Arrays;
 
@@ -15,13 +15,39 @@ public class MergeSortArray {
     public static void main(String[] args) {
 //
         int[] a = {1, 2, 3, 0, 0, 0};
-        int[] b = {2,5,6};
+        int[] b = {2, 5, 6};
 
 //        int[] a = {};
 //        int[] b = {1};
         int m = 3;
         int n = 3;
-        merge(a, m, b, n);
+        // merge(a, m, b, n);
+        mergeInPlace(a, m, b, n);
+    }
+
+    private static void mergeInPlace(final int[] a, final int m, final int[] b, final int n) {
+
+        int i = m - 1;
+        int j = n - 1;
+        int k = (m + n) - 1;
+
+        while (i >= 0 && j >= 0) {
+            if (a[i] > b[j]) {
+                a[k] = a[i--];
+            } else {
+                a[k] =b[j--];
+            }
+            k--;
+        }
+
+        while (i >=0) {
+            a[k--] = a[i--];
+        }
+
+        while (j >=0) {
+            a[k--] = b[j--];
+        }
+        System.out.println(Arrays.toString(a));
     }
 
     public static void merge(int[] a, int m, int[] b, int n) {

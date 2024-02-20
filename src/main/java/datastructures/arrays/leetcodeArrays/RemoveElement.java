@@ -1,4 +1,4 @@
-package datastructures.arrays.leetcodeArray;
+package datastructures.arrays.leetcodeArrays;
 
 import java.util.Arrays;
 
@@ -9,21 +9,11 @@ public class RemoveElement {
         int val = 2;
      //   removeElement(a, val);
 
-        removeElementLeetCodeSolution(a,val);
+        removeElementInplaceArray(a,val);
     }
 
-    private static  int removeElementLeetCodeSolution(final int[] nums, final int val) {
+    private static  int removeElementInplaceArray(final int[] nums, final int val) {
         int k=0;
-
-//       for(int elem : a)
-//       {
-//           if(elem!=val)
-//           {
-//               a[k]=elem;
-//               k++;
-//           }
-//
-//       }
         int newLength = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != val) {

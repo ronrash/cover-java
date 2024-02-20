@@ -748,10 +748,6 @@ Asrc/main/java/datastructures/arrays/twodimarrays/ArrayList2d.java,7/2/7229f68d
 Usrc/main/java/datastructures/arrays/twodimarrays/ArrayListMutablityVsImmutablity.java,e/a/ea00ac04f95288220d6a702c1132b3af16e1c5c5
 z
 Jsrc/main/java/datastructures/arrays/twodimarrays/ArrayListOfArrayList.java,d/b/dbab732c59449b9a638955f76da85bf134f61038
-_
-/azure-notes/azure-fundamentals/Azure Questions1,6/3/63a0a1e85d58de806f7a50eb2895e96c18cfdecb
-^
-.azure-notes/azure-fundamentals/Azure Questions,4/b/4b874705a112360168167073d9a835b17801930e
 ]
 -azure-notes/azure-fundamentals/Azure-fundas01,d/f/dfb822c94b600939e11e9d4716da9236b011107f
 ‡
@@ -760,5 +756,35 @@ s
 Csrc/main/java/datastructures/arrays/twodimarrays/SearchInArray.java,b/e/be1a1a4ab70acb1c56b89597cec6308e37d48362
 x
 Hsrc/main/java/datastructures/arrays/Questions/DeleteElementsInArray.java,d/6/d69b44d34cac0b29d94179f6f3a484e1f326eede
-U
-%azure-notes/azure-fundamentals/Az-900,2/f/2f53e3e25472f5373f14beba08ae40ed6a1143c6
+f
+6azure-notes/azure-fundamentals/Az-9000/Azure Questions,c/6/c67faae9ae0ad84751efccc58fe6d743dc7a8c65
+g
+7azure-notes/azure-fundamentals/Az-9000/Azure Questions1,4/b/4b348591283a42deb13e3d38b2a1fafd94e68905
+e
+5azure-notes/azure-fundamentals/Az-9000/DefenseINDepth,3/f/3fdeea7a19911c3dbb1f37d729747861196642a4
+]
+-azure-notes/azure-fundamentals/Az-9000/Az-900,4/e/4efb6e17ac0bbf2dcfaa20b7b960f2e7787d06b4
+ƒ
+Ssrc/main/java/datastructures/arrays/twopointerQuestions/DuplicatesInPlaceArray.java,0/f/0fcf85bb479cf5802d4b05aa3dd8142869ec4f0a
+p
+@src/main/java/datastructures/arrays/leetcodeArrays/JumpGame.java,a/2/a244a8f93c1e65a708f11b140b50b4d096ecf967
+v
+Fsrc/main/java/datastructures/arrays/leetcodeArrays/MergeSortArray.java,7/0/70740f782315d422fe26c5ddaa80e1b2dd868d63
+v
+Fsrc/main/java/datastructures/arrays/leetcodeArrays/MajorityElemnt.java,1/c/1c47c360d7fa984322fb2e4c0b5d7f34e6e5cd61
+‚
+Rsrc/main/java/datastructures/arrays/leetcodeArrays/RemoveDuplicatesWith2Array.java,6/8/68cfffbd093b6c17f3c94179412bcee8fa3a582e
+y
+Isrc/main/java/datastructures/arrays/leetcodeArrays/BuyAndSellStocks2.java,9/d/9d57648afee2e7a9de2a0f4650bb4f4c2de154f8
+u
+Esrc/main/java/datastructures/arrays/leetcodeArrays/RemoveElement.java,5/3/53a44c3bef3d2b98775036b9c844abb6821a1313
+p
+@src/main/java/datastructures/arrays/leetcodeArrays/MinJumps.java,a/d/ade82c6510471b7d306b017fd6bb6851ecf23a8c
+n
+>src/main/java/datastructures/arrays/leetcodeArrays/HIndex.java,1/0/10001729b643fcdbc8687ef42f5738422c092ff4
+u
+Esrc/main/java/datastructures/arrays/leetcodeArrays/RandomizedSet.java,0/0/00b8647e11b8cd80985ad370926c394474e01304
+~
+Nsrc/main/java/datastructures/arrays/arrayQuestionsleetcode/RomanToInteger.java,8/b/8bb3d6905a2d7175eac614eb160d579ae9bd5b9b
+~
+Nsrc/main/java/datastructures/arrays/arrayQuestionsleetcode/IntegerToRoman.java,9/4/94c7178a27e39e4f02d084101006c80229653428
