@@ -1,6 +1,7 @@
 package datastructures.hashmaps.hashmapQuestions;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class RansomNote {
 
@@ -22,30 +23,38 @@ public class RansomNote {
 //    Output: true
 
     public static void main(String[] args) {
-        final String ransomeNote = "aa";
-        final String magazine = "aab";
-        System.out.println(canConstruct(ransomeNote, magazine));
+        final String ransomeNote = "bg";
+        final String magazine = "efjbdfbdgfjhhaiigfhbaejahgfbbgbjagbddfgdiaigdadhcfcj";
+        //  System.out.println(canConstruct(ransomeNote, magazine));
+        System.out.println(canConstructNew(ransomeNote, magazine));
     }
 
-    private static boolean canConstruct(final String ransomeNote, final String magazine) {
+    public static boolean canConstructNew(String ransomNote, String magazine) {
 
-        HashMap<Character, Integer> map = new HashMap<>();
-
-        for (Character ch : magazine.toCharArray()) {
-
+        Map<Character, Integer> map = new HashMap<>();
+        for (Character ch : ransomNote.toCharArray()) {
             map.put(ch, map.getOrDefault(ch, 0) + 1);
         }
-        System.out.println(map);
 
-        for (Character ch : ransomeNote.toCharArray()) {
-
-            int count = map.getOrDefault(ch, 0);
-            if (count == 0) {
-                return false;
+        for (Character ch : magazine.toCharArray()) {
+            if(map.containsKey(ch)) // there might be characters in the second string we have to skip
+            {
+                int count = map.getOrDefault(ch, 0);
+                if (!map.isEmpty() && count == 0)
+                {
+                    return false;
+                }
+                else if(!map.isEmpty()){
+                    map.put(ch, count - 1);
+                    if (map.get(ch) == 0)
+                        map.remove(ch);
+                }
             }
-           map.put(ch,count-1);
         }
-        return true;
+
+        return map.isEmpty() ? true : false;
     }
 
 }
+
+

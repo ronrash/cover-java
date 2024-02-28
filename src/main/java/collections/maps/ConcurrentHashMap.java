@@ -24,8 +24,8 @@ public class ConcurrentHashMap {
     No thread acquires lock on the segment in put() operation and at a time only one thread can write from the segment
     but the thread can do a write operation on some other segment
 
-    Can 2 threads write in a single segment ?
-    No same as above but can write in different segments
+    Can 2 threads Read in a single segment ?
+    Yes 2 or multiple threads can read from a segment as it does not require lock on that segment
 
     Can multiple threads read from same segment ??
     Yes Threads dont acquire read lock on get() operation -- so multiple threads can read from same segment

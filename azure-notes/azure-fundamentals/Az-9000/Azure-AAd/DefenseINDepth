@@ -17,15 +17,20 @@ Azure Active Directory (AAD): Provides identity services that ensure only author
 Features like multi-factor authentication (MFA), conditional access policies,
 and role-based access control (RBAC) help safeguard access to data and applications.
 
-3. Perimeter Security
+3. Perimeter Security - network perimeter protects from network-based attacks against your resources
 Azure Firewall: A managed, cloud-based network security service that protects your Azure Virtual Network resources.
 DDoS Protection: Azure's DDoS protection service shields your Azure applications from distributed denial of service (DDoS) attacks.
 
-4. Network Security
+4. Network Security -  focus is on limiting the network connectivity across all your resources to allow only what's required
+                       Limit communication between resources.
+                        Deny by default.
+                       Restrict inbound internet access and limit outbound access where appropriate.
+                       Implement secure connectivity to on-premises networks.
 Network Security Groups (NSGs): Allow you to filter network traffic to and from Azure resources in an Azure virtual network.
 Virtual Network (VNet) Peering: Securely connects Azure virtual networks with each other.
 
-5. Compute Security
+5. Compute Security - Malware, unpatched systems, and improperly secured systems open your environment to attacks
+make sure ur vms are protected properly patched
 Azure Security Center: Provides unified security management and advanced threat protection across hybrid cloud workloads.
 Encryption: Azure offers disk encryption for virtual machines and application-level encryption for data.
 
