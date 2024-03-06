@@ -23,66 +23,32 @@ public class NextGreatestToRight {
 
         findTheNextGreatestForEveryElement(array);
 
-        nextGreatestToRight(array);
+
 
     }
 
     private static void findTheNextGreatestForEveryElement(final int[] array) {
 
+        // universal logic for every elemnent in the array
         int[] result = new int[array.length];
-
-        // keep pushing the results in the result array
-        Deque<Integer> stack = new ArrayDeque<>();
-        int k = array.length - 1;
-        for (int i = array.length - 1; i >= 0; i--) {
-            if (stack.isEmpty()) {
-                result[k--] = -1;
-            } else if (array[i] < stack.peek()) {
-                result[k--] = stack.peek();
-            } else if (array[i] > stack.peek()) {
-                while (stack.size() > 0 && array[i] > stack.peek()) {
-                    stack.pop();
-                }
-                if (stack.size() == 0) {
-                    result[k--] = -1;
-                } else {
-                    result[k--] = stack.peek();
-                }
-
+       // {1, 5,2,3,4} ---> [5,-1,3,4,-1] -->[]
+        Stack<Integer> stack = new Stack<>();
+        for(int i= array.length-1;i>=0;i--){
+            // Pop elements that are smaller than or equal to the current element
+            while(!stack.isEmpty() && array[i]>= stack.peek())
+            {
+                stack.pop();
             }
+            // if stack is empty
+            if(stack.isEmpty())
+                result[i]=-1;
+            else {
+                // The top element is the next greater element to the right
+                result[i]=stack.peek();
+            }
+            // push the current element to the top of the stack
             stack.push(array[i]);
         }
-        System.out.println("new technique "+Arrays.toString(result));
-
-    }
-
-
-    private static int[] nextGreatestToRight(final int[] a) {
-        Stack<Integer> stack = new Stack<>();
-        int[] output = new int[a.length];
-        int k = a.length - 1;
-        for (int i = a.length - 1; i >= 0; i--) {
-            if (stack.isEmpty()) {
-                output[k--] = -1;
-                stack.push(a[i]);
-            } else {
-                while (!stack.isEmpty()) {
-                    if (a[i] > stack.peek()) {
-                        stack.pop();
-                    } else if (a[i] < stack.peek()) {
-                        output[k--] = stack.peek();
-                        stack.push(a[i]);
-                        break;
-                    }
-                    if (stack.isEmpty()) {
-                        stack.push(a[i]);
-                        output[k--] = -1;
-                        break;
-                    }
-                }
-            }
-        }
-        System.out.println(Arrays.toString(output));
-        return output;
+        System.out.println(Arrays.toString(result));
     }
 }

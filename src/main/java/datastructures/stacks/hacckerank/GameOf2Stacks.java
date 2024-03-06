@@ -2,155 +2,93 @@ package datastructures.stacks.hacckerank;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 public class GameOf2Stacks {
 
     public static void main(String[] args) {
-       Integer[] array ={5,5,20,5} ;
-       Integer[] arr ={5,15,2,5,2};
+       Integer[] array ={4, 2, 4, 6, 1} ;
+       Integer[] arr ={20, 1, 8, 5};
+
+       // find the max no of elemnts u can pop suc that total sum is less than maxsum.
         ArrayList<Integer> a = new ArrayList<>(List.of(array));
         ArrayList<Integer> b = new ArrayList<>(List.of(arr));
-        actaulSolution(40,a,b);
+
+        System.out.println(practiceSoultion(7,a,b));
+        System.out.println(actual(7,a,b));
       //  https://www.youtube.com/watch?v=WMmST9al0DE&t=2s video solution
+
+        int[] stack1 = {4, 2, 4, 6, 1};
+        int[] stack2 = {20, 1, 8, 5};
+        int x = 10; // Maximum sum constraint
     }
 
-    public static int actaulSolution(int maxSum, List<Integer> a, List<Integer> b) {
+    public static int practiceSoultion(int maxSum, List<Integer> a, List<Integer> b) {
 
-        // loop thru any one of the stack
-        int finalResult =0;
-        int stack1Counter=0;
-        int stack2Counter=0;
-        int sumSoFar=0;
-
-        // iterating thru first stack
-        for(Integer i : a)
+        int csum=0; // current Sum
+        int maxCounter=0;
+        int c1=0; // counter1
+        int c2 =0; // counter2
+        for(int elem : a)
         {
-            if(sumSoFar+i>maxSum)
+
+            if(csum+elem>maxSum)
+            {
                 break;
-            sumSoFar=sumSoFar+i;
-            stack1Counter++;
-        }
-        finalResult=stack1Counter;
-        // iterate thru second stack
-
-        for(Integer i :b)
-        {
-            sumSoFar=sumSoFar+i;
-            stack2Counter++;
-
-            while (sumSoFar>maxSum && stack1Counter>0)
-            {
-                sumSoFar = sumSoFar - a.get(stack1Counter-1);
-                stack1Counter--;
             }
 
-        finalResult = (sumSoFar <=maxSum)?Math.max(stack1Counter+stack2Counter,finalResult) :finalResult;
+            csum=csum+elem;
+            c1++;
         }
-        System.out.println(finalResult);
-        return finalResult;
+      maxCounter=c1;
+
+        // loop thru the second list and check
+        for(int elem : b)
+        {
+            csum = elem+csum;
+            c2++;
+            while(csum>maxSum && c1>0)
+            {
+                csum=csum-a.get(c1-1);
+                c1 =c1-1;
+            }
+           if(csum<=maxSum)
+           {
+               maxCounter = Math.max(c1 + c2, maxCounter);
+           }
+        }
+        return maxCounter;
     }
 
-    // these are bsacially greddy approaches and not actauls solutiins
-    public static int twoStacks(int maxSum, List<Integer> a, List<Integer> b) {
-        // Write your code here
-       // a[4,2,4,6,1] [1,6,4]
-      // b [2,1,8,5]  --no of steps =4
+    public static int actual(int maxSum, List<Integer> a, List<Integer> b) {
+        int currentSum = 0; // current Sum
+        int maxCounter = 0;
+        int counter1 = 0; // counter for list a
+        int counter2 = 0; // counter for list b
 
-        int tempSum =0;
-        int steps=0;
-
-        while(tempSum<maxSum)
-        {
-            if(a.get(a.size()-1)<b.get(b.size()-1))
-            {
-                tempSum+=a.get(a.size()-1);
-                a.remove(a.size()-1);
-            }
-            else {
-                tempSum+=b.get(b.size()-1);
-                b.remove(b.size()-1);
-            }
-            if(tempSum<maxSum)
-            {
-                steps++;
-            }
-
-        }
-        System.out.println(steps);
-        return steps;
-    }
-
-    public static int twoStackss(int maxSum, List<Integer> a, List<Integer> b) {
-        // Write your code here
-        // a[4,1,2,3,4,1] [1,6,4]
-        // b [2]  --no of steps =4
-
-        int tempSum =0;
-        int steps=0;
-        while(tempSum<maxSum)
-        {
-            if(a.isEmpty() && b.isEmpty())
-            {
-                return steps;
-            }
-            else if(b.isEmpty() && !a.isEmpty())
-            {
-                tempSum+= a.get(0);
-                a.remove(0);
-            }
-            else if (a.isEmpty() && !b.isEmpty())
-            {
-                tempSum+=b.get(0);
-                b.remove(0);
-            }
-           else  if((a.get(0)<b.get(0)))
-            {
-                tempSum+=a.get(0);
-                a.remove(0);
-            }
-            else {
-                tempSum+=b.get(0);
-                b.remove(0);
-            }
-            if(tempSum<maxSum)
-            {
-                steps++;
-            }
-        }
-        System.out.println(steps);
-        return steps;
-    }
-
-    public static int twoStackssReal(int maxSum, List<Integer> a, List<Integer> b) {
-        // Write your code here
-        // a[4,1,2,3,4,1] [1,6,4]
-        // b [2]  --no of steps =4
-
-        int result = 0, counter1 = 0, counter2 = 0, sumsofar = 0;
-
-        // Get elements from first stack
-        for (Integer i : a) {
-            if (sumsofar + i > maxSum)
+        // Process elements from the first list
+        for (int elem : a) {
+            if (currentSum + elem > maxSum) {
                 break;
-            sumsofar += i;
+            }
+            currentSum += elem;
             counter1++;
         }
-        result = counter1;
+        maxCounter = counter1; // Update maxCounter with elements from the first list only
 
-        // Try to use elements of second stack
-        for (Integer i : b) {
-            sumsofar += i;
+        // Process elements from the second list, adjust the first list as necessary
+        for (int elem : b) {
+            currentSum += elem;
             counter2++;
-            while (sumsofar > maxSum && counter1 > 0) {
-                sumsofar -= a.get(counter1 - 1);
+            while (currentSum > maxSum && counter1 > 0) {
                 counter1--;
+                currentSum -= a.get(counter1);
             }
-            result = (sumsofar <= maxSum) ?
-                    Math.max(counter1 + counter2, result) : result;
+
+            if (currentSum <= maxSum) {
+                maxCounter = Math.max(counter1 + counter2, maxCounter);
+            }
         }
-        System.out.println(result);
-        return result;
+        return maxCounter;
     }
 
 

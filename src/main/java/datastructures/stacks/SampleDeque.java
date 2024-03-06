@@ -20,7 +20,9 @@ public class SampleDeque {
 //        declares a transient instance variable named elements of type Object[] in a class.
 //
 //The transient keyword in Java is used to indicate that a field should not be serialized when an object
-// of the class is being serialized. During the serialization process, transient fields are ignored, and their values are not persisted. When the object is deserialized, transient fields are set to their default values (e.g., null for reference types).
+// of the class is being serialized. During the serialization process,
+// transient fields are ignored, and their values are not persisted.
+// When the object is deserialized, transient fields are set to their default values (e.g., null for reference types).
 //
 //In the context of the line you provided, the elements array is marked as transient,
 // which means that when an object of this class is serialized, the elements array will not be included in the serialized form. This can be useful in cases where the array contains temporary or non-essential data that doesn't need to be preserved when the object is serialized and later deserialized.

@@ -20,7 +20,7 @@ public class StackUsingArray<T> {
         array[count++]=data;
     }
 
-    private T pop(){
+    public T pop(){
         // remove the elemet at current count
         T dataToBeRemoved = array[--count];
 
@@ -28,6 +28,10 @@ public class StackUsingArray<T> {
         if(count > 0 && count == array.length/4)
             resize(count/2);
         return dataToBeRemoved;
+    }
+
+    public T peek(){
+        return array[count];
     }
 
     private void resize(final int size) {
@@ -56,6 +60,7 @@ public class StackUsingArray<T> {
     public static void main(String[] args) {
 
         StackUsingArray<Integer> stackUsingArray = new StackUsingArray<>();
+        System.out.println(        stackUsingArray.peek());
 
         for(int i=1;i<=10;i++)
         stackUsingArray.push(i*10);
