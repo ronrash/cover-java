@@ -41,7 +41,7 @@ one-direction pairing, the Primary region does not provide backup for its second
   Brazil South is unique because it's paired with a region outside of its geography.
   Brazil South's secondary region is South Central US. The secondary region of South Central US isn't Brazil South.
 
-Sovereign Regions are sisolated from main azure and is used for compliance and legal purposes
+Sovereign Regions are isolated from main azure and is used for compliance and legal purposes
 Azure sovereign regions include:
 
 US DoD Central, US Gov Virginia,

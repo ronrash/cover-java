@@ -10,14 +10,16 @@ Who uses Microsoft Entra Id?
 IT administrators. -- Use to control access to applications and resources
 Developers - to add functionality to the application like sso
 Users - can manage their identities and take maintenance actions like self-service password reset.
-Online service subscribers. Microsoft 365, Microsoft Office 365, Azure, and Microsoft Dynamics CRM Online subscribers use thus Microsft Entra Id
+Online service subscribers. Microsoft 365, Microsoft Office 365, Azure,
+and Microsoft Dynamics CRM Online subscribers use thus Microsft Entra Id
 to authenticate their account.
 
 What does it do ??
 Authentication - verify identity to access app and resources ,, include ,, password reset,mfa,banned passwords self service
 Single sign 0n -- one user/pwd for multiple app,now if user leaves org or changes role ,, easy to deactivate or elevate prvilegs
 App Management -- mange cloud and on-premise like Application Proxy, SaaS apps, the My Apps portal, and single sign-on by using Microsoft Entra Id
-Devices- Registration on devices enables devices to be managed through tools like Microsoft Intune. Device based control irrespective of account.
+Devices- Registration on devices enables devices to be managed through tools like Microsoft Intune.
+Device based control irrespective of account.
 
 Can I connect my on-premises AD with Microsoft Entra ID?
 If you had an on-premises environment running Active Directory and a cloud deployment using Microsoft Entra ID,then we need to maintain 2 diff identity sets
@@ -74,7 +76,8 @@ users often get frustrated with the additional security
   you can be authenticated without using a password.
 
 Microsoft global Azure and Azure Government provides passwordless authentication options integrate with  Microsoft Entra ID:
-1. Windows Hello for Business - information workers that have their own designated Windows PC.biometric and PIN are driectly tied to the pc
+1. Windows Hello for Business - information workers that have their own designated Windows PC.
+biometric and PIN are driectly tied to the pc
 With public key infrastructure (PKI) integration and built-in support for single sign-on (SSO)
 Microsoft Authenticator app
 FIDO2 security keys - FIDO (Fast IDentity Online)  latest standard that incorporates the web authentication (WebAuthn) standard

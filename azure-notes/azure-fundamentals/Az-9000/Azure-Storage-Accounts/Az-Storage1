@@ -10,7 +10,7 @@ Read-access geo-zone-redundant storage (RA-GZRS)
 
 Standard general-purpose v2
 Blob Storage (including Data Lake Storage), Queue Storage, Table Storage, and Azure Files
-LRS, GRS, RA-GRS, ZRS, GZRS, RA-GZRS
+LRS, GRS, RA-GRS, ZRS, GZRS, RA-GZRS all of them support the above
 Standard storage account type for blobs, file shares, queues, and tables.
 Recommended for most scenarios using Azure Storage.
 If you want support for network file system (NFS) in Azure Files, use the premium file shares account type.

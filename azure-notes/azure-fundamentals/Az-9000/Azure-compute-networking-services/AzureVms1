@@ -4,6 +4,8 @@ The ability to run custom software.
 To use custom hosting configurations.
 
 Virtual Machine Sets
+A virtual machine needs a network card, storage and a virtual network.
+It does not need a public IP address. In fact, most Azure VMs are private and are not accessible from the Internet.
 
 Virtual machine scale sets let you create and manage a group of identical, load-balanced VMs.
 with virtual machine scale sets, Azure automates most of that work
@@ -15,7 +17,10 @@ With virtual machine scale sets, you can build large-scale services for areas su
 
 Virtual machine availability sets
 tool to help you build a more resilient, highly available environment
-
+Availability Sets allow you to tell Azure which virtual machines are identical,
+so that Azure will keep them apart physically inside the datacenter.
+This helps when there are either expected or unexpected downtime,
+by increasing the chances that one issue does not affect all VMs in a single Availability Set.
  Availability sets are designed to prevent you from losing all your VMs with a single network or power failure.
  Availability sets do this by grouping VMs in two ways: update domain and fault domain.
 

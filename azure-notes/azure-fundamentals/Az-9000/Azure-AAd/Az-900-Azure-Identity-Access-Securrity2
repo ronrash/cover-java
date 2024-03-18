@@ -4,7 +4,8 @@
  and you manage access to your apps with Microsoft Entra ID or Azure AD B2C to keep your resources protected.
 
  External Identities
- 1. Business to business (B2B) collaboration -> Collaborate with external users with their own sso to access ur microsoft app/resources (saas,custom
+ 1. Business to business (B2B) collaboration -> Collaborate with external users with their own sso to access ur
+ microsoft app/resources (saas,custom
   developed resources ) . B2B collaboration users are guest users
 
  2 . B2B direct connect  (two-way trust with another Microsoft Entra organization)
@@ -13,9 +14,12 @@
  3. Microsoft Azure Active Directory business to customer (B2C) - Publish modern SaaS apps to consumers and customers,
   while using Azure AD B2C for identity and access management
 
+
 Azure conditional access checks the location of the user , doesnt need mfa if it is in the desired location
-Conditional Access is a tool that Microsoft Entra ID uses to allow/deny based on llcation, it checks
-Conditional Access collects signals from the user and decides based on that
+Conditional Access is a tool that Microsoft Entra ID uses to allow/deny based on lcation, it checks
+Conditional Access collects signals from the user and decides based on that.
+Conditional Access also provides a more granular multifactor authentication experience for users.
+ For example, a user might not be challenged for second authentication factor if they're at a known location.
 
 When to use Conditional Access?
 MFA is requred for admins but not for people outside resiurces becoz they have limited acccess
@@ -24,7 +28,7 @@ block access for untrusted resources
 Require users to access your application only from managed devices.
  A managed device is a device that meets your standards for security and compliance.
 
-  Azure role-based access control RBAC is heiratrc
+  Azure role-based access control RBAC is heirarchial
  Role-based access control is applied to a scope, which is a resource or set of resources
  A management group, subscription, or resource group might be given the role of owner,
  so they have increased control and authority.
@@ -46,5 +50,7 @@ the members of that group can view every resource group and resource within the 
 When you're assigned a role, Azure RBAC allows you to perform actions within the scope of that role.
  If one role assignment grants you read permissions to a resource group and a different role assignment
  grants you write permissions to the same resource group, you have both read and write permissions on that resource group.
+
+
 
 

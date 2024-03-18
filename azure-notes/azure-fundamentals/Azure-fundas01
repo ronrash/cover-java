@@ -12,3 +12,6 @@ Resource groups make the management of Azure resources easier.
 With a resource group, you can allow a user to manage all resources in the resource group,
  such as virtual machines, websites, and subnets.
  The permissions you apply to the resource group apply to all resources contained in the resource group.
+
+
+w
