@@ -1,0 +1,46 @@
+Develop Azure compute solutions (25–30%)
+
+Develop for Azure storage (15–20%)
+
+Implement Azure security (20–25%)
+
+Monitor, troubleshoot, and optimize Azure solutions (15–20%)
+
+Connect to and consume Azure services and third-party services (15–20%)
+
+
+Azure Compute Services
+Develop Azure compute solutions (25–30%)
+
+Implement containerized solutions
+Create and manage container images for solutions
+Publish an image to Azure Container Registry
+Run containers by using Azure Container Instance
+Create solutions by using Azure Container Apps
+
+Implement Azure App Service Web Apps
+Create an Azure App Service Web App
+Enable diagnostics logging
+Deploy code to a web app
+Configure web app settings including Transport Layer Security (TLS), API settings, and connection strings
+Implement autoscaling
+
+Implement Azure Functions
+Create and configure an Azure Functions app
+Implement input and output bindings
+Implement function triggers by using data operations, timers, and webhooks
+
+
+------------------------------------------------------------------------------------------------------
+Develop for Azure storage (15–20%)
+Develop solutions that use Azure Cosmos DB
+Perform operations on containers and items by using the SDK
+Set the appropriate consistency level for operations
+Implement change feed notifications
+
+Develop solutions that use Azure Blob Storage
+Set and retrieve properties and metadata
+Perform operations on data by using the appropriate SDK
+Implement storage policies and data lifecycle management
+Implement static website hosting
+

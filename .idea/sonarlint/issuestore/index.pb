@@ -368,8 +368,6 @@ F
 restapiNotes/restNotes,a/6/a6b9f0caaee50f23ac83b0a20d7b12b95c94c401
 s
 Csrc/main/java/com/corejava/corejava/datatype/CustomArrayList01.java,3/7/3798dda4b78d9303affe00fc34f5efdd5bcb5c83
-c
-3azure-notes/azure-fundamentals/AzureAppService-Paas,6/0/60691e4b2b2746e18552f21453aa974b3ebe1e72
 k
 ;src/main/java/com/corejava/corejava/datatype/Wrapperss.java,9/e/9e5285f43b6a0b3221c1ae2f149ccf409ee1c684
 p
@@ -438,16 +436,12 @@ G
 docker-notes/docker.txt,5/7/577cbf12418f541674fbcc2cba5a1cd5b8aa11dd
 ]
 -azure-notes/Azure-functions/AzureFunctionApps,1/e/1ec9e407f0dad52497ecab1be7183ca9d28ff4c7
-]
--azure-notes/azure-fundamentals/Azure-Fundas02,1/4/143ddd838c26f457c1620e009b892530b9f64c1f
 X
 (azure-notes/Azure-functions/AzFunction01,0/c/0c85d91e5e6be67a3540f5af8a7c619b112ee4f5
 Y
 )azure-notes/Azure-functions/AzFunctions03,7/6/761eba61676cb306b8fb93775f88ee8eabd93170
 X
 (azure-notes/Azure-functions/AzurefUnct02,c/0/c02295304e6b6374adf97e707c3b2cda00cdcbcd
-a
-1azure-notes/azure-fundamentals/Azure-fundamentals,8/3/83de0a14e700ec2aad47d42c09224a158fc74c94
 F
 argocdnotes/ArgoCd.txt,8/f/8f7dd509d812e2c5f12a900121feafd956e2bdf2
 U
@@ -740,8 +734,6 @@ Asrc/main/java/datastructures/arrays/twodimarrays/ArrayList2d.java,7/2/7229f68d
 Usrc/main/java/datastructures/arrays/twodimarrays/ArrayListMutablityVsImmutablity.java,e/a/ea00ac04f95288220d6a702c1132b3af16e1c5c5
 z
 Jsrc/main/java/datastructures/arrays/twodimarrays/ArrayListOfArrayList.java,d/b/dbab732c59449b9a638955f76da85bf134f61038
-]
--azure-notes/azure-fundamentals/Azure-fundas01,d/f/dfb822c94b600939e11e9d4716da9236b011107f
 ‡
 Wsrc/main/java/datastructures/arrays/twodimarrays/SearchInARowSortedAndColumnSorted.java,2/5/2501ab95db5967a1e8cdb921765466eedf29684b
 s
@@ -832,8 +824,6 @@ o
 ?src/main/java/datastructures/stacks/questions/SimplifyPath.java,1/3/1332f4112e92e9329a833208c3beaaa096b1eff7
 r
 Bsrc/main/java/datastructures/stacks/questions/BasicCalculator.java,b/f/bfde400197005a48b3dc15d445b0364209ab7d1e
-b
-2azure-notes/azure-fundamentals/Az900 What to study,3/e/3e74736182b1ca3442815909b90ca69b4d893196
 c
 3azure-notes/azure-fundamentals/Az-9000/Azure900Mcq1,4/6/4654514f4ff14f19e89cd29c4be032766d547689
 ‚
@@ -868,12 +858,6 @@ y
 Iazure-notes/azure-fundamentals/Az-9000/Azure-Storage-Accounts/Az-Storage5,6/2/62b42784d39f6c0fd9e86bc0db61e7db8db16cc9
 u
 Eazure-notes/azure-fundamentals/Az-9000/Azure-Cost-Management/Az-Cost1,1/d/1d8e7c3496d108b605b2281c264d3d0bbd3232c3
-u
-Eazure-notes/azure-fundamentals/Az-9000/Azure-Cost-Management/Az-Cost2,d/4/d4b0523fcd2e0783d3a63dbc88b52004cbc26233
-u
-Eazure-notes/azure-fundamentals/Az-9000/Azure-Cost-Management/Az-Cost3,a/f/af400a9972213be67fb79d58566da7035689d0a9
-v
-Fazure-notes/azure-fundamentals/Az-9000/Azure-Governance/Az-Governance1,1/0/101b39ec1347a54456f116e08d4bc1a348a94576
 r
 Bazure-notes/azure-fundamentals/Az-9000/Azure-Governance/Az-Policy1,d/4/d44f39c5654ecb842d4c1d954bcc03c465b2d097
 }
@@ -882,3 +866,49 @@ x
 Hazure-notes/azure-fundamentals/Az-9000/Azure-Governance/Az-ResourceLOcks,2/e/2ee24959ffe027e099f9810920835955a19edfcd
 ~
 Nazure-notes/azure-fundamentals/Az-9000/Azure-Cloud-Concepts(20-25%)/IAAS-part1,c/b/cb06d196bea8a285353eb4b0d60cf25f1c88e0c0
+t
+Dazure-notes/azure-fundamentals/Az-9000/Azure-Storage-Accounts/Az-900,b/9/b9092bd9a96f97d1d0ee05364b0ee8ec2d9ecb40
+y
+Iazure-notes/azure-fundamentals/Az-9000/Azure-Governance/microsoft purview,c/2/c21414c3f39d8465261c1181f3d84b16546f27ba
+ƒ
+Sazure-notes/azure-fundamentals/Az-9000/Azure-Governance/azure-portal-cli-powershell,0/2/027c47366f5d15c7492ab43e3328ecaad28b8d76
+u
+Eazure-notes/azure-fundamentals/Az-9000/Azure-Governance/arm-templates,2/2/2239e53f7ab33b53a0301df9768ec2fa78cd5d61
+q
+Aazure-notes/azure-fundamentals/Az-9000/Azure-Cost-Management/tags,4/b/4b69583172b77ef4a65b542cb7c32122e851c52d
+|
+Lazure-notes/azure-fundamentals/Az-9000/Azure-Cost-Management/pricing and tco,5/b/5b039e2ddac59644d65926e7e46ecf5ab014ce85
+z
+Jazure-notes/azure-fundamentals/Az-9000/Azure-Governance/az-monitor-advisor,2/f/2fbc0e8098d21fc8807de595cfcc897809dea0cf
+_
+/azure-notes/azure-fundamentals/Az-9000/Az-900-1,3/9/39b26b5312e38bef511fad73fdc627f954a3eed8
+_
+/azure-notes/azure-fundamentals/Az-9000/Az-900-2,c/0/c063846a963efc21394161a720878c18a4d4663c
+_
+/azure-notes/azure-fundamentals/Az-9000/Az-900-3,6/0/60de0aafc00296434d1f3dd0a3d38400943b80da
+i
+9azure-notes/azure-fundamentals/Az-9000/Azure-fundamentals,1/0/10c0577095ced2211f02f4068b4b27ef5e4848b6
+g
+7azure-notes/azure-fundamentals/Az-204/ManagedIdentities,b/f/bfdf49eba22dc8eae16c2478d5638e6d6059dc47
+b
+2azure-notes/azure-fundamentals/Az-204/Az-204-Guide,b/9/b90b5e27854a331c4d5494df5b3a86843b2330e3
+f
+6azure-notes/azure-fundamentals/Az-204/compute/Overview,3/1/31b5a58c039016afa0e71c2441c85895b14c0e3f
+v
+Fsrc/main/java/threads/complteablefuture/CompletableFutueThenApply.java,b/f/bfb5d09a6afa1d9dff00cd67b1564539ba8d7cae
+~
+Nsrc/main/java/threads/complteablefuture/MultipleCompletableFurtureService.java,7/2/7282265afc0921e5bdef8192cb70b5a69b7bf8c2
+a
+1src/main/java/threads/synchroization/MainApp.java,0/9/09e90109708f0f8b37486a5d6260cb37535d8a7b
+m
+=src/main/java/threads/synchroization/ProducerAndConsumer.java,5/4/548dc872d68877eb7605ddf5fa035571cb20da31
+t
+Dsrc/main/java/threads/complteablefuture/SampleCompletableFuture.java,9/6/96390320883d7b643b19085125e8aadec77ee0b9
+i
+9azure-notes/azure-fundamentals/Az-204/compute/Aut-Scaling,7/b/7bfc65c77531e9463cab9451a22d7619f1d67844
+i
+9azure-notes/azure-fundamentals/Az-204/compute/App-service,9/c/9c84552bf01619b09f83a7e45761082fe639f730
+r
+Bazure-notes/azure-fundamentals/Az-204/compute/labs/Lab-app-service,5/6/56f880e62dbf44ddc88bf0f4bac28d0d0c4358ce
+t
+Dazure-notes/azure-fundamentals/Az-204/compute/labs/Lab-monitor -labs,9/f/9f26ed6447ac057775a89a2d751a476bf0440097
