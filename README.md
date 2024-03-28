@@ -1,2 +1,1 @@
-# cover-java
-This covers each topic of core java/java 8/ spring boot/ data structures 
+main repo for all the info related to java ,spring, git azure, aws etc
