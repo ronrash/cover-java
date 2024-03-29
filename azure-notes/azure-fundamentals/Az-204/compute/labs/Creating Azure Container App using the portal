@@ -1,0 +1,28 @@
+Search for container apps and create an app container env
+Container App Environment is a hosting service for the container app instance
+It is collection of container apps.
+You also have the ability to connect a virtual network to the environment which enables
+the local communication on the network level with other resources hosted on the same network.
+
+The container app is given a unique website URL listed under Application Url.
+
+
+2.Click Ingress under Settings from the left blade menu:
+The ingress controller allows you to modify whether you wish to expose the application
+over the internet or keep it internal to the container environment on any specific port.
+
+
+3. Click Continuous deployment under Settings from the left blade menu:
+If you are using Azure Container Registry or Docker Hub,
+you can set up CI/CD workflow to automatically trigger and deploy the latest version of an image to the container app instance.
+
+4. Click on the contaners blade
+The Containers blade menu allows you to modify the container properties including environment
+variables and health probes related to the container.
+ A new revision is created whenever an update is made on the container properties.
+
+ 5. Click Revisions under Application from the left blade menu:
+ The revision is created whenever an update is performed on the container app including,
+ modifying environment variables, updating container image, and modifying container size.
+  The container is reprovisioned and built to ensure successful functionality.
+
