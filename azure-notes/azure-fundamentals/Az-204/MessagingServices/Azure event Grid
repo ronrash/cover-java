@@ -1,0 +1,29 @@
+Azure event grid--
+
+publisher --sends events to Azure event grid -- > subsriber
+Event Subsriptions are event handlers the route/filter the events to event handlers
+
+Event handlers are applications/services which  handle these events
+event sources or publishers are
+custom topics
+Domains
+saas providers such as
+partner events
+api management
+azure functions
+event handler includes webhooks
+event hubs
+blob storage
+service bus and queues
+relay hybrid queues
+storage quesu
+
+5 imp pieces of azure event grid
+event
+event sources
+topics
+event subsciptions
+event handleers
+
+Endpoint validation is used to verify that the webhook endpoint specified by a subscriber is valid
+and reachable before it can recieve events

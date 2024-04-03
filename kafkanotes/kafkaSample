@@ -36,7 +36,8 @@ Kafka has a sized component called a cluster.
 
 Inside a cluster, we’ve got several servers, also known as brokers (usually at least three brokers to provide enough redundancy.)
 
-Kaka brokers are called bootstrap server -- u need to only connect to the broker and kafka clients will connect to all the servers inside the cluster
+Kaka brokers are called bootstrap server --
+u need to only connect to the broker and kafka clients will connect to all the servers inside the cluster
 broker100 broker101 broker102
 topicA    topicA    topicA
 part0     part1     part2
@@ -53,8 +54,10 @@ By splitting the topic into multiple partitions, we’re facilitating scalabilit
 Each broker is responsible for receiving messages from producers and committing those messages to disk.
 The broker is also responsible for answering consumers’ fetch requests and serving them.
 
-While designing a Kafka system, it’s always a wise decision to factor in topic replication. As a result, its topics’ replicas from another broker can solve the crisis,
- if a broker goes down. Broker1 has Topic 1 and 10 partitions ,  its replica is in Broker2, so on and so forth. It has got a replication factor of 2;
+While designing a Kafka system, it’s always a wise decision to factor in topic replication. As a result,
+its topics’ replicas from another broker can solve the crisis,
+ if a broker goes down. Broker1 has Topic 1 and 10 partitions ,  its replica is in Broker2, so on and so forth.
+  It has got a replication factor of 2;
  it means it will have one additional copy other than the primary one.
   It is not possible to have the number of replication factor more than the number of available brokers.
 
@@ -63,7 +66,8 @@ Moreover, exactly one consumer instance reads the data from one partition in one
 Since, there is more than one consumer group, in that case, one instance from each of these groups can read from one single partition.
 
 However, there will be some inactive consumers, if the number of consumers exceeds the number of partitions.
- Let’s understand it with an example if there are 8 consumers and 6 partitions in a single consumer group, that means there will be 2 inactive consumers.
+ Let’s understand it with an example if
+ there are 8 consumers and 6 partitions in a single consumer group, that means there will be 2 inactive consumers.
 
 
 Kafka Cluster: A Kafka cluster is a system that comprises of different brokers, topics, and their respective partitions.

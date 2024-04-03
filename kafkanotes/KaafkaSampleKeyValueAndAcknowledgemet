@@ -1,7 +1,8 @@
 The 4 core apis used by kafka are
 producer,consumer,stream,connector api
 
-Consumer offset --> it is on tje topics where where the consumer has last consumed message it has the details -- it is commited inside the toic
+Consumer offset --> it is on tje topics where where the consumer has last consumed message it has the details --
+ it is commited inside the toic
 if the consumer dies it will satrt reading message from where it left whcih means duplicate mesage can be read ,, we need to make sure our systekm is idempotenet
 which means it can handle duplicate messages
 offsets are commited instantly if processging goes wrong messages can be lost

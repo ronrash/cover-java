@@ -906,9 +906,25 @@ t
 Dsrc/main/java/threads/complteablefuture/SampleCompletableFuture.java,9/6/96390320883d7b643b19085125e8aadec77ee0b9
 i
 9azure-notes/azure-fundamentals/Az-204/compute/Aut-Scaling,7/b/7bfc65c77531e9463cab9451a22d7619f1d67844
-i
-9azure-notes/azure-fundamentals/Az-204/compute/App-service,9/c/9c84552bf01619b09f83a7e45761082fe639f730
 r
 Bazure-notes/azure-fundamentals/Az-204/compute/labs/Lab-app-service,5/6/56f880e62dbf44ddc88bf0f4bac28d0d0c4358ce
 t
 Dazure-notes/azure-fundamentals/Az-204/compute/labs/Lab-monitor -labs,9/f/9f26ed6447ac057775a89a2d751a476bf0440097
+F
+kafkanotes/kafkaSample,a/2/a22956d7cfe9ffc0eafa293766992fc4ae33ce01
+`
+0kafkanotes/KaafkaSampleKeyValueAndAcknowledgemet,6/2/62cacde6332110934d3c6c213893d2549dc514ac
+o
+?azure-notes/azure-fundamentals/Az-204/storage/Lab-storage-blobs,e/c/ec2cdee2f68b428c59fb50a7b5d0fbf22e301de1
+F
+kafkanotes/KafkaBroker,7/c/7cb433ec031eaab1b9370017a9c4270d0a494d21
+V
+&kafkanotes/producervsConsumer/Producer,d/d/dd6928d61e770e56303b079c313e399c2d8120a7
+u
+Eazure-notes/azure-fundamentals/Az-204/storage/Lab-storage-account-arm,0/8/08547eddd73ef72714e3a458191b831c93179fc7
+x
+Hazure-notes/azure-fundamentals/Az-204/MessagingServices/Azure event Grid,3/d/3d09982168f9db5ae21cd2462989c3540c7ed799
+i
+9azure-notes/azure-fundamentals/Az-204/storage/Lab-storage,7/5/75a32962a9766b6a95c3adc1143c7705c1d5118b
+F
+kafkanotes/Kakasample3,a/f/af5dc588128b9514f99b2b8572a41e2abc245142
