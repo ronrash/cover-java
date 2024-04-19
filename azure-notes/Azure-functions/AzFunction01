@@ -37,8 +37,9 @@ Application Insights
 
 Creating a Function within the function Apps
 Http Trigger - Name
-3 Autorization type
- Function - a function or host key is required - fuction key works only for that function , host key works for all the functions within that function aspp
+3 Authorization type
+ Function - a function or host key is required - fuction key works only for that function ,
+ host key works for all the functions within that function aspp
  Admin - Level Authorization a special master key is required
 
  and admin they require some sort of key based aithorizations
@@ -59,11 +60,14 @@ Function keys
 Function keys are scoped to this function and can be used to access this function.
 Function --> app keys
 System keys
-System keys are automatically managed by the Function runtime. System Keys provide granular access to functions runtime features.
+System keys are automatically managed by the Function runtime.
+System Keys provide granular access to functions runtime features.
 Host keys (all functions)
-Use Host keys with your clients to access all your HTTP functions in the app. _master key grants admin access to Functions Runtime APIs.
+Use Host keys with your clients to access all your HTTP functions in the app.
+_master key grants admin access to Functions Runtime APIs.
 
-These authntication and aithorization is used to protect function apps during developmen and for protection in production we can use alternative like Api Management.
+These authntication and aithorization is used to protect function apps during development
+ and for protection in production we can use alternative like Api Management.
 
 Monitor -- tab is used for monitoring logs , how when what happened to function apps
 Configuration - This configuration page is used to store function app configuration settings like connection strings

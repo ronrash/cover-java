@@ -1,4 +1,4 @@
-package com.corejava.java8.streams;
+package com.corejava.java8.streams.streamsApi;
 
 import static java.util.stream.Collectors.*;
 

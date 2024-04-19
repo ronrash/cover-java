@@ -1,9 +1,10 @@
-package com.corejava.java8.streams;
+package com.corejava.java8.streams.streamsApi;
 
 import java.util.Comparator;
 import java.util.Optional;
 
 import com.corejava.corejava.equalsandhascodes.Student;
+import com.corejava.java8.streams.StudentUtility;
 
 public class StreamMapAndFilter {
 

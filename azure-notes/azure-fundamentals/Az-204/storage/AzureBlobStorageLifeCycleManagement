@@ -1,6 +1,7 @@
 Hot Tier -- > highest storage cost, lowest access cost, frequently accessed
 Cool Tier --> Infrequent, Storages cost is low , acccess cost is high,, upto 30 days ,, penalty fpr deleting data before that
-Archive Tier --> rarely accessed , storag low ,acces hight , penalty of accessed before 180 days,, it takes upt 0 15 hours before u can access data
+Archive Tier --> rarely accessed , storag low ,acces hight , penalty of accessed before 180 days,,
+it takes upt 0 15 hours before u can access data
 
 
 Lifecycle Policy -->

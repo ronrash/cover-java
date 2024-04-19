@@ -1,4 +1,5 @@
-Azure App Service is a platform-as-a-service (PaaS) offering that allows you to quickly build, deploy, and scale Web, API, Mobile, and Function apps.
+Azure App Service is a platform-as-a-service (PaaS) offering that
+allows you to quickly build, deploy, and scale Web, API, Mobile, and Function apps.
 The App Service platform supports both Windows and Linux for running applications in a variety of languages and frameworks,
  such as .NET, .NET Core, Java, Ruby, Node.js, PHP, Python, and Docker containers.
 
@@ -37,7 +38,7 @@ The App Service platform supports both Windows and Linux for running application
  Go to App service + create weba app
  give the deyails like
  subscription :
- resource grp
+ rpresource g
  resource name
  App service plan -- the plan u have created
  location South central Us
@@ -59,8 +60,16 @@ The App Service platform supports both Windows and Linux for running application
  Steps to create a deployment slot
  1. Go to App Service
  2, Go to Deployment slots --> add slot {give a name --staging}
- 3. clikc on the new deployment staging slot created --> under devlopment tools --> go to advanced tools-- click on go
-   this open sthe kudus environment -- click on tools --> zip push deploy
+ got to the staging deployment and check the url agianst the production url
+ Notice that the URL subdomain is the web app name appended with - and the slot name, -staging in this case.
+ The production slot is special in that there is no slot name appended.
+
+  https://ca-lab-app-219101-staging.azurewebsites.net/
+    https://ca-lab-app-219101.azurewebsites.net/
+
+
+   https://ca-lab-app-219101-staging.azurewebsites.net/
+   https://ca-lab-app-219101.azurewebsites.net/
 
    the url has
    https://portal.azure.com/#@labscloudacademy.onmicrosoft.com/resource/subscriptions/6d3ddb69-3bd6-4e8d-904c-41cccfb8c9ef/resourceGroups/cal-1017-cda/providers/Microsoft.Web/sites/ca-lab-app-9129102/slots/staging/appServices
@@ -78,6 +87,7 @@ The App Service platform supports both Windows and Linux for running application
     Because each slot maintains its own configuration and application settings,
     the web app may not behave exactly as it did in the originating slot, and that is a good thing.
 
+
     settings such as SSL certificates, custom domain names, and scale settings do not swap when you swap deployment slots.
     monitoring and diagnostic settings, framework versions, app settings, and connection strings gets swapped
      app settings and connection strings can be configured to be sticky and stay with a slot.
@@ -91,8 +101,10 @@ The App Service platform supports both Windows and Linux for running application
      4. drag and drop ur files here
      5. Once the deployment is done  Close the Kudu browser tab.
      6. Click Browse on the staging slot's Overview blade to navigate to the Web App:
-     The Web App is now warmed up from your initial request. The test-setting message at the top of the page echoes the value of the app setting named test-setting.
-     Currently, it is undefined because you have not configured the test-setting value. You will use this message to verify how app settings behave across swaps.
+     The Web App is now warmed up from your initial request.
+     The test-setting message at the top of the page echoes the value of the app setting named test-setting.
+     Currently, it is undefined because you have not configured the test-setting value.
+      You will use this message to verify how app settings behave across swaps.
     7. Open the staging slot's Configuration blade:
     The Application Settings are divided into different sections.
     The Application settings and Connection strings are always swapped by default since the Web App depends on specific

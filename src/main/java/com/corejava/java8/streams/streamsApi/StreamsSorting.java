@@ -1,18 +1,13 @@
-package com.corejava.java8.streams;
+package com.corejava.java8.streams.streamsApi;
 
 import static java.util.Arrays.*;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
-import java.util.stream.Collectors;
-
-import com.corejava.corejava.equalsandhascodes.Student;
 
 public class StreamsSorting {
 

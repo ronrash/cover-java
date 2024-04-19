@@ -1,4 +1,4 @@
-package com.corejava.java8.streams;
+package com.corejava.java8.streams.streamsApi;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;

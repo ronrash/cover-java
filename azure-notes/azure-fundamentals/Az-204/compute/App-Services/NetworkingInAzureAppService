@@ -1,5 +1,5 @@
 Custom Domain
-1-- Azure app has a defaukt url at the end --> .azurewebsites.net
+1-- Azure app has a defaut url at the end --> .azurewebsites.net
 2. we need to change the pricing tier to a paid one as it supports having custom domain
 
 Thinsg to do
@@ -14,18 +14,38 @@ and address id ip address --> suppose 20.40.202.27
 In ur domain provide
 go to dns records
 
-Add  Type                Name    Value
-A     rootname            @      20.40.202.27
-CNAME www. {subdomain}    www     cawebapp.azurewebsites.net
-TXT   additional info
+@ --> rootname
+Type NAME VALUE
+A     @   20.40.202.27  value is ur ip address of the webapp in ur azure
 
-Need to creat 2 txt records to prove to microsoft u own this domain and the subdomain
-TYpe  NAme       Value App Service Unique Identifier
+if u want to set the subdomain name like
+Type    NAME     VALUE
+CNAME     www   cawebapp.azurewebsites.net  value is ur url  of the webapp in ur azure
+
+eg
+Type    NAME     VALUE
+A        @       20.40.202.27
+CNAME   www      cawebapp.azurewebsites.net
+
+@ is the rootname
+www is the subdomain
+
+TXT is just additionl info whihc does not affect the resolution of ur doamin name
+Need to creatw 2 txt records to prove to microsoft u own this domain and the subdomain
+
+asuid -app service unique identifier
+
+Type  Name       Value                  App Service Unique Identifier
 TXT   asuid      2020320323023i203i230 {custom domain verification id }
 TXT   asuid.www  2020320323023i203i230
 
+NOw
 got to azure app service--> webapp--> custom domain -- add ur custom domain
-add the doman name like himaavan.com
+add the domain name like himaavan.com
+
+CUSTOM DOMAIN            foot.com
+Hostname record type     A record
+
 validate button
 
 -----------------------------------------------------------------------------------------------------------------------------
@@ -38,28 +58,38 @@ Need to have tls/ssl certificate file which contains a private ke and public key
 These pair of keys is used to encrypt/decrypt traffic between the website and the user over the internet
 The certificate checks if the browser is interacting with website directly  prventing middle man attack
 
-3. Create a Tls binding woth ur custom domain
+3. Create a Tls binding with ur custom domain
 
 How to create a certificate ??
-App Service Certifcate free ,,provided by digcert checks for the authenticity of the certificate or import form a third party
+App Service Certifcate free ,,
+provided by digcert checks for the authenticity of the certificate
+or import form a third party
 
-To create a certificate  --got to tls/settings--> private key certificate.pfx--> create app service managed and add ur custom domain
+To create a certificate  --got to tls/settings on ur web service app--> private key certificate.pfx-->
+--> click on create app service managed and add ur custom domain
 Now bind tls/ssl to ur domain
 there are 2 types of tls/ssl
-1. Sni SSl --> binds the certificate using websites hostname,, more flexibilty and easy to configure ,, not used on very old browsers
+1. Sni SSl --> binds  certificate using websites hostname,, more flexibilty and easy to configure ,, not used on very old browsers
 2. Ip Based SSl --> binds the cert using websites ip address
 
+sni is more useful
+also select the htts only option in ur tls/ssl settings
+
+what is tls mutual auth
+for a website to know it is communication with a client and to a hacker use tls mutual auth
 Tls Mutual Authentication is used when the website wants to know if the user is not a hacker is legitimate
 used within an individual org becoz it requires that client devices have a client certficate
-go to configuration and set cleint certificate mode to on
+
+go to configuration and set client certificate mode to on
 also need to add authentication code to ur app
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Inbound and outbound rules
 restrict ip address
 
-if u have resources in azure and want to connect to ur app
+if u have resources in azure say vm  and want to connect to ur web app service u can use a service endpoint
 azure db -----> app -- u can connect restrict access using a service endpoint rather than an ip address
+
 A service endpoint is something u can enable on a subnet
 
 U can create a private endpoint for ur app
@@ -95,7 +125,8 @@ When setting up a custom domain name in Azure App Service,
 
 Custom Domain Verification ID
 
-If you have resources in an Azure virtual network that need to connect to your Azure app over the Microsoft backbone network rather than over the Internet, then you can restrict access to your app using a(n) _____.
+If you have resources in an Azure virtual network that need to connect to your Azure app
+over the Microsoft backbone network rather than over the Internet, then you can restrict access to your app using a(n) _____.
 service endpoint
 
 When setting up a custom domain name in Azure App Service, to prove to Microsoft that you own a domain and its subdomain, you need to create a(n) _____ record for each of them.

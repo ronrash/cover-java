@@ -4,6 +4,16 @@ It is collection of container apps.
 You also have the ability to connect a virtual network to the environment which enables
 the local communication on the network level with other resources hosted on the same network.
 
+Steps
+Type container app in the Azure Portal search bar and click Container Apps under Services:
+Click Create container app in the middle of the screen:
+Resource group: Select the only available resource group from the list
+Container app name: Enter containerapp### (while replacing # with random numbers to get a unique container name)
+Region: Choose West US region from the dropdown list
+On the Container tab of Create Container App window, review the settings without changing anything and click Review + create:
+The checkbox Use quickstart image uses a default container image instead of using a custom image for the container.
+ By default, the HTTP PORT 80 is open on the container.
+
 The container app is given a unique website URL listed under Application Url.
 
 

@@ -16,21 +16,23 @@ create a web app
 az webapp create --name <app-name> --resource-group webapprg --plan appserviceplantest
 
 Deploy a sample git project from Github on to the web app in app service
-az webapp deployment source config --repo-url https://github.com/Azure-Samples/html-docs-hello-world --branch master --manual-integration --name <app_name> --resource-group webapprg
+az webapp deployment source config --repo-url https://github.com/Azure-Samples/html-docs-hello-world
+ --branch master --manual-integration --name <app_name> --resource-group webapprg
 
 We can also use continuos deployment
 Go to Azure portal --app service -- find the webapp --> deployment center -->
 click on disconnect so that we can now do continuous deployment instead of
 manual deployment,
 
-Now create a staging slot so that contious deployment can be set on that slot and then swap with productin {manually or auto swap or swap with preview}
-Slot creation change the pricing tier to standard
-go to deployment slot ,, add a slot --> create a staging slot {clone woth production }--? go back to deployment center
+Now create a staging slot so that contnious deployment can be set on that slot
+and then swap with productin {manually or auto swap or swap with preview}
+Slot creation change the pricing tier to standard -- got to scale up to change the pricing tier to standard
+go to deployment slot ,, add a slot --> create a staging slot {clone with production }--?
+ Select the stagin slot and go back to deployment center
 from the staging slot and then choose the belwo settings
-source
-github
-build
-branch
+source github
+choose the build options
+choose details like organization ,repo and branch
 
 
 Questions

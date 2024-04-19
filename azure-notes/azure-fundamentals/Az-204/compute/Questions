@@ -42,3 +42,7 @@ Microsoft also offers a solution called Azure Sphere to make your IoT devices mo
   In fact, containers run on virtual machines.
  Microsoft provides a variety of ways to run containers.
  The simplest way is to use Azure Container Instances. This service lets you run a container using a single command.
+
+Microsoft also provides a dashboard called Service Health where you can find out about problems
+with the Azure platform itself as well as upcoming maintenance events.
+You can even create alerts so you'll be notified of both planned and unplanned outages.

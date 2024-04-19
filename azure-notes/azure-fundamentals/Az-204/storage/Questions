@@ -11,6 +11,9 @@ With the REST version 2015-07-08 and above,
 
 Server-side encryption is done Azure storage service, and is enabled by default for all managed disks.
 The encryption provides encryption at rest for your data
+and is enabled by default for all managed disks, and whenever possible, snapshots, and images?
 
+Regarding Microsoft Azure Storage, Table storage offers a NoSQL data store
+Which type of storage within Azure Storage is optimized for random access files that are frequently updated?
 
 You would use a Shared Access Signature to provide access to a client that can't be trusted with the account key.

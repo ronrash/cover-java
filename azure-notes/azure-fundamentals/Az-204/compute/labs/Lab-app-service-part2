@@ -39,7 +39,8 @@ If a complete App Service outage is being experienced, Service health will repor
 
  . Scroll down the sidebar menu and select Monitoring > App Service Logs:
  Application -logging filesystem --> Enable application logging to collect diagnostic traces from your web app code.
- You'll need to turn this on to enable the streaming log feature. This setting turns itself off after 12 hours.
+ You'll need to turn this on to enable the streaming log feature.
+ This setting turns itself off after 12 hours.
 
  Application logging (Blob) -> Logs are collected in the blob container that is specified under Storage settings
 
@@ -59,7 +60,9 @@ Monitor and alert on application health
 Analyze customer usage
 Create custom key performance indicator (KPI) dashboards
 
-Application Insights can collect data from applications in Azure, running on-prem, or on other clouds. The integration with Azure Web Apps makes it exceptionally easy to use in Azure.
+Application Insights can collect data from applications in Azure,
+running on-prem, or on other clouds.
+The integration with Azure Web Apps makes it exceptionally easy to use in Azure.
 
 In the search bar at the top of the Azure Portal, enter app insight. Click Application Insights under Services:
 create the aplication insights

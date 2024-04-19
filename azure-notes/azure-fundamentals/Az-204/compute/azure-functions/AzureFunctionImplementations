@@ -1,0 +1,4 @@
+There are 3 types of authorization
+function -- function specific key is required
+anonymous -- no key is required
+admin -- master key is required
