@@ -1,3 +1,8 @@
+Static website is one of the newly introduced capabilities of Azure Storage Account
+that lets you host static HTML-based website and associated assets to host website.
+The hosting does not require any rendering or management of the hosting platform.
+ If you are looking to host a simple landing page or static content, a Static website with Azure Storage might be the best option for your organization.
+
 In this lab step, you will enable the static website feature and upload the asset files to serve the static website.
 
 Static Website is a feature in Azure Storage that enables you to serve static content such as HTML,

@@ -1,5 +1,5 @@
-In this lab, you will use the Azure Portal
-to create a Namespace, and you will use Azure CloudShell to create a Topic and Subscription inside your Azure Service Bus namespace.
+In this lab, you will use the Azure Portal to create a Namespace
+, and you will use Azure CloudShell to create a Topic and Subscription inside your Azure Service Bus namespace.
 
 1. enter Service Bus
 
@@ -46,7 +46,8 @@ az servicebus topic create \
 
 In response to issuing this command, you will see a JSON representation of a newly created Topic named lab-topic.
 
-A Topic in Azure Service Bus enables one-to-many communication. In contrast to Queues, which only allow processing by a single consumer.
+A Topic in Azure Service Bus enables one-to-many communication.
+In contrast to Queues, which only allow processing by a single consumer.
 
 In this command, the name of the resource group and the namespace are fetched in subshells.
  Notice that you have specified the --output option to be tab-separated values (tsv).

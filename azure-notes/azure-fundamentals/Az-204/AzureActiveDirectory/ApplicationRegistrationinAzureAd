@@ -1,5 +1,5 @@
 ApplicationRegistration
-Saas Providers and Developers ofte develop and deploy cloud resources,
+Saas Providers and Developers often develop and deploy cloud resources,
 
 Before Integrating these app/services with Azure Ad they need to be first registered with Ad
 The developer must first give info about teh app to the Azure Ad
@@ -42,7 +42,7 @@ The proxy connector is an agent which manages the outbound connection from the a
 
 Steps
 Use an admin account
-goto azure active directory ---> application proxy --> download the connector service and install it ,, verify if teh connector is installed
+goto azure active directory ---> application proxy --> download the connector service and install it ,, verify if te connector is installed
 goto azure active directory ---> application proxy {here we will see the new connector}
 
 lets prepare our on-prem environment -- our app added to ad

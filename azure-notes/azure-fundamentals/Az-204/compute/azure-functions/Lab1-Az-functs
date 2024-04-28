@@ -6,6 +6,7 @@ But to begin with, you need to create a Function App for all of your Azure Funct
 You will create a Function App in this Lab Step
 
 Steps ,
+1. In the Azure Portal search bar, enter Function App and click Function App under Marketplace in the results drop-down:
 In portal seacrh Function apps
 give necessary details like resource grp,runtime stack,consumption plan ,storage,enale monitorung
 

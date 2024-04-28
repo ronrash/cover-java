@@ -990,3 +990,11 @@ p
 @azure-notes/azure-fundamentals/Az-204/storage/Azure-StorageTypes,c/4/c4c7a5d3e0b3ff9acf91825018c2c03dc7d6070f
 {
 Kazure-notes/azure-fundamentals/Az-204/storage/AzCopyAndAzureStorageExplorer,5/0/50eea28cab1d1f747bcded4e0c5d31ada2ab9957
+o
+?azure-notes/azure-fundamentals/Az-204/Azure Cosmos DB/CosmosDb1,3/2/32a8eaeeed7055cd9608014f70d5c7c993af90c4
+u
+Eazure-notes/azure-fundamentals/Az-204/Azure Cosmos DB/cosmosdb-script,a/7/a7b3d406d9a808a7565f4ceaa9b0a9054f04de53
+r
+Bazure-notes/azure-fundamentals/Az-204/Azure Cosmos DB/CosmosDb-lab,a/3/a3da7a4cc0b5b85d7f39ff64415b8ca5be1a4d95
+s
+Cazure-notes/azure-fundamentals/Az-204/Azure Cosmos DB/CosmosDb-lab2,6/d/6d8f0170f1bcfa2a000697299adf2673b4e6d23c

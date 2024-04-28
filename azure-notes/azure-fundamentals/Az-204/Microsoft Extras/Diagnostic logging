@@ -1,0 +1,36 @@
+Diagnostic logging means detailed logging to improve the overall feature of the application.
+Application,webserver,detail tracing,deployment logging
+
+Application Logging (Filesystem) or Application Logging (Blob), or both.
+ The Filesystem option is for temporary debugging purposes, and turns itself off in 12 hours.
+ The Blob option is for long-term logging, and needs a blob storage container to write logs to.
+
+
+ Level	Included categories
+ Disabled	None
+ Error	Error, Critical
+ Warning	Warning, Error, Critical
+ Information	Info, Warning, Error, Critical
+ Verbose      	Trace, Debug, Info, Warning, Error, Critical (all categories)
+
+ Enable application logging
+  App Service log --> Application logging to filesystem
+  specify Quota (mb) -disk quota
+  Retention Period (Days) - no of days
+
+Enable web server logging
+select Storage to store logs on blob storage, or File System to store logs on the App Service file system.
+specify Retention Period (Days) - no of days
+
+Add log messages in code a .net application
+System.Diagnostics.Trace.TraceError("If you're seeing this, something bad happened");
+
+
+Before you stream logs in real time, enable the log type that you want.
+Any information written to files ending in .txt, .log, or .htm that are stored in the /LogFiles directory (d:/home/logfiles) is streamed by App Service.
+
+Azure portal - To stream logs in the Azure portal, navigate to your app and select Log stream.
+Azure CLI use the below command
+az webapp log tail --name appname --resource-group myResourceGroup
+
+App Service logs - if u have configured blob storage

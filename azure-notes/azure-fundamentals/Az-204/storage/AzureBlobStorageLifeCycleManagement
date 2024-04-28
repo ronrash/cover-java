@@ -19,9 +19,10 @@ if base blob was created more than 365*10 days delete blob
 
 Azure policy runs once in 24 hrs
 
-we can use filteers to apply these rules/policies to a certin type of blobs
+we can use filters to apply these rules/policies to a certain type of blobs
 select option -->limit blob with filters
-2 types of filter
+
+2 types of filters
 Blob Prefix
 Blob Index
 You can set rules/policies for many storage accounts or blobs use a configuration file or json
@@ -42,3 +43,16 @@ Bobl Subtypes
 Blob base
 
 Questions
+a potential conditions for action in a lifecycle rule
+Days since blob was created,modified or accessed
+
+An Azure Storage lifecycle policy rule contains which two parts
+rule actions and filters
+For example, suppose we want a lifecycle rule to only apply to blobs that start with the word “report”,
+then we’d select “Limit blobs with filters”.
+ Now there’s a tab called “Filter set”.
+ There are two types of filters we can apply: blob prefix and blob index match.
+ The second one is more complicated and requires tagging your blobs before it’ll work.
+ The blob prefix is the one we need for our example.
+  We just need to type “report” in this field. And we have to click the Update button.
+  Now the rule will apply to any blobs that start with those letters.

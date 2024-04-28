@@ -29,6 +29,11 @@ A Key Vault reference is of the form @Microsoft.KeyVault({referenceString}),
  where {referenceString} is replaced by either SecretUri=secretUri
  or a combination of VaultName, Secret Name and/or Secret version.
 
+ Use the following information to add the application settings and click OK once done:
+
+ Name: Enter constr
+ Value: Enter @Microsoft.KeyVault(SecretUri=####) while replacing the # with the Secret Identifier URL copied from the Key Vault secret version in the previous lab step.
+
 5. Click + New application setting and add 2 more app settings:
 
    App Setting 1
