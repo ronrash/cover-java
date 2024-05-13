@@ -880,8 +880,6 @@ _
 /azure-notes/azure-fundamentals/Az-9000/Az-900-3,6/0/60de0aafc00296434d1f3dd0a3d38400943b80da
 i
 9azure-notes/azure-fundamentals/Az-9000/Azure-fundamentals,1/0/10c0577095ced2211f02f4068b4b27ef5e4848b6
-g
-7azure-notes/azure-fundamentals/Az-204/ManagedIdentities,b/f/bfdf49eba22dc8eae16c2478d5638e6d6059dc47
 b
 2azure-notes/azure-fundamentals/Az-204/Az-204-Guide,b/9/b90b5e27854a331c4d5494df5b3a86843b2330e3
 f
@@ -998,3 +996,9 @@ r
 Bazure-notes/azure-fundamentals/Az-204/Azure Cosmos DB/CosmosDb-lab,a/3/a3da7a4cc0b5b85d7f39ff64415b8ca5be1a4d95
 s
 Cazure-notes/azure-fundamentals/Az-204/Azure Cosmos DB/CosmosDb-lab2,6/d/6d8f0170f1bcfa2a000697299adf2673b4e6d23c
+
+Oazure-notes/azure-fundamentals/Az-204/AzureActiveDirectory/AzureActiveDirectiry,7/e/7e7b7e7b36ed16ab1fcc9a66db5be6aadf642fd1
+v
+Fsrc/main/java/datastructures/arrays/arrayQuestionsleetcode/TwoSum.java,2/1/21a6b03a29adeb474c5f7b9b1410dca9dcb135e6
+V
+&src/main/java/AzureImplementation.java,f/5/f503523a86526974809965b0d89ef2e8785a2cae

@@ -1,4 +1,4 @@
-4 key roles
+4 key roles setup by Azure
 Contributor --> can make changes to azure resources but cannot assign roles to other resources
 owner --> the can manage resources and allow the user{owner} to assign roles to other users
 reader -- only view/read the azure resources
@@ -23,8 +23,8 @@ Azure Security Center --> Creates default security policy for subscription
 
 They are many default security policies
 Security Updates - retrieves a daily list of security/criticalk updates
-Secuirty Configurations
-Endpoint protection
+Security Configurations
+Endpoint Protection
 Disk Encryption
 Network Security Groups
 Web app firewall
@@ -51,7 +51,7 @@ Delete
 Read Only
 
 Lock Levels
-CanNotDelete -- aloows users to read and modify a resource but not delete
+CanNotDelete -- allows users to read and modify a resource but not delete
 Read Only  -- allows users to only read not modify nor delete similar to read only access role
 
 Resource locks are inherited so lock at parent level ,, is inhertied by all resources

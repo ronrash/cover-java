@@ -1,5 +1,0 @@
- Managed identities eliminate the need for developers to manage the credentilas stored in azure key vault
- Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials.
-
-
- for example i want to build and app using azure app services that access azure storage without having to manage any credentials

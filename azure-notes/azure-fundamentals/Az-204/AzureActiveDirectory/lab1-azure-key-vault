@@ -60,7 +60,7 @@ The keys section contains the primary and secondary access keys along with the c
 
  Similarly, you will need to access the other two secrets and store the secret identifier URL for later use.
 
- secret identifier
+ secret identifier for connection string
  https://vaultcal1421ceb.vault.azure.net/secrets/cosmos-connection-string/58f1740130024478a91ec0ef216f2811
 
  databse name
