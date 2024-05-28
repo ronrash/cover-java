@@ -49,7 +49,15 @@ A lightweight service authenticates the client as needed and then generates a SA
  The SAS mitigates the need for routing all data through the front-end proxy service.
 
  Many real-world services might use a hybrid of these two approaches
- When you copy a blob to another blob that resides in a different storage account, you must use a SAS to authorize access to the source blob.
+ When you copy a blob
+
+
+
+
+
+ at resides in a different storage account, you must use a SAS to authorize access to the source blob.
  When you copy a file to another file that resides in a different storage account
  When you copy a blob to a file, or a file to a blob, you must use a SAS to authorize access to the source object,
  even if the source and destination objects reside within the same storage account.
+
+ questions

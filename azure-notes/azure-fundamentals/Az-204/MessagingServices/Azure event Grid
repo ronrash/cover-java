@@ -49,3 +49,16 @@ In Azure Event Hubs, a partition key is used to map incoming event data to speci
 organize the data and keep related events together in the same partition,
 ensuring that they are delivered in order of arrival.
 Using a partition key can improve performance, reliability, and scalability of your event processing pipeline.
+
+
+Questions
+You need to ensure an application can receive events filtered by values in the data field in the advanced filtering options.
+An advanced filter is used to filter events by values in the data fields and specify the comparison operator.
+An event type filter is used to send only certain event types to the endpoint.
+A subject filter is used to specify a starting or ending value for the subject.
+Topics is not a type of filter; the event grid topic provides an endpoint where the source sends events.
+
+Messages can be peeked at in the queue without removing them from the queue by calling the PeekMessages method of the QueueClient class.
+ The Peek method of the QueueClient class is used with Azure Service Bus, not Azure Queue Storage.
+ The ReceiveMessages method of the QueueClient class removes them from the queue.
+ The ReceiveMessageAsync method of the QueueClient class is used with Azure Service Bus, not Azure Queue Storage.

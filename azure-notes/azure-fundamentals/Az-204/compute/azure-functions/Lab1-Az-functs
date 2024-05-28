@@ -8,7 +8,7 @@ You will create a Function App in this Lab Step
 Steps ,
 1. In the Azure Portal search bar, enter Function App and click Function App under Marketplace in the results drop-down:
 In portal seacrh Function apps
-give necessary details like resource grp,runtime stack,consumption plan ,storage,enale monitorung
+give necessary details like resource grp,runtime stack,consumption plan ,storage,enable monitorung
 
 You now have a Function App to begin deploying Functions to.
 Initially, there are no Functions in the Function App. You will deploy one in the next Lab Step

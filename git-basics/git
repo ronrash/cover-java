@@ -1,6 +1,6 @@
-git status
-git add . 0r git add -a  --> adds the file plus commits them as well
-git commit -m "heloo some message"
+
+git config --global user.name
+git config --global user.email
 
 git pull --rebase origin team/SCMI
 git commit -m "SCMI-1303"

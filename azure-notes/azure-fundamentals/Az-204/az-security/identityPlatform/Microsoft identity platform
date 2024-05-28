@@ -25,13 +25,14 @@ Microsoft identity platform implements the OAuth 2.0 authorization protocol
 i.e 3rd party app can access web-hosted resources on behalf of a user
 
 Any web-hosted resource that integrates with the Microsoft identity platform has a resource identifier, or application ID URI.
-eg of web hosted resources
+eg of Microsoft web-hosted resources
 Microsoft Graph: https://graph.microsoft.com
 Microsoft 365 Mail API: https://outlook.office.com
 Azure Key Vault: https://vault.azure.net
 
 Real life scenario
-Imagine a company uses an app to manage meeting rooms and schedules. The app needs to access the company's calendars to check room availability. Here’s how it would typically go:
+Imagine a company uses an app to manage meeting rooms and schedules. The app needs to access the company's calendars to check room availability.
+Here’s how it would typically go:
 The app identifies the necessary permission: It figures out it needs the permission to read calendars (https://graph.microsoft.com/Calendars.Read).
 Sending the request: The app sends a request to Microsoft’s identity platform, specifically to the authorize endpoint. It says, “I need permission to read calendar entries to check room availability.”
 Handling the request: Microsoft checks this request, and if everything looks okay (like the user agreeing and the app being secure), it grants the app a token that allows it to read the calendars.
@@ -48,6 +49,8 @@ the resource is assumed to be Microsoft Graph. For example, scope=User.Read is e
 
 
 Permission types
+Delegated Permission - user sign-in where the app acts as a user
+App-0nly access permission - without user signed in , background apps
 Delegated Permisiion -- apps that have a signed-in user present, either the user or an administrator consents to the permissions that the app requests.
 eg an app used by a school to manage student assignments and grades.
 app needs to access the school's email system to send notifications to students about new assignments or grade updates.
@@ -78,7 +81,7 @@ generates reports, and perhaps even sends these reports to management without an
 
 ===========================================
 Consent Types
-three consent types
+three consent types ,static,admin,dynmaic
 static user consent,
 incremental and dynamic user consent,
 and admin consent
@@ -121,8 +124,7 @@ app needs permission to read the user's calendar and send mail as the user.
 
 
 =========================
-Conditional Access
-Conditional Access enables developers and enterprise customers to protect services in a multitude of ways including:
+Conditional Access helps users to protect thier apps in the following ways
 
 Multifactor authentication
 Allowing only Intune enrolled devices to access specific services
@@ -154,7 +156,9 @@ At this point, a claims "challenge" is presented to the middle tier. The middle 
  How It Works
  Signing In: When you load up your game, you first log in with your username and password. This is you signing in to the app.
  Access Request to Middle Tier: Once logged in, your game sends a request to the middle tier service to get your latest game statistics.
- Token Transfer: The middle tier gets this request and says, "Okay, I’ll need a special pass (token) to show the game stats server that I’m asking on behalf of the player."
+ Token Transfer: The middle tier gets this request and says, "Okay, I’ll need a special pass (token) to show the game stats server
+ that I’m asking on behalf of the player."
+
  On-Behalf-Of Flow: With the token, the middle tier then asks the downstream API (the game stats server) for your stats.
  Conditional Access Challenge: Here's where it gets a bit tricky. The stats server has special rules set by the company (like parental controls or privacy settings). When the middle tier asks for the stats, the server responds, “I need to make sure the player really allows this. Show me they agree to the game stats rules.”
  Challenge Sent Back: The middle tier doesn’t have this permission on its own. So, it sends a message back to your game saying, “Hey, we need to confirm you agree to these rules before I can show you the stats.”

@@ -1002,3 +1002,39 @@ v
 Fsrc/main/java/datastructures/arrays/arrayQuestionsleetcode/TwoSum.java,2/1/21a6b03a29adeb474c5f7b9b1410dca9dcb135e6
 V
 &src/main/java/AzureImplementation.java,f/5/f503523a86526974809965b0d89ef2e8785a2cae
+l
+<azure-notes/azure-fundamentals/Az-204/ApiManagement/lab-apim,c/a/cafc1b3c0a649370d69ccbd98a288a08adaf0ae3
+ƒ
+Sazure-notes/azure-fundamentals/Az-204/az-security/Implement Azure App Configuration,e/4/e407a3579bed47986fb90e697ad5e79b9ff1f02a
+s
+Cazure-notes/azure-fundamentals/Az-204/az-security/ManagedIdentities,0/8/084152f6295934c811b82b1a4d6d96534e49745e
+Ž
+^azure-notes/azure-fundamentals/Az-204/az-security/identityPlatform/Microsoft identity platform,6/c/6ce5e859efd70bf5e70bf12176a6a5d3e1d3b0de
+v
+Fazure-notes/azure-fundamentals/Az-204/az-security/ShardAccessSignature,1/6/1677a58b3c6a4a3b4bbac12e52dc113908d392ee
+n
+>azure-notes/azure-fundamentals/Az-204/ApiManagement/lab-apim-2,4/0/4006503057faeec2300139e4fc7c5a2946566b45
+n
+>azure-notes/azure-fundamentals/Az-204/ApiManagement/Lab-apim-3,6/2/625695278b54044adfb24438a23e78ebbc78d0bf
+º
+‰azure-notes/azure-fundamentals/Az-204/az-security/identityPlatform/Implement authentication by using the Microsoft Authentication Library,5/5/5548be2e7fe32ec9eacdbd343854cd70c65900e1
+e
+5azure-notes/azure-fundamentals/Az-204/azure-redis-cdn,6/c/6c5ec47b2e51c20e44c002f6d81ec784c203e7c0
+r
+Bazure-notes/azure-fundamentals/Az-204/azure-monitor/Az-monitor-lab,3/5/35e2e2f66989ac69b1d8a8cb2d6d66f5fcaccece
+t
+Dazure-notes/azure-fundamentals/Az-204/azure-monitor/Metrics And LOgs,9/b/9b23c4a056dc7500b55bf2e3b4fd899f0ed40e4c
+w
+Gazure-notes/azure-fundamentals/Az-204/azure-monitor/ApplicationInsights,c/8/c8129f33178767d46cccf1812ad07a75ebf7aa73
+Œ
+\azure-notes/azure-fundamentals/Az-204/compute/App-Services/frommsnotes/Security Certificates,1/d/1dd0e94f2c05e243c1819bd9a5a870fef4616432
+†
+Vazure-notes/azure-fundamentals/Az-204/compute/App-Service-Containers/ContainersInAzure,7/8/782ad729385859105cb8801bb5bf90a022f08a50
+Ž
+^azure-notes/azure-fundamentals/Az-204/compute/App-Services/frommsnotes/ConfigureWebAppSettings,7/0/7076a014cc45fd9139c9323de5f285a0388746ec
+‰
+Yazure-notes/azure-fundamentals/Az-204/compute/App-Services/frommsnotes/Diagnostic logging,0/2/02821ee8c7024ec73cc578e66eef2d1648ff9adf
+k
+;azure-notes/azure-fundamentals/Az-204/az-security/Questions,4/6/465cb9290dc4a00cb38e9117ee39f28389cb0275
+?
+git-basics/save,4/0/40100d0e2bb09f2806b9d3d81b18f79085431483

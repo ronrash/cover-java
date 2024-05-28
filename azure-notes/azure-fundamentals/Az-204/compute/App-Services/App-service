@@ -38,7 +38,8 @@ Price Tier--> slect the compute resources
 
   Pricing tier model
 
-              free Shared  basic  Standard(run prod workloads) premium(enhanced pef and scale) isolated(high pef ,security and isolation)
+         free Shared  basic  Standard(run prod workloads) premium(enhanced pef and scale)
+          isolated(high pef ,security and isolation)
  disk
  max instances
 custom domain

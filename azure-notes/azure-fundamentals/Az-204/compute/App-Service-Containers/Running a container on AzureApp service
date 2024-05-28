@@ -3,7 +3,7 @@ Steps
 Create an instance of Azure Container registry
 Build a container image
 Upload it to a conatiner registry
-Deploy it from the conatiner registry to Azur app service
+Deploy it from the conatiner registry to Azure app service
 Connect and test ur app
 
 what is a Docker container ??
@@ -61,7 +61,7 @@ Best practices for Multiple stage builds
 1.Avoid large complex containers -- separate images for website ,db,cache
 eg u can scale website ,, leaving db container alone
 
-2. Avoid unnecessary packags
+2. Avoid unnecessary packages
 3. choose an appropriate base image
 4. avoid including app data
 
@@ -102,5 +102,5 @@ Questions
 Docker is a software containerization platform
 Dcokerfile is a text file that contains the commands necessary to build an image
 Azure Container registry  allows you to store and manage your container images in a central location.
- Azure Kubernetes Service container orchestration service
- Microservice an application development strategy in which each part of an application is deployed as a completely self-contained component
+Azure Kubernetes Service container orchestration service
+Microservice an application development strategy in which each part of an application is deployed as a completely self-contained component
